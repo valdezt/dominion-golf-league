@@ -87,8 +87,24 @@ def main():
         front_week = 2 * row_index + 1
         back_week = 2 * row_index + 2
 
-        front = [scores[i] if is_score(scores[i]) else "" for i in range(9)]
-        back = [scores[9 + i] if is_score(scores[9 + i]) else "" for i in range(9)]
+        def clean(vals, week, label):
+            out = []
+            for j, v in enumerate(vals):
+                vs = v.strip()
+                if vs == "" or vs.upper() in ("X", "-"):
+                    out.append("")
+                elif vs.isdigit():
+                    out.append(vs)
+                else:
+                    warnings.append(
+                        f"{current}, week {week} ({label} hole {j + 1}): "
+                        f"'{v}' isn't a whole number — dropped, please fix in the sheet"
+                    )
+                    out.append("")
+            return out
+
+        front = clean(scores[0:9], front_week, "front")
+        back = clean(scores[9:18], back_week, "back")
         if any(front):
             wide[(current, front_week)] = {"nine": "F", "scores": front}
         if any(back):

@@ -1,12 +1,64 @@
-Travis Valdez	6	7	6	6	4	5	3	5	6	5	5	5	4	4	7	5	6	5	48	46
-June 12 - 11 HDC	X	X	X	X	X	X	X	X	X	5	7	4	5	4	4	6	6	5		46
-	5	6	6	7	5	5	3	6	5	6	5	5	5	2	4	5	5	4	48	41
-	6	5	8	4	4	6	4	4	4	7	7	6	4	4	4	4	7	4	45	47
-	X	X	X	X	X	X	X	X	X	7	6	5	5	5	3	4	5	4	0	44
-	X	X	X	X	X	X	X	X	X										0	0
-Brian Holland	X	X	X	X	X	X	X	X	X	8	6	5	4	4	4	5	8	4	0	48
-June 12 - 12 HDC	5	5	7	5	5	6	3	5	5	7	6	3	5	4	5	4	7	5	46	46
-	5	4	5	6	5	6	5	5	5	X	X	X	X	X	X	X	X	X	46	0
-	5	4	5	4	4	4	2	5	5	X	X	X	X	X	X	X	X	X	38	0
-	5	5	5	4	4	5	3	7	5	X	X	X	X	X	X	X	X	X	43	0
-	X	X	X	X	X	X	X	X	X										0	0
+Mike Bondy	6	7	7	5	5	6	5	5	6	5	7	6	5	5	4	4	6	5
+June 12 - 12 HDC	X	X	X	X	X	X	X	X	X	4	7	4	4	5	3	5	6	6
+	6	5	5	6	4	6	6	5	5	5	7	4	6	6	5	4	4	5
+	5	5	8	5	4	7	6	5	4	7	6	5	4	6	5	5	7	5
+	8	7	7	5	5	4	5	4	5	7	7	4	4	6	4	5	6	6
+	6	6	5	4	5	6	5	5	6
+Brock Seguin	5	5	6	4	5	5	8	5	4	X	X	X	X	X	X	X	X	X
+June 12 - 6 HDC	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+	5	4	4	4	3	4	3	4	4	X	X	X	X	X	X	X	X	X
+Nate Hodgins	5	9	8	7	6	8	6	5	4	5	9	4	4	4	4	5	6	5
+June 12 - 16 HDC	X	X	X	X	X	X	X	X	X	5	8	6	5	3	3	7	5	6
+	7	4	5	7	5	6	4	8	7	5	5	5	5	6	5	6	6	6
+	6	5	4	5	5	6	4	5	5	7	4	5	5	5	5	5	5	5
+	5	8	6	5	4	6	4	5	5	6	5	5	8	3	4	6	7	5
+	6	4	5	7	3	8	5	6	4
+Nate Emery	5	5	6	4	5	4	3	5	4	5	6	5	4	4	3	5	5	4
+June 12 - 6 HDC	5	5	6	5	4	6	3	4	5	5	4	4	4	4	3	5	4	5
+	5	4	5	4	3	5	4	6	5	X	X	X	X	X	X	X	X	X
+	X	X	X	X	X	X	X	X	X	6	5	4	3	4	4	4	4	4
+	5	3	6	4	3	5	3	5	4	5	5	4	4	5	4	4	5	4
+Dylan Bell	6	4	6	6	4	6	5	4	4	7	5	5	4	5	4	4	6	5
+June 12 - 9 HDC	7	4	7	4	4	5	3	5	5	5	7	3	4	5	4	4	5	5
+	5	6	5	6	2	6	5	5	5	5	6	4	5	4	4	5	5	5
+	6	5	6	5	5	5	3	4	3	5	7	3	5	4	5	5	5	5
+	4	5	7	5	5	5	3	6	4	X	X	X	X	X	X	X	X	X
+	5	5	5	5	4	5	4	5	4
+Eddie Sauve	X	X	X	X	X	X	X	X	X	4	5	4	4	4	4	5	5	6
+June 12 - 5 HDC	5	3	5	5	4	4	3	5	5	X	X	X	X	X	X	X	X	X
+	4	4	5	5	3	6	4	4	4	5	5	4	4	5	4	4	5	3
+	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+	5	4	4	4	2	4	5	5	3	6	5	3	3	5	3	4	5	4
+Riley Pekar	6	5	8	5	5	6	4	5	6	7	7	4	4	5	4	5	5	6
+June 12 - 11 HDC	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+	X	X	X	X	X	X	X	X	X	6	6	3	4	6	4	4	5	4
+	5	5	6	5	4	4	7	4	4	4	6	5	5	4	4	6	4	4
+	6	6	6	6	3	4	3	4	4
+Evan Sheppard	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+Alex Djordjevski	6	5	5	5	6	5	4	4	5	5	7	3	4	5	5	5	5	5
+June 12 - 8 HDC	7	5	4	5	4	6	4	5	5	5	6	3	5	6	5	4	5	5
+	4	4	5	5	5	6	3	4	4	4	6	4	4	4	3	4	5	6
+	8	5	5	6	4	6	4	5	4	8	6	4	5	3	4	5	6	4
+	X	X	X	X	X	X	X	X	X	4	7	3	4	5	5	4	8	6
+	6	7	4	5	4	4	4	6	4	5	6	5	6	4	4	5	5	6
+Ryan Dimitrov	6	5	6	5	6	5	3	5	6	7	5	4	5	5	4	5	6	4
+June 12 - 12 HDC	6	5	5	6	3	6	4	8	6	6	6	7	8	5	4	6	5	5
+	4	5	6	4	4	6	6	10	6	5	6	5	6	4	5	5	5	4
+	6	4	6	6	4	5	6	5	6	5	4	5	6	4	6	6	5	5
+	6	4	6	6	4	5	3	4	5	5	6	3	5	5	5	6	5	5
+	4	7	5	4	4	4	4	3	4
+Austin Crough	4	6	7	4	5	5	3	4	4	6	5	5	4	4	4	5	6	6
+June 12 - 8 HDC	6	8	6	7	4	6	3	5	5	X	X	X	X	X	X	X	X	X
+	5	5	7	4	4	4	3	5	4	5	4	3	4	4	5	4	4	5
+	5	5	3	4	4	6	5	6	4	5	5	3	5	5	4	5	5	3
+	5	5	5	6	4	4	4	4	4	4	6	3	5	5	4	3	6	3
+Travis Valdez	6	7	6	6	4	5	3	5	6	5	5	5	4	4	7	5	6	5
+June 12 - 11 HDC	X	X	X	X	X	X	X	X	X	5	7	4	5	4	4	6	6	5
+	5	6	6	7	5	5	3	6	5	6	5	5	5	2	4	5	5	4
+	6	5	8	4	4	6	4	4	4	7	7	6	4	4	4	4	7	4
+	X	X	X	X	X	X	X	X	X	7	6	5	5	5	3	4	5	4
+Brian Holland	X	X	X	X	X	X	X	X	X	8	6	5	4	4	4	5	8	4
+June 12 - 12 HDC	5	5	7	5	5	6	3	5	5	7	6	3	5	4	5	4	7	5
+	5	4	5	6	5	6	5	5	5	X	X	X	X	X	X	X	X	X
+	5	4	5	4	4	4	2	5	5	X	X	X	X	X	X	X	X	X
+	5	5	5	4	4	5	3	7	5	X	X	X	X	X	X	X	X	X

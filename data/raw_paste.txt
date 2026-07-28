@@ -1,0 +1,12 @@
+Travis Valdez	6	7	6	6	4	5	3	5	6	5	5	5	4	4	7	5	6	5	48	46
+June 12 - 11 HDC	X	X	X	X	X	X	X	X	X	5	7	4	5	4	4	6	6	5		46
+	5	6	6	7	5	5	3	6	5	6	5	5	5	2	4	5	5	4	48	41
+	6	5	8	4	4	6	4	4	4	7	7	6	4	4	4	4	7	4	45	47
+	X	X	X	X	X	X	X	X	X	7	6	5	5	5	3	4	5	4	0	44
+	X	X	X	X	X	X	X	X	X										0	0
+Brian Holland	X	X	X	X	X	X	X	X	X	8	6	5	4	4	4	5	8	4	0	48
+June 12 - 12 HDC	5	5	7	5	5	6	3	5	5	7	6	3	5	4	5	4	7	5	46	46
+	5	4	5	6	5	6	5	5	5	X	X	X	X	X	X	X	X	X	46	0
+	5	4	5	4	4	4	2	5	5	X	X	X	X	X	X	X	X	X	38	0
+	5	5	5	4	4	5	3	7	5	X	X	X	X	X	X	X	X	X	43	0
+	X	X	X	X	X	X	X	X	X										0	0

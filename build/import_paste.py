@@ -1,23 +1,25 @@
 #!/usr/bin/env python3
 """
-Convert a raw paste of the league spreadsheet into a clean long-format CSV.
+BULK IMPORT: convert a full paste of the league spreadsheet into data/scores.csv.
+
+Use this to seed the season or to add several players at once. It OVERWRITES
+data/scores.csv, so the paste in data/raw_paste.txt must contain everyone you
+want in the site. For adding just the current week, use add_week.py instead.
 
 The spreadsheet packs TWO weeks into every row (18 score columns):
   - columns 1-9  = the FRONT nine (course holes 1-9)  played one week
   - columns 10-18 = the BACK nine  (course holes 10-18) played the next week
 So consecutive league weeks alternate nines.
 
-Layout of each block:
-  - The first line of a player's block has the player NAME in column 0.
+Layout of each player block:
+  - The first line has the player NAME in column 0.
   - The second line carries a "<date> - <N> HDC" note (still has real scores).
   - Following lines have an empty column 0 (still real scores).
   - 'X' means the player did not play that nine that week.
   - Any columns after the 18 scores (the two 9-hole totals) are ignored.
+  - Every player's block must start on the same week grid (row 1 = weeks 1&2).
 
-Output: data/scores_long.csv with columns: player,week,nine,hole,strokes
-  week  = sequential 9-hole league week (1,2,3,...)
-  nine  = 'F' or 'B'
-  hole  = actual course hole (1-18)
+Output: data/scores.csv  (wide: week,date,nine,player,h1..h9)
 """
 import csv
 import os
@@ -27,7 +29,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 RAW = os.path.join(ROOT, "data", "raw_paste.txt")
-OUT = os.path.join(ROOT, "data", "scores_long.csv")
+OUT = os.path.join(ROOT, "data", "scores.csv")
 NOTES = os.path.join(ROOT, "data", "handicap_notes.csv")
 
 
@@ -43,7 +45,7 @@ def main():
     with open(RAW, newline="") as f:
         lines = f.read().split("\n")
 
-    rows = []            # (player, week, nine, hole, strokes)
+    wide = {}            # (player, week) -> {"nine": F/B, "scores": [9 values]}
     notes = []           # (player, date, reported_hdc)
     warnings = []
 
@@ -85,14 +87,12 @@ def main():
         front_week = 2 * row_index + 1
         back_week = 2 * row_index + 2
 
-        for i in range(9):
-            hole = i + 1
-            if is_score(scores[i]):
-                rows.append((current, front_week, "F", hole, int(scores[i])))
-        for i in range(9):
-            hole = i + 10
-            if is_score(scores[9 + i]):
-                rows.append((current, back_week, "B", hole, int(scores[9 + i])))
+        front = [scores[i] if is_score(scores[i]) else "" for i in range(9)]
+        back = [scores[9 + i] if is_score(scores[9 + i]) else "" for i in range(9)]
+        if any(front):
+            wide[(current, front_week)] = {"nine": "F", "scores": front}
+        if any(back):
+            wide[(current, back_week)] = {"nine": "B", "scores": back}
 
         # Optional sanity check against the two total columns, if present.
         for nine_slice, total_idx, label in ((scores[0:9], 19, "front"), (scores[9:18], 20, "back")):
@@ -105,22 +105,22 @@ def main():
                         f"!= sum of holes {calc}"
                     )
 
-    rows.sort(key=lambda r: (r[1], r[0], r[3]))
-
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["player", "week", "nine", "hole", "strokes"])
-        w.writerows(rows)
+        w.writerow(["week", "date", "nine", "player"] + [f"h{i}" for i in range(1, 10)])
+        for (player, week) in sorted(wide, key=lambda k: (k[1], k[0])):
+            rec = wide[(player, week)]
+            w.writerow([week, "", rec["nine"], player] + rec["scores"])
 
     with open(NOTES, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["player", "date", "reported_hdc"])
         w.writerows(notes)
 
-    players = sorted({r[0] for r in rows})
-    weeks = sorted({r[1] for r in rows})
-    print(f"Imported {len(rows)} hole scores")
+    players = sorted({p for (p, _) in wide})
+    weeks = sorted({w for (_, w) in wide})
+    print(f"Imported {len(wide)} player-weeks -> data/scores.csv")
     print(f"  players: {len(players)} -> {', '.join(players)}")
     print(f"  weeks:   {len(weeks)} -> {weeks}")
     if warnings:

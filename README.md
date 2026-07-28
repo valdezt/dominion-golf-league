@@ -6,36 +6,55 @@ generated for the whole league to browse on their phones.
 
 ## How it works
 
+`data/scores.csv` is the single source of truth — one row per player per week
+(`week,date,nine,player,h1..h9`). `build/build.py` reads it plus
+`data/course.csv` and writes `site/data.json`, which the static site renders.
+Nothing on the site is edited by hand.
+
 ```
-data/raw_paste.txt   ← you paste from Google Sheets each week
-        │  build/import_paste.py
-        ▼
-data/scores_long.csv  (clean: one row per player/week/hole)
-        │  build/build.py   +   data/course.csv (par + stroke index)
-        ▼
-site/data.json  →  site/index.html   (the site)
+data/scores.csv ──► build/build.py (+ data/course.csv) ──► site/data.json ──► site
+      ▲
+      ├─ add_week.py       ← the usual weekly step (paste this week, append)
+      └─ import_paste.py   ← bulk seed / add several players from a full sheet
 ```
 
-Nothing on the site is edited by hand — it's all computed from scores.
+## Add the current week (the usual step)
 
-## Update it each week (3 steps)
-
-1. **Paste** the current league grid into `data/raw_paste.txt`, replacing what's
-   there. The format is exactly how it copies out of your sheet:
-   - one row per player-week-pair (18 score columns = front 9 then back 9),
-   - player name on the first row of each block, a `June 12 - 11 HDC` note on
-     the second, `X` for a missed nine. Extra total columns are ignored.
-2. **Build**:
-   ```bash
-   python3 build/update.py
+1. Open `data/this_week.txt` and paste this week's scores, one line per player:
    ```
-   Optionally preview locally: `cd site && python3 -m http.server` → open
-   http://localhost:8000
-3. **Publish**:
+   Travis Valdez: 5 4 6 4 3 5 3 4 5
+   Brian Holland = 5,5,7,5,5,6,3,5,5
+   Dana Kim 6 5 5 4 4 6 4 5 5
+   ```
+   Use `X` for a hole someone skipped. Week #, front/back, and date are filled
+   in automatically (override with `week:` / `nine:` / `date:` lines if needed).
+2. Run it (this appends to `scores.csv` **and** rebuilds the site):
+   ```bash
+   python3 build/add_week.py
+   ```
+3. Preview locally if you like (`cd site && python3 -m http.server` →
+   http://localhost:8000), then publish:
    ```bash
    git add -A && git commit -m "Week N scores" && git push
    ```
-   GitHub Actions rebuilds and redeploys automatically (~1 min).
+   GitHub Actions redeploys automatically (~1 min).
+
+## Add several players at once (or seed the season)
+
+Paste your **whole** Google Sheet — all players, all weeks — into
+`data/raw_paste.txt` (the double-week format: 18 score columns = front 9 then
+back 9, player name on row 1 of each block, `X` for a missed nine), then:
+
+```bash
+python3 build/import_paste.py   # OVERWRITES scores.csv from the paste
+python3 build/build.py          # rebuild
+```
+
+Use this when the sheet is your master. If instead you build week-by-week with
+`add_week.py`, don't re-run the importer afterwards — it rebuilds `scores.csv`
+from the paste and would drop weeks you appended. Pick one as your master.
+You can also just hand-edit `data/scores.csv` (it's plain wide CSV) and run
+`python3 build/update.py` to rebuild.
 
 ## The math (all in `build/build.py`)
 

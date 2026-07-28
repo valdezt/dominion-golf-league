@@ -22,8 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build data.json from CSVs
-        run: python3 build/update.py
+      - name: Build data.json from committed CSVs
+        run: python3 build/build.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

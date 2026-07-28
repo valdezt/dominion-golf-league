@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 COURSE_CSV = os.path.join(ROOT, "data", "course.csv")
-SCORES_CSV = os.path.join(ROOT, "data", "scores_long.csv")
+SCORES_CSV = os.path.join(ROOT, "data", "scores.csv")
 OUT = os.path.join(ROOT, "site", "data.json")
 
 WINDOW = 8       # look back this many league weeks
@@ -40,20 +40,36 @@ def load_course():
 
 
 def load_rounds(course):
-    """Return rounds keyed by (player, week) -> round dict."""
+    """Read wide scores.csv (week,date,nine,player,h1..h9) -> rounds by (player, week).
+
+    Holes are mapped to real course holes via the nine: F -> 1-9, B -> 10-18.
+    """
     rounds = {}
     with open(SCORES_CSV, newline="") as f:
         for r in csv.DictReader(f):
-            key = (r["player"], int(r["week"]))
+            player = r["player"].strip()
+            if not player or not r.get("week", "").strip():
+                continue
+            week = int(r["week"])
+            nine = (r.get("nine") or "F").strip().upper()[:1]
+            base = 0 if nine == "F" else 9
+            key = (player, week)
             rd = rounds.setdefault(key, {
-                "player": r["player"], "week": int(r["week"]),
-                "nine": r["nine"], "holes": {}, "gross": 0, "par": 0,
+                "player": player, "week": week, "nine": nine,
+                "date": (r.get("date") or "").strip(),
+                "holes": {}, "gross": 0, "par": 0,
             })
-            hole = int(r["hole"])
-            strokes = int(r["strokes"])
-            rd["holes"][hole] = strokes
-            rd["gross"] += strokes
-            rd["par"] += course[hole]["par"]
+            for i in range(1, 10):
+                v = (r.get(f"h{i}") or "").strip()
+                if v == "":
+                    continue
+                strokes = int(v)
+                hole = base + i
+                rd["holes"][hole] = strokes
+                rd["gross"] += strokes
+                rd["par"] += course[hole]["par"]
+    # drop empty rounds (player listed but no scores that week)
+    rounds = {k: rd for k, rd in rounds.items() if rd["holes"]}
     for rd in rounds.values():
         rd["to_par"] = rd["gross"] - rd["par"]
     return rounds
@@ -84,6 +100,7 @@ def build():
     weeks = []
     for w in league_weeks:
         nine = next((rd["nine"] for (p, ww), rd in rounds.items() if ww == w), "F")
+        wdate = next((rd["date"] for (p, ww), rd in rounds.items() if ww == w and rd["date"]), "")
         holes_played = sorted(
             {h for (p, ww), rd in rounds.items() if ww == w for h in rd["holes"]}
         )
@@ -103,7 +120,7 @@ def build():
             })
         results.sort(key=lambda r: (r["net"] if r["net"] is not None else 1e9))
         weeks.append({
-            "week": w, "nine": nine, "holes": holes_played,
+            "week": w, "nine": nine, "date": wdate, "holes": holes_played,
             "par": sum(course[h]["par"] for h in holes_played),
             "results": results,
             "winner": results[0]["player"] if results else None,

@@ -1,0 +1,15 @@
+# Paste this week's 9-hole scores below — one line per player — then run:
+#     python3 build/add_week.py
+#
+# Any of these line formats work:
+#     Travis Valdez: 5 4 6 4 3 5 3 4 5
+#     Brian Holland = 5,5,7,5,5,6,3,5,5
+#     Dana Kim 6 5 5 4 4 6 4 5 5
+# Use X for a hole a player skipped. Lines starting with # are ignored.
+#
+# Optional overrides (otherwise: next week #, alternating nine, today's date):
+#     week: 11
+#     nine: F
+#     date: 2026-07-22
+#
+# --- scores below this line ---

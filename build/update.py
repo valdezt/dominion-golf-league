@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""One-shot weekly update: import the paste, then rebuild the site."""
+"""Rebuild site/data.json from data/scores.csv (local convenience wrapper).
+
+Data entry lives elsewhere:
+  - add_week.py     append the current week (the usual weekly step)
+  - import_paste.py bulk import / add several players from a full sheet paste
+Both of those already rebuild automatically; run this when you've hand-edited
+data/scores.csv or data/course.csv and just want to regenerate the site.
+"""
+import os
 import subprocess
 import sys
-import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-
-for step in ("import_paste.py", "build.py"):
-    print(f"\n=== {step} ===")
-    r = subprocess.run([sys.executable, os.path.join(HERE, step)])
-    if r.returncode != 0:
-        sys.exit(r.returncode)
-print("\nDone. Review site/ locally, then commit & push to publish.")
+sys.exit(subprocess.run([sys.executable, os.path.join(HERE, "build.py")]).returncode)

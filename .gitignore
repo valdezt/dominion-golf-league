@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .claude/
+
+# weekly-entry archive (backups of this_week.txt)
+data/weeks_log/

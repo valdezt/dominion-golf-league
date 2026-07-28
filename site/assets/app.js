@@ -231,9 +231,33 @@ function viewHandicaps(main) {
     <div class="tiles">${tiles}</div>
     ${improved ? `<div class="card"><h3 class="section-title">📉 Most improved</h3>
       <p><strong>${improved}</strong> is down ${signed(DATA.handicaps[improved].delta)} strokes since their first tracked week.</p></div>` : ''}
-    <div class="card"><h3 class="section-title">Handicap trend</h3>
-      ${lineChart(series, { yLabel: 'Handicap', invertBetter: true })}
-      ${chartLegend(series)}</div>`;
+    <div class="card" id="hc-card"><h3 class="section-title">Handicap trend</h3>
+      <p class="sub">Hover or tap a name to isolate that player's line.</p>
+      ${lineChart(series, { yLabel: 'Handicap', invertBetter: true, interactive: true })}
+      ${chartLegend(series, true)}</div>`;
+
+  // hover / tap a legend chip (or line) to spotlight one player
+  const card = main.querySelector('#hc-card');
+  const sers = [...card.querySelectorAll('.ser')];
+  const legItems = [...card.querySelectorAll('.leg-item')];
+  let locked = null;
+  const apply = (k) => {
+    sers.forEach(g => {
+      const on = k == null || +g.dataset.i === k;
+      g.style.opacity = on ? 1 : 0.07;
+      const path = g.querySelector('path');
+      if (path) path.style.strokeWidth = (k != null && on) ? '3.5' : '';
+    });
+    legItems.forEach(l => { l.style.opacity = (k == null || +l.dataset.i === k) ? 1 : 0.3; });
+  };
+  const bind = (el, k) => {
+    el.addEventListener('mouseenter', () => { if (locked == null) apply(k); });
+    el.addEventListener('mouseleave', () => { if (locked == null) apply(null); });
+    el.addEventListener('click', (e) => { e.stopPropagation(); locked = locked === k ? null : k; apply(locked); });
+  };
+  legItems.forEach(l => bind(l, +l.dataset.i));
+  sers.forEach(g => bind(g, +g.dataset.i));
+  card.addEventListener('click', () => { locked = null; apply(null); });
 }
 
 // ---------- Ringer / Dinger boards ----------
@@ -580,12 +604,14 @@ function lineChart(series, opts = {}) {
   const weeks = [...new Set(xs)].sort((a, b) => a - b);
   weeks.forEach(w => { xlab += `<text x="${sx(w)}" y="${H - 8}" text-anchor="middle" font-size="10" fill="var(--muted)">${w}</text>`; });
 
-  const paths = series.map(s => {
+  const sw = opts.interactive ? 1.8 : 2.5;
+  const paths = series.map((s, si) => {
     const pts = [...s.points].sort((a, b) => a.x - b.x);
     if (!pts.length) return '';
     const d = pts.map((p, i) => `${i ? 'L' : 'M'}${sx(p.x).toFixed(1)},${sy(p.y).toFixed(1)}`).join(' ');
-    const dots = pts.map(p => `<circle cx="${sx(p.x).toFixed(1)}" cy="${sy(p.y).toFixed(1)}" r="3.2" fill="${s.color}"/>`).join('');
-    return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.5" stroke-linejoin="round"/>${dots}`;
+    const dots = opts.interactive ? '' : pts.map(p => `<circle cx="${sx(p.x).toFixed(1)}" cy="${sy(p.y).toFixed(1)}" r="3.2" fill="${s.color}"/>`).join('');
+    const g = `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${sw}" stroke-linejoin="round"/>${dots}`;
+    return opts.interactive ? `<g class="ser" data-i="${si}">${g}</g>` : g;
   }).join('');
 
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img">
@@ -594,9 +620,9 @@ function lineChart(series, opts = {}) {
   </svg>`;
 }
 
-function chartLegend(series) {
-  return `<div class="chart-legend">${series.map(s =>
-    `<span><span class="dot" style="background:${s.color}"></span>${s.name}</span>`).join('')}</div>`;
+function chartLegend(series, interactive) {
+  return `<div class="chart-legend">${series.map((s, i) =>
+    `<span class="${interactive ? 'leg-item' : ''}"${interactive ? ` data-i="${i}"` : ''}><span class="dot" style="background:${s.color}"></span>${s.name}</span>`).join('')}</div>`;
 }
 
 // ---------- utils ----------
@@ -617,7 +643,8 @@ fetch('data.json?_=' + Date.now())
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
     DATA = data;
-    data.meta.players.forEach((p, i) => colorOf[p] = PLAYER_COLORS[i % PLAYER_COLORS.length]);
+    // distinct colour per player via golden-angle hue spacing (readable on light & dark)
+    data.meta.players.forEach((p, i) => { colorOf[p] = `hsl(${((i * 137.508) % 360).toFixed(0)}, 65%, 52%)`; });
     $('#league-name').textContent = LEAGUE_NAME;
     $('#meta-line').textContent = `${data.meta.players.length} players · ${data.meta.num_weeks} weeks played`;
     $('#footer-meta').textContent = `Data updated ${data.meta.generated_at}. Handicap = best ${data.meta.best_n} of last ${data.meta.window} weeks.`;

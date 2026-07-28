@@ -189,6 +189,9 @@ tr.missed td:not(.name) { background: repeating-linear-gradient(45deg, transpare
 svg.chart { width: 100%; height: auto; display: block; }
 .chart-legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; font-size: .82rem; }
 .chart-legend span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+.chart-legend .leg-item { cursor: pointer; transition: opacity .12s ease; user-select: none; }
+.chart-legend .leg-item:hover { color: var(--ink); }
+svg.chart .ser { transition: opacity .12s ease; cursor: pointer; }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 
 footer { border-top: 1px solid var(--line); padding: 18px 0 40px; color: var(--muted); font-size: .8rem; }

@@ -41,23 +41,26 @@ def load_course():
 
 
 def load_week_meta():
-    """Optional week -> {date, note} map (data/weeks.csv). Authoritative for display."""
+    """week -> {nine, date, note} map (data/weeks.csv). Authoritative for nine & date."""
     meta = {}
     if os.path.exists(WEEKS_CSV):
         with open(WEEKS_CSV, newline="") as f:
             for r in csv.DictReader(f):
                 if r.get("week", "").strip():
                     meta[int(r["week"])] = {
+                        "nine": (r.get("nine") or "F").strip().upper()[:1] or "F",
                         "date": (r.get("date") or "").strip(),
                         "note": (r.get("note") or "").strip(),
                     }
     return meta
 
 
-def load_rounds(course):
-    """Read wide scores.csv (week,date,nine,player,h1..h9) -> rounds by (player, week).
+def load_rounds(course, week_nine):
+    """Read scores.csv (week,player,h1..h9,notes) -> rounds by (player, week).
 
-    Holes are mapped to real course holes via the nine: F -> 1-9, B -> 10-18.
+    The nine (F/B) comes from weeks.csv per week; holes map to real course holes
+    (F -> 1-9, B -> 10-18). Rounds with week < 1 are "banked" play-ahead rounds
+    not yet assigned to a league week (-1 = front, -2 = back) and are excluded.
     """
     rounds = {}
     with open(SCORES_CSV, newline="") as f:
@@ -66,26 +69,25 @@ def load_rounds(course):
             if not player or not r.get("week", "").strip():
                 continue
             week = int(r["week"])
-            nine = (r.get("nine") or "F").strip().upper()[:1]
+            if week < 1:
+                continue  # banked / not-yet-used round
+            nine = week_nine.get(week, "F")
             base = 0 if nine == "F" else 9
             key = (player, week)
             rd = rounds.setdefault(key, {
                 "player": player, "week": week, "nine": nine,
-                "date": (r.get("date") or "").strip(),
-                "holes": {}, "gross": 0, "par": 0,
+                "notes": (r.get("notes") or "").strip(), "holes": {},
             })
+            if (r.get("notes") or "").strip():
+                rd["notes"] = (r.get("notes") or "").strip()
             for i in range(1, 10):
                 v = (r.get(f"h{i}") or "").strip()
-                if v == "":
-                    continue
-                strokes = int(v)
-                hole = base + i
-                rd["holes"][hole] = strokes
-                rd["gross"] += strokes
-                rd["par"] += course[hole]["par"]
-    # drop empty rounds (player listed but no scores that week)
+                if v != "":
+                    rd["holes"][base + i] = int(v)
     rounds = {k: rd for k, rd in rounds.items() if rd["holes"]}
-    for rd in rounds.values():
+    for rd in rounds.values():  # totals from the final hole set (dup-safe)
+        rd["gross"] = sum(rd["holes"].values())
+        rd["par"] = sum(course[h]["par"] for h in rd["holes"])
         rd["to_par"] = rd["gross"] - rd["par"]
     return rounds
 
@@ -96,8 +98,9 @@ def rnd(x, n=2):
 
 def build():
     course = load_course()
-    rounds = load_rounds(course)
     week_meta = load_week_meta()
+    week_nine = {w: m["nine"] for w, m in week_meta.items()}
+    rounds = load_rounds(course, week_nine)
 
     players = sorted({p for (p, _) in rounds})
     league_weeks = sorted({w for (_, w) in rounds})
@@ -135,6 +138,7 @@ def build():
             results.append({
                 "player": p, "gross": rd["gross"], "to_par": rd["to_par"],
                 "par": rd["par"], "handicap": rnd(hdc), "net": rnd(net),
+                "notes": rd.get("notes", ""),
                 "holes": {str(h): rd["holes"].get(h) for h in holes_played},
             })
         results.sort(key=lambda r: (r["net"] if r["net"] is not None else 1e9))

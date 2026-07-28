@@ -1,21 +1,26 @@
 {
   "meta": {
-    "generated_at": "2026-07-28 14:03 UTC",
+    "generated_at": "2026-07-28 16:33 UTC",
     "players": [
       "Alex Djordjevski",
       "Austin Crough",
+      "Boots",
       "Brian Holland",
       "Brock Seguin",
+      "Dragan Lukic",
       "Dylan Bell",
       "Eddie Sauve",
+      "Marc Berthiaume",
       "Mike Bondy",
       "Nate Emery",
       "Nate Hodgins",
       "Riley Pekar",
       "Ryan Dimitrov",
-      "Travis Valdez"
+      "Scotty",
+      "Travis Valdez",
+      "Ty"
     ],
-    "num_weeks": 12,
+    "num_weeks": 13,
     "league_weeks": [
       1,
       2,
@@ -28,7 +33,8 @@
       9,
       10,
       11,
-      12
+      12,
+      13
     ],
     "nine_par": 35,
     "window": 8,
@@ -134,6 +140,7 @@
           "par": 35,
           "handicap": 10.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -153,6 +160,7 @@
           "par": 35,
           "handicap": 7.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 4,
             "2": 6,
@@ -172,6 +180,7 @@
           "par": 35,
           "handicap": 12.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -191,6 +200,7 @@
           "par": 35,
           "handicap": 10.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 4,
@@ -210,6 +220,7 @@
           "par": 35,
           "handicap": 17.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 7,
@@ -229,6 +240,7 @@
           "par": 35,
           "handicap": 6.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -248,6 +260,7 @@
           "par": 35,
           "handicap": 23.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 9,
@@ -267,6 +280,7 @@
           "par": 35,
           "handicap": 15.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -286,6 +300,7 @@
           "par": 35,
           "handicap": 12.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -305,6 +320,7 @@
           "par": 35,
           "handicap": 13.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 7,
@@ -345,6 +361,7 @@
           "par": 35,
           "handicap": 23.0,
           "net": -12.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 9,
@@ -364,6 +381,7 @@
           "par": 35,
           "handicap": 17.0,
           "net": -5.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 7,
@@ -383,6 +401,7 @@
           "par": 35,
           "handicap": 15.0,
           "net": -3.0,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 7,
@@ -402,6 +421,7 @@
           "par": 35,
           "handicap": 12.0,
           "net": -2.0,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 5,
@@ -421,6 +441,7 @@
           "par": 35,
           "handicap": 13.0,
           "net": -2.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 5,
@@ -440,6 +461,7 @@
           "par": 35,
           "handicap": 10.0,
           "net": -1.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 7,
@@ -459,6 +481,7 @@
           "par": 35,
           "handicap": 13.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "10": 8,
             "11": 6,
@@ -478,6 +501,7 @@
           "par": 35,
           "handicap": 10.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 5,
@@ -497,6 +521,7 @@
           "par": 35,
           "handicap": 6.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "10": 4,
             "11": 5,
@@ -516,6 +541,7 @@
           "par": 35,
           "handicap": 6.0,
           "net": 0.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 6,
@@ -535,6 +561,7 @@
           "par": 35,
           "handicap": 7.0,
           "net": 3.0,
+          "notes": "",
           "holes": {
             "10": 6,
             "11": 5,
@@ -575,6 +602,7 @@
           "par": 35,
           "handicap": 13.0,
           "net": -2.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -594,6 +622,7 @@
           "par": 35,
           "handicap": 6.0,
           "net": -2.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 3,
@@ -607,18 +636,59 @@
           }
         },
         {
+          "player": "Boots",
+          "gross": 52,
+          "to_par": 17,
+          "par": 35,
+          "handicap": 17.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "1": 7,
+            "2": 6,
+            "3": 6,
+            "4": 6,
+            "5": 5,
+            "6": 6,
+            "7": 6,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
           "player": "Dylan Bell",
-          "gross": 44,
-          "to_par": 9,
+          "gross": 45,
+          "to_par": 10,
           "par": 35,
           "handicap": 10.0,
-          "net": -1.0,
+          "net": 0.0,
+          "notes": "",
           "holes": {
             "1": 7,
             "2": 4,
             "3": 7,
             "4": 4,
             "5": 4,
+            "6": 5,
+            "7": 4,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "player": "Scotty",
+          "gross": 42,
+          "to_par": 7,
+          "par": 35,
+          "handicap": 7.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 6,
+            "3": 6,
+            "4": 4,
+            "5": 3,
             "6": 5,
             "7": 3,
             "8": 5,
@@ -632,6 +702,7 @@
           "par": 35,
           "handicap": 9.5,
           "net": 0.5,
+          "notes": "",
           "holes": {
             "1": 7,
             "2": 5,
@@ -651,6 +722,7 @@
           "par": 35,
           "handicap": 6.0,
           "net": 2.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -670,6 +742,7 @@
           "par": 35,
           "handicap": 11.0,
           "net": 3.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -689,6 +762,7 @@
           "par": 35,
           "handicap": 8.5,
           "net": 6.5,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 8,
@@ -723,12 +797,174 @@
       "par": 35,
       "results": [
         {
+          "player": "Austin Crough",
+          "gross": 37,
+          "to_par": 2,
+          "par": 35,
+          "handicap": 10.67,
+          "net": -8.67,
+          "notes": "",
+          "holes": {
+            "10": 4,
+            "11": 5,
+            "12": 4,
+            "13": 5,
+            "14": 3,
+            "15": 2,
+            "16": 5,
+            "17": 4,
+            "18": 5
+          }
+        },
+        {
+          "player": "Ryan Dimitrov",
+          "gross": 43,
+          "to_par": 8,
+          "par": 35,
+          "handicap": 12.0,
+          "net": -4.0,
+          "notes": "",
+          "holes": {
+            "10": 6,
+            "11": 7,
+            "12": 3,
+            "13": 4,
+            "14": 5,
+            "15": 3,
+            "16": 6,
+            "17": 5,
+            "18": 4
+          }
+        },
+        {
+          "player": "Dylan Bell",
+          "gross": 43,
+          "to_par": 8,
+          "par": 35,
+          "handicap": 10.0,
+          "net": -2.0,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 6,
+            "12": 5,
+            "13": 5,
+            "14": 4,
+            "15": 4,
+            "16": 5,
+            "17": 5,
+            "18": 4
+          }
+        },
+        {
+          "player": "Nate Hodgins",
+          "gross": 52,
+          "to_par": 17,
+          "par": 35,
+          "handicap": 17.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "10": 7,
+            "11": 7,
+            "12": 4,
+            "13": 6,
+            "14": 5,
+            "15": 3,
+            "16": 7,
+            "17": 6,
+            "18": 7
+          }
+        },
+        {
+          "player": "Eddie Sauve",
+          "gross": 41,
+          "to_par": 6,
+          "par": 35,
+          "handicap": 5.0,
+          "net": 1.0,
+          "notes": "",
+          "holes": {
+            "10": 6,
+            "11": 5,
+            "12": 3,
+            "13": 4,
+            "14": 4,
+            "15": 5,
+            "16": 4,
+            "17": 5,
+            "18": 5
+          }
+        },
+        {
+          "player": "Travis Valdez",
+          "gross": 50,
+          "to_par": 15,
+          "par": 35,
+          "handicap": 12.0,
+          "net": 3.0,
+          "notes": "",
+          "holes": {
+            "10": 8,
+            "11": 9,
+            "12": 5,
+            "13": 5,
+            "14": 5,
+            "15": 4,
+            "16": 4,
+            "17": 5,
+            "18": 5
+          }
+        },
+        {
+          "player": "Brian Holland",
+          "gross": 51,
+          "to_par": 16,
+          "par": 35,
+          "handicap": 12.0,
+          "net": 4.0,
+          "notes": "",
+          "holes": {
+            "10": 6,
+            "11": 10,
+            "12": 5,
+            "13": 5,
+            "14": 5,
+            "15": 4,
+            "16": 5,
+            "17": 7,
+            "18": 4
+          }
+        }
+      ],
+      "winner": "Austin Crough"
+    },
+    {
+      "week": 5,
+      "nine": "B",
+      "date": "2026-05-25",
+      "note": "No round May 18 \u2014 holiday",
+      "holes": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "par": 35,
+      "results": [
+        {
           "player": "Mike Bondy",
-          "gross": 44,
-          "to_par": 9,
+          "gross": 43,
+          "to_par": 8,
           "par": 35,
           "handicap": 14.5,
-          "net": -5.5,
+          "net": -6.5,
+          "notes": "",
           "holes": {
             "10": 4,
             "11": 7,
@@ -738,16 +974,17 @@
             "15": 3,
             "16": 5,
             "17": 6,
-            "18": 6
+            "18": 5
           }
         },
         {
           "player": "Nate Hodgins",
-          "gross": 48,
-          "to_par": 13,
+          "gross": 47,
+          "to_par": 12,
           "par": 35,
           "handicap": 17.0,
-          "net": -4.0,
+          "net": -5.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 8,
@@ -757,7 +994,7 @@
             "15": 3,
             "16": 7,
             "17": 5,
-            "18": 6
+            "18": 5
           }
         },
         {
@@ -767,6 +1004,7 @@
           "par": 35,
           "handicap": 6.67,
           "net": -3.67,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 4,
@@ -784,8 +1022,9 @@
           "gross": 42,
           "to_par": 7,
           "par": 35,
-          "handicap": 9.67,
-          "net": -2.67,
+          "handicap": 9.5,
+          "net": -2.5,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 7,
@@ -803,8 +1042,9 @@
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 12.0,
-          "net": -1.0,
+          "handicap": 13.33,
+          "net": -2.33,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 6,
@@ -822,8 +1062,9 @@
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 12.0,
-          "net": -1.0,
+          "handicap": 13.0,
+          "net": -2.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 7,
@@ -843,6 +1084,7 @@
           "par": 35,
           "handicap": 9.67,
           "net": -0.67,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 6,
@@ -856,12 +1098,33 @@
           }
         },
         {
+          "player": "Dragan Lukic",
+          "gross": 54,
+          "to_par": 19,
+          "par": 35,
+          "handicap": 19.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "10": 7,
+            "11": 8,
+            "12": 5,
+            "13": 5,
+            "14": 5,
+            "15": 4,
+            "16": 5,
+            "17": 8,
+            "18": 7
+          }
+        },
+        {
           "player": "Ryan Dimitrov",
           "gross": 52,
           "to_par": 17,
           "par": 35,
-          "handicap": 12.0,
-          "net": 5.0,
+          "handicap": 11.0,
+          "net": 6.0,
+          "notes": "",
           "holes": {
             "10": 6,
             "11": 6,
@@ -878,10 +1141,10 @@
       "winner": "Mike Bondy"
     },
     {
-      "week": 5,
+      "week": 6,
       "nine": "F",
-      "date": "2026-05-25",
-      "note": "No round May 18 \u2014 holiday",
+      "date": "2026-06-01",
+      "note": "",
       "holes": [
         1,
         2,
@@ -902,6 +1165,7 @@
           "par": 35,
           "handicap": 12.0,
           "net": -12.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 4,
@@ -915,12 +1179,33 @@
           }
         },
         {
+          "player": "Alex Djordjevski",
+          "gross": 40,
+          "to_par": 5,
+          "par": 35,
+          "handicap": 9.5,
+          "net": -4.5,
+          "notes": "Play ahead 05-29",
+          "holes": {
+            "1": 4,
+            "2": 4,
+            "3": 5,
+            "4": 5,
+            "5": 5,
+            "6": 6,
+            "7": 3,
+            "8": 4,
+            "9": 4
+          }
+        },
+        {
           "player": "Austin Crough",
           "gross": 41,
           "to_par": 6,
           "par": 35,
-          "handicap": 10.67,
-          "net": -4.67,
+          "handicap": 8.5,
+          "net": -2.5,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -934,50 +1219,13 @@
           }
         },
         {
-          "player": "Alex Djordjevski",
-          "gross": 40,
-          "to_par": 5,
-          "par": 35,
-          "handicap": 9.5,
-          "net": -4.5,
-          "holes": {
-            "1": 4,
-            "2": 4,
-            "3": 5,
-            "4": 5,
-            "5": 5,
-            "6": 6,
-            "7": 3,
-            "8": 4,
-            "9": 4
-          }
-        },
-        {
-          "player": "Eddie Sauve",
-          "gross": 39,
-          "to_par": 4,
-          "par": 35,
-          "handicap": 5.0,
-          "net": -1.0,
-          "holes": {
-            "1": 4,
-            "2": 4,
-            "3": 5,
-            "4": 5,
-            "5": 3,
-            "6": 6,
-            "7": 4,
-            "8": 4,
-            "9": 4
-          }
-        },
-        {
           "player": "Brian Holland",
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 11.67,
-          "net": -0.67,
+          "handicap": 12.75,
+          "net": -1.75,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 4,
@@ -991,12 +1239,93 @@
           }
         },
         {
+          "player": "Eddie Sauve",
+          "gross": 39,
+          "to_par": 4,
+          "par": 35,
+          "handicap": 5.33,
+          "net": -1.33,
+          "notes": "",
+          "holes": {
+            "1": 4,
+            "2": 4,
+            "3": 5,
+            "4": 5,
+            "5": 3,
+            "6": 6,
+            "7": 4,
+            "8": 4,
+            "9": 4
+          }
+        },
+        {
+          "player": "Mike Bondy",
+          "gross": 47,
+          "to_par": 12,
+          "par": 35,
+          "handicap": 12.33,
+          "net": -0.33,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 5,
+            "3": 5,
+            "4": 6,
+            "5": 4,
+            "6": 5,
+            "7": 6,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "player": "Marc Berthiaume",
+          "gross": 44,
+          "to_par": 9,
+          "par": 35,
+          "handicap": 9.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 5,
+            "5": 6,
+            "6": 5,
+            "7": 3,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "player": "Ty",
+          "gross": 40,
+          "to_par": 5,
+          "par": 35,
+          "handicap": 5.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 4,
+            "5": 3,
+            "6": 4,
+            "7": 5,
+            "8": 5,
+            "9": 4
+          }
+        },
+        {
           "player": "Nate Emery",
           "gross": 41,
           "to_par": 6,
           "par": 35,
           "handicap": 5.75,
           "net": 0.25,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 4,
@@ -1010,50 +1339,13 @@
           }
         },
         {
-          "player": "Mike Bondy",
-          "gross": 48,
-          "to_par": 13,
-          "par": 35,
-          "handicap": 12.67,
-          "net": 0.33,
-          "holes": {
-            "1": 6,
-            "2": 5,
-            "3": 5,
-            "4": 6,
-            "5": 4,
-            "6": 6,
-            "7": 6,
-            "8": 5,
-            "9": 5
-          }
-        },
-        {
-          "player": "Dylan Bell",
-          "gross": 45,
-          "to_par": 10,
-          "par": 35,
-          "handicap": 9.0,
-          "net": 1.0,
-          "holes": {
-            "1": 5,
-            "2": 6,
-            "3": 5,
-            "4": 6,
-            "5": 2,
-            "6": 6,
-            "7": 5,
-            "8": 5,
-            "9": 5
-          }
-        },
-        {
           "player": "Travis Valdez",
           "gross": 48,
           "to_par": 13,
           "par": 35,
-          "handicap": 11.67,
-          "net": 1.33,
+          "handicap": 12.5,
+          "net": 0.5,
+          "notes": "Retro play 06-06",
           "holes": {
             "1": 5,
             "2": 6,
@@ -1067,12 +1359,33 @@
           }
         },
         {
+          "player": "Dylan Bell",
+          "gross": 45,
+          "to_par": 10,
+          "par": 35,
+          "handicap": 9.0,
+          "net": 1.0,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 6,
+            "3": 5,
+            "4": 6,
+            "5": 2,
+            "6": 6,
+            "7": 5,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
           "player": "Nate Hodgins",
           "gross": 53,
           "to_par": 18,
           "par": 35,
-          "handicap": 15.67,
-          "net": 2.33,
+          "handicap": 15.75,
+          "net": 2.25,
+          "notes": "",
           "holes": {
             "1": 7,
             "2": 4,
@@ -1090,8 +1403,9 @@
           "gross": 51,
           "to_par": 16,
           "par": 35,
-          "handicap": 13.25,
-          "net": 2.75,
+          "handicap": 12.2,
+          "net": 3.8,
+          "notes": "",
           "holes": {
             "1": 4,
             "2": 5,
@@ -1108,9 +1422,9 @@
       "winner": "Brock Seguin"
     },
     {
-      "week": 6,
+      "week": 7,
       "nine": "B",
-      "date": "2026-06-01",
+      "date": "2026-06-08",
       "note": "",
       "holes": [
         10,
@@ -1126,50 +1440,13 @@
       "par": 35,
       "results": [
         {
-          "player": "Austin Crough",
-          "gross": 38,
-          "to_par": 3,
-          "par": 35,
-          "handicap": 9.5,
-          "net": -6.5,
-          "holes": {
-            "10": 5,
-            "11": 4,
-            "12": 3,
-            "13": 4,
-            "14": 4,
-            "15": 5,
-            "16": 4,
-            "17": 4,
-            "18": 5
-          }
-        },
-        {
-          "player": "Riley Pekar",
-          "gross": 42,
-          "to_par": 7,
-          "par": 35,
-          "handicap": 13.5,
-          "net": -6.5,
-          "holes": {
-            "10": 6,
-            "11": 6,
-            "12": 3,
-            "13": 4,
-            "14": 6,
-            "15": 4,
-            "16": 4,
-            "17": 5,
-            "18": 4
-          }
-        },
-        {
           "player": "Travis Valdez",
           "gross": 41,
           "to_par": 6,
           "par": 35,
-          "handicap": 12.0,
-          "net": -6.0,
+          "handicap": 12.6,
+          "net": -6.6,
+          "notes": "",
           "holes": {
             "10": 6,
             "11": 5,
@@ -1183,22 +1460,43 @@
           }
         },
         {
-          "player": "Ryan Dimitrov",
-          "gross": 45,
-          "to_par": 10,
+          "player": "Riley Pekar",
+          "gross": 42,
+          "to_par": 7,
           "par": 35,
-          "handicap": 13.8,
-          "net": -3.8,
+          "handicap": 13.5,
+          "net": -6.5,
+          "notes": "",
           "holes": {
-            "10": 5,
+            "10": 6,
             "11": 6,
-            "12": 5,
-            "13": 6,
-            "14": 4,
-            "15": 5,
-            "16": 5,
+            "12": 3,
+            "13": 4,
+            "14": 6,
+            "15": 4,
+            "16": 4,
             "17": 5,
             "18": 4
+          }
+        },
+        {
+          "player": "Austin Crough",
+          "gross": 38,
+          "to_par": 3,
+          "par": 35,
+          "handicap": 8.0,
+          "net": -5.0,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 4,
+            "12": 3,
+            "13": 4,
+            "14": 4,
+            "15": 5,
+            "16": 4,
+            "17": 4,
+            "18": 5
           }
         },
         {
@@ -1208,6 +1506,7 @@
           "par": 35,
           "handicap": 8.6,
           "net": -3.6,
+          "notes": "Play ahead from 05-29",
           "holes": {
             "10": 4,
             "11": 6,
@@ -1225,8 +1524,9 @@
           "gross": 49,
           "to_par": 14,
           "par": 35,
-          "handicap": 16.25,
-          "net": -2.25,
+          "handicap": 16.2,
+          "net": -2.2,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 5,
@@ -1240,12 +1540,33 @@
           }
         },
         {
+          "player": "Ryan Dimitrov",
+          "gross": 45,
+          "to_par": 10,
+          "par": 35,
+          "handicap": 12.0,
+          "net": -2.0,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 6,
+            "12": 5,
+            "13": 6,
+            "14": 4,
+            "15": 5,
+            "16": 5,
+            "17": 5,
+            "18": 4
+          }
+        },
+        {
           "player": "Mike Bondy",
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 12.75,
-          "net": -1.75,
+          "handicap": 12.25,
+          "net": -1.25,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 7,
@@ -1263,8 +1584,9 @@
           "gross": 43,
           "to_par": 8,
           "par": 35,
-          "handicap": 9.2,
-          "net": -1.2,
+          "handicap": 9.0,
+          "net": -1.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 6,
@@ -1282,8 +1604,9 @@
           "gross": 39,
           "to_par": 4,
           "par": 35,
-          "handicap": 4.67,
-          "net": -0.67,
+          "handicap": 5.0,
+          "net": -1.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 5,
@@ -1295,14 +1618,34 @@
             "17": 5,
             "18": 3
           }
+        },
+        {
+          "player": "Marc Berthiaume",
+          "gross": 51,
+          "to_par": 16,
+          "par": 35,
+          "handicap": 9.0,
+          "net": 7.0,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 7,
+            "12": 5,
+            "13": 5,
+            "14": 5,
+            "15": 4,
+            "16": 6,
+            "17": 8,
+            "18": 6
+          }
         }
       ],
-      "winner": "Austin Crough"
+      "winner": "Travis Valdez"
     },
     {
-      "week": 7,
+      "week": 8,
       "nine": "F",
-      "date": "2026-06-08",
+      "date": "2026-06-15",
       "note": "",
       "holes": [
         1,
@@ -1322,8 +1665,9 @@
           "gross": 38,
           "to_par": 3,
           "par": 35,
-          "handicap": 11.5,
-          "net": -8.5,
+          "handicap": 12.4,
+          "net": -9.4,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 4,
@@ -1341,8 +1685,9 @@
           "gross": 45,
           "to_par": 10,
           "par": 35,
-          "handicap": 15.8,
-          "net": -5.8,
+          "handicap": 14.4,
+          "net": -4.4,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -1362,6 +1707,7 @@
           "par": 35,
           "handicap": 11.33,
           "net": -2.33,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -1379,8 +1725,9 @@
           "gross": 42,
           "to_par": 7,
           "par": 35,
-          "handicap": 8.8,
-          "net": -1.8,
+          "handicap": 8.6,
+          "net": -1.6,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -1394,31 +1741,13 @@
           }
         },
         {
-          "player": "Austin Crough",
-          "gross": 42,
-          "to_par": 7,
-          "par": 35,
-          "handicap": 8.2,
-          "net": -1.2,
-          "holes": {
-            "1": 5,
-            "2": 5,
-            "3": 3,
-            "4": 4,
-            "5": 4,
-            "6": 6,
-            "7": 5,
-            "8": 6,
-            "9": 4
-          }
-        },
-        {
           "player": "Travis Valdez",
           "gross": 45,
           "to_par": 10,
           "par": 35,
           "handicap": 10.8,
           "net": -0.8,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 5,
@@ -1432,22 +1761,23 @@
           }
         },
         {
-          "player": "Ryan Dimitrov",
-          "gross": 48,
-          "to_par": 13,
+          "player": "Austin Crough",
+          "gross": 42,
+          "to_par": 7,
           "par": 35,
-          "handicap": 12.4,
-          "net": 0.6,
+          "handicap": 5.6,
+          "net": 1.4,
+          "notes": "",
           "holes": {
-            "1": 6,
-            "2": 4,
-            "3": 6,
-            "4": 6,
+            "1": 5,
+            "2": 5,
+            "3": 3,
+            "4": 4,
             "5": 4,
-            "6": 5,
-            "7": 6,
-            "8": 5,
-            "9": 6
+            "6": 6,
+            "7": 5,
+            "8": 6,
+            "9": 4
           }
         },
         {
@@ -1455,8 +1785,9 @@
           "gross": 49,
           "to_par": 14,
           "par": 35,
-          "handicap": 12.4,
-          "net": 1.6,
+          "handicap": 12.0,
+          "net": 2.0,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -1470,12 +1801,33 @@
           }
         },
         {
+          "player": "Ryan Dimitrov",
+          "gross": 48,
+          "to_par": 13,
+          "par": 35,
+          "handicap": 10.8,
+          "net": 2.2,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 4,
+            "3": 6,
+            "4": 6,
+            "5": 4,
+            "6": 5,
+            "7": 6,
+            "8": 5,
+            "9": 6
+          }
+        },
+        {
           "player": "Alex Djordjevski",
           "gross": 47,
           "to_par": 12,
           "par": 35,
           "handicap": 7.6,
           "net": 4.4,
+          "notes": "",
           "holes": {
             "1": 8,
             "2": 5,
@@ -1487,14 +1839,34 @@
             "8": 5,
             "9": 4
           }
+        },
+        {
+          "player": "Marc Berthiaume",
+          "gross": 53,
+          "to_par": 18,
+          "par": 35,
+          "handicap": 12.5,
+          "net": 5.5,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 6,
+            "3": 7,
+            "4": 6,
+            "5": 4,
+            "6": 6,
+            "7": 6,
+            "8": 6,
+            "9": 6
+          }
         }
       ],
       "winner": "Brian Holland"
     },
     {
-      "week": 8,
+      "week": 9,
       "nine": "B",
-      "date": "2026-06-15",
+      "date": "2026-06-22",
       "note": "",
       "holes": [
         10,
@@ -1516,6 +1888,7 @@
           "par": 35,
           "handicap": 10.75,
           "net": -3.75,
+          "notes": "",
           "holes": {
             "10": 4,
             "11": 6,
@@ -1535,6 +1908,7 @@
           "par": 35,
           "handicap": 5.8,
           "net": -2.8,
+          "notes": "",
           "holes": {
             "10": 6,
             "11": 5,
@@ -1548,12 +1922,33 @@
           }
         },
         {
+          "player": "Austin Crough",
+          "gross": 38,
+          "to_par": 3,
+          "par": 35,
+          "handicap": 5.0,
+          "net": -2.0,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 5,
+            "12": 3,
+            "13": 5,
+            "14": 3,
+            "15": 4,
+            "16": 5,
+            "17": 5,
+            "18": 3
+          }
+        },
+        {
           "player": "Nate Hodgins",
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 13.2,
-          "net": -2.2,
+          "handicap": 12.8,
+          "net": -1.8,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 4,
@@ -1567,31 +1962,13 @@
           }
         },
         {
-          "player": "Austin Crough",
-          "gross": 40,
-          "to_par": 5,
-          "par": 35,
-          "handicap": 6.6,
-          "net": -1.6,
-          "holes": {
-            "10": 5,
-            "11": 5,
-            "12": 3,
-            "13": 5,
-            "14": 5,
-            "15": 4,
-            "16": 5,
-            "17": 5,
-            "18": 3
-          }
-        },
-        {
           "player": "Ryan Dimitrov",
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 11.8,
-          "net": -0.8,
+          "handicap": 10.6,
+          "net": 0.4,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 4,
@@ -1609,8 +1986,9 @@
           "gross": 44,
           "to_par": 9,
           "par": 35,
-          "handicap": 8.2,
-          "net": 0.8,
+          "handicap": 8.0,
+          "net": 1.0,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 7,
@@ -1630,6 +2008,7 @@
           "par": 35,
           "handicap": 10.2,
           "net": 1.8,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 7,
@@ -1644,21 +2023,22 @@
         },
         {
           "player": "Alex Djordjevski",
-          "gross": 45,
-          "to_par": 10,
+          "gross": 46,
+          "to_par": 11,
           "par": 35,
           "handicap": 7.6,
-          "net": 2.4,
+          "net": 3.4,
+          "notes": "",
           "holes": {
-            "10": 8,
-            "11": 6,
-            "12": 4,
-            "13": 5,
-            "14": 3,
-            "15": 4,
-            "16": 5,
-            "17": 6,
-            "18": 4
+            "10": 4,
+            "11": 7,
+            "12": 3,
+            "13": 4,
+            "14": 5,
+            "15": 5,
+            "16": 4,
+            "17": 8,
+            "18": 6
           }
         },
         {
@@ -1666,8 +2046,9 @@
           "gross": 50,
           "to_par": 15,
           "par": 35,
-          "handicap": 11.8,
-          "net": 3.2,
+          "handicap": 11.4,
+          "net": 3.6,
+          "notes": "",
           "holes": {
             "10": 7,
             "11": 6,
@@ -1679,14 +2060,34 @@
             "17": 7,
             "18": 5
           }
+        },
+        {
+          "player": "Ty",
+          "gross": 44,
+          "to_par": 9,
+          "par": 35,
+          "handicap": 5.0,
+          "net": 4.0,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 4,
+            "12": 4,
+            "13": 4,
+            "14": 4,
+            "15": 3,
+            "16": 7,
+            "17": 7,
+            "18": 6
+          }
         }
       ],
       "winner": "Riley Pekar"
     },
     {
-      "week": 9,
+      "week": 10,
       "nine": "F",
-      "date": "2026-06-22",
+      "date": "2026-06-29",
       "note": "",
       "holes": [
         1,
@@ -1706,8 +2107,9 @@
           "gross": 36,
           "to_par": 1,
           "par": 35,
-          "handicap": 4.5,
-          "net": -3.5,
+          "handicap": 4.8,
+          "net": -3.8,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 4,
@@ -1721,12 +2123,33 @@
           }
         },
         {
+          "player": "Marc Berthiaume",
+          "gross": 46,
+          "to_par": 11,
+          "par": 35,
+          "handicap": 14.33,
+          "net": -3.33,
+          "notes": "",
+          "holes": {
+            "1": 7,
+            "2": 5,
+            "3": 7,
+            "4": 5,
+            "5": 4,
+            "6": 4,
+            "7": 4,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
           "player": "Ryan Dimitrov",
           "gross": 43,
           "to_par": 8,
           "par": 35,
-          "handicap": 11.2,
-          "net": -3.2,
+          "handicap": 10.4,
+          "net": -2.4,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 4,
@@ -1740,50 +2163,13 @@
           }
         },
         {
-          "player": "Riley Pekar",
-          "gross": 42,
-          "to_par": 7,
-          "par": 35,
-          "handicap": 10.0,
-          "net": -3.0,
-          "holes": {
-            "1": 6,
-            "2": 6,
-            "3": 6,
-            "4": 6,
-            "5": 3,
-            "6": 4,
-            "7": 3,
-            "8": 4,
-            "9": 4
-          }
-        },
-        {
-          "player": "Brian Holland",
-          "gross": 43,
-          "to_par": 8,
-          "par": 35,
-          "handicap": 9.8,
-          "net": -1.8,
-          "holes": {
-            "1": 5,
-            "2": 5,
-            "3": 5,
-            "4": 4,
-            "5": 4,
-            "6": 5,
-            "7": 3,
-            "8": 7,
-            "9": 5
-          }
-        },
-        {
           "player": "Nate Emery",
           "gross": 38,
           "to_par": 3,
           "par": 35,
-          "handicap": 4.8,
-          "net": -1.8,
+          "handicap": 5.2,
+          "net": -2.2,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 3,
@@ -1797,35 +2183,57 @@
           }
         },
         {
-          "player": "Austin Crough",
-          "gross": 41,
-          "to_par": 6,
+          "player": "Brian Holland",
+          "gross": 43,
+          "to_par": 8,
           "par": 35,
-          "handicap": 5.6,
-          "net": 0.4,
+          "handicap": 9.8,
+          "net": -1.8,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
             "3": 5,
-            "4": 6,
+            "4": 4,
             "5": 4,
+            "6": 5,
+            "7": 3,
+            "8": 7,
+            "9": 5
+          }
+        },
+        {
+          "player": "Riley Pekar",
+          "gross": 42,
+          "to_par": 7,
+          "par": 35,
+          "handicap": 8.75,
+          "net": -1.75,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 6,
+            "3": 6,
+            "4": 6,
+            "5": 3,
             "6": 4,
-            "7": 4,
+            "7": 3,
             "8": 4,
             "9": 4
           }
         },
         {
           "player": "Dylan Bell",
-          "gross": 44,
-          "to_par": 9,
+          "gross": 43,
+          "to_par": 8,
           "par": 35,
-          "handicap": 8.0,
-          "net": 1.0,
+          "handicap": 7.8,
+          "net": 0.2,
+          "notes": "",
           "holes": {
             "1": 4,
             "2": 5,
-            "3": 7,
+            "3": 6,
             "4": 5,
             "5": 5,
             "6": 5,
@@ -1839,8 +2247,9 @@
           "gross": 48,
           "to_par": 13,
           "par": 35,
-          "handicap": 11.8,
-          "net": 1.2,
+          "handicap": 11.6,
+          "net": 1.4,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 8,
@@ -1854,12 +2263,33 @@
           }
         },
         {
+          "player": "Austin Crough",
+          "gross": 41,
+          "to_par": 6,
+          "par": 35,
+          "handicap": 4.2,
+          "net": 1.8,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 6,
+            "5": 4,
+            "6": 4,
+            "7": 4,
+            "8": 4,
+            "9": 4
+          }
+        },
+        {
           "player": "Mike Bondy",
           "gross": 50,
           "to_par": 15,
           "par": 35,
-          "handicap": 11.8,
-          "net": 3.2,
+          "handicap": 11.4,
+          "net": 3.6,
+          "notes": "",
           "holes": {
             "1": 8,
             "2": 7,
@@ -1874,179 +2304,6 @@
         }
       ],
       "winner": "Eddie Sauve"
-    },
-    {
-      "week": 10,
-      "nine": "B",
-      "date": "2026-06-29",
-      "note": "",
-      "holes": [
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "par": 35,
-      "results": [
-        {
-          "player": "Austin Crough",
-          "gross": 39,
-          "to_par": 4,
-          "par": 35,
-          "handicap": 5.4,
-          "net": -1.4,
-          "holes": {
-            "10": 4,
-            "11": 6,
-            "12": 3,
-            "13": 5,
-            "14": 5,
-            "15": 4,
-            "16": 3,
-            "17": 6,
-            "18": 3
-          }
-        },
-        {
-          "player": "Travis Valdez",
-          "gross": 44,
-          "to_par": 9,
-          "par": 35,
-          "handicap": 10.0,
-          "net": -1.0,
-          "holes": {
-            "10": 7,
-            "11": 6,
-            "12": 5,
-            "13": 5,
-            "14": 5,
-            "15": 3,
-            "16": 4,
-            "17": 5,
-            "18": 4
-          }
-        },
-        {
-          "player": "Eddie Sauve",
-          "gross": 38,
-          "to_par": 3,
-          "par": 35,
-          "handicap": 3.8,
-          "net": -0.8,
-          "holes": {
-            "10": 6,
-            "11": 5,
-            "12": 3,
-            "13": 3,
-            "14": 5,
-            "15": 3,
-            "16": 4,
-            "17": 5,
-            "18": 4
-          }
-        },
-        {
-          "player": "Ryan Dimitrov",
-          "gross": 45,
-          "to_par": 10,
-          "par": 35,
-          "handicap": 10.4,
-          "net": -0.4,
-          "holes": {
-            "10": 5,
-            "11": 6,
-            "12": 3,
-            "13": 5,
-            "14": 5,
-            "15": 5,
-            "16": 6,
-            "17": 5,
-            "18": 5
-          }
-        },
-        {
-          "player": "Nate Emery",
-          "gross": 40,
-          "to_par": 5,
-          "par": 35,
-          "handicap": 4.2,
-          "net": 0.8,
-          "holes": {
-            "10": 5,
-            "11": 5,
-            "12": 4,
-            "13": 4,
-            "14": 5,
-            "15": 4,
-            "16": 4,
-            "17": 5,
-            "18": 4
-          }
-        },
-        {
-          "player": "Mike Bondy",
-          "gross": 49,
-          "to_par": 14,
-          "par": 35,
-          "handicap": 11.8,
-          "net": 2.2,
-          "holes": {
-            "10": 7,
-            "11": 7,
-            "12": 4,
-            "13": 4,
-            "14": 6,
-            "15": 4,
-            "16": 5,
-            "17": 6,
-            "18": 6
-          }
-        },
-        {
-          "player": "Nate Hodgins",
-          "gross": 49,
-          "to_par": 14,
-          "par": 35,
-          "handicap": 11.6,
-          "net": 2.4,
-          "holes": {
-            "10": 6,
-            "11": 5,
-            "12": 5,
-            "13": 8,
-            "14": 3,
-            "15": 4,
-            "16": 6,
-            "17": 7,
-            "18": 5
-          }
-        },
-        {
-          "player": "Alex Djordjevski",
-          "gross": 46,
-          "to_par": 11,
-          "par": 35,
-          "handicap": 7.6,
-          "net": 3.4,
-          "holes": {
-            "10": 4,
-            "11": 7,
-            "12": 3,
-            "13": 4,
-            "14": 5,
-            "15": 5,
-            "16": 4,
-            "17": 8,
-            "18": 6
-          }
-        }
-      ],
-      "winner": "Austin Crough"
     },
     {
       "week": 11,
@@ -2071,8 +2328,9 @@
           "gross": 39,
           "to_par": 4,
           "par": 35,
-          "handicap": 10.4,
-          "net": -6.4,
+          "handicap": 10.0,
+          "net": -6.0,
+          "notes": "",
           "holes": {
             "1": 4,
             "2": 7,
@@ -2086,12 +2344,33 @@
           }
         },
         {
+          "player": "Marc Berthiaume",
+          "gross": 47,
+          "to_par": 12,
+          "par": 35,
+          "handicap": 13.5,
+          "net": -1.5,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 6,
+            "3": 7,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 3,
+            "8": 6,
+            "9": 5
+          }
+        },
+        {
           "player": "Dylan Bell",
           "gross": 42,
           "to_par": 7,
           "par": 35,
-          "handicap": 8.0,
-          "net": -1.0,
+          "handicap": 7.6,
+          "net": -0.6,
+          "notes": "",
           "holes": {
             "1": 5,
             "2": 5,
@@ -2105,12 +2384,33 @@
           }
         },
         {
+          "player": "Alex Djordjevski",
+          "gross": 44,
+          "to_par": 9,
+          "par": 35,
+          "handicap": 8.0,
+          "net": 1.0,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 7,
+            "3": 4,
+            "4": 5,
+            "5": 4,
+            "6": 4,
+            "7": 4,
+            "8": 6,
+            "9": 4
+          }
+        },
+        {
           "player": "Mike Bondy",
           "gross": 48,
           "to_par": 13,
           "par": 35,
-          "handicap": 12.2,
-          "net": 0.8,
+          "handicap": 12.0,
+          "net": 1.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 6,
@@ -2128,8 +2428,9 @@
           "gross": 48,
           "to_par": 13,
           "par": 35,
-          "handicap": 12.2,
-          "net": 0.8,
+          "handicap": 12.0,
+          "net": 1.0,
+          "notes": "",
           "holes": {
             "1": 6,
             "2": 4,
@@ -2143,21 +2444,22 @@
           }
         },
         {
-          "player": "Alex Djordjevski",
-          "gross": 44,
-          "to_par": 9,
+          "player": "Austin Crough",
+          "gross": 42,
+          "to_par": 7,
           "par": 35,
-          "handicap": 7.8,
-          "net": 1.2,
+          "handicap": 4.0,
+          "net": 3.0,
+          "notes": "",
           "holes": {
-            "1": 6,
-            "2": 7,
-            "3": 4,
-            "4": 5,
-            "5": 4,
-            "6": 4,
+            "1": 5,
+            "2": 3,
+            "3": 5,
+            "4": 4,
+            "5": 7,
+            "6": 5,
             "7": 4,
-            "8": 6,
+            "8": 5,
             "9": 4
           }
         }
@@ -2183,12 +2485,153 @@
       "par": 35,
       "results": [
         {
+          "player": "Travis Valdez",
+          "gross": 44,
+          "to_par": 9,
+          "par": 35,
+          "handicap": 10.4,
+          "net": -1.4,
+          "notes": "",
+          "holes": {
+            "10": 7,
+            "11": 6,
+            "12": 5,
+            "13": 5,
+            "14": 5,
+            "15": 3,
+            "16": 4,
+            "17": 5,
+            "18": 4
+          }
+        },
+        {
+          "player": "Eddie Sauve",
+          "gross": 38,
+          "to_par": 3,
+          "par": 35,
+          "handicap": 3.75,
+          "net": -0.75,
+          "notes": "",
+          "holes": {
+            "10": 6,
+            "11": 5,
+            "12": 3,
+            "13": 3,
+            "14": 5,
+            "15": 3,
+            "16": 4,
+            "17": 5,
+            "18": 4
+          }
+        },
+        {
+          "player": "Austin Crough",
+          "gross": 39,
+          "to_par": 4,
+          "par": 35,
+          "handicap": 4.0,
+          "net": 0.0,
+          "notes": "",
+          "holes": {
+            "10": 4,
+            "11": 6,
+            "12": 3,
+            "13": 5,
+            "14": 5,
+            "15": 4,
+            "16": 3,
+            "17": 6,
+            "18": 3
+          }
+        },
+        {
+          "player": "Nate Emery",
+          "gross": 40,
+          "to_par": 5,
+          "par": 35,
+          "handicap": 3.75,
+          "net": 1.25,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 5,
+            "12": 4,
+            "13": 4,
+            "14": 5,
+            "15": 4,
+            "16": 4,
+            "17": 5,
+            "18": 4
+          }
+        },
+        {
+          "player": "Ryan Dimitrov",
+          "gross": 45,
+          "to_par": 10,
+          "par": 35,
+          "handicap": 8.2,
+          "net": 1.8,
+          "notes": "",
+          "holes": {
+            "10": 5,
+            "11": 6,
+            "12": 3,
+            "13": 5,
+            "14": 5,
+            "15": 5,
+            "16": 6,
+            "17": 5,
+            "18": 5
+          }
+        },
+        {
+          "player": "Nate Hodgins",
+          "gross": 49,
+          "to_par": 14,
+          "par": 35,
+          "handicap": 11.8,
+          "net": 2.2,
+          "notes": "",
+          "holes": {
+            "10": 6,
+            "11": 5,
+            "12": 5,
+            "13": 8,
+            "14": 3,
+            "15": 4,
+            "16": 6,
+            "17": 7,
+            "18": 5
+          }
+        },
+        {
+          "player": "Mike Bondy",
+          "gross": 49,
+          "to_par": 14,
+          "par": 35,
+          "handicap": 11.6,
+          "net": 2.4,
+          "notes": "",
+          "holes": {
+            "10": 7,
+            "11": 7,
+            "12": 4,
+            "13": 4,
+            "14": 6,
+            "15": 4,
+            "16": 5,
+            "17": 6,
+            "18": 6
+          }
+        },
+        {
           "player": "Alex Djordjevski",
           "gross": 46,
           "to_par": 11,
           "par": 35,
-          "handicap": 7.6,
-          "net": 3.4,
+          "handicap": 7.8,
+          "net": 3.2,
+          "notes": "",
           "holes": {
             "10": 5,
             "11": 6,
@@ -2202,7 +2645,168 @@
           }
         }
       ],
-      "winner": "Alex Djordjevski"
+      "winner": "Travis Valdez"
+    },
+    {
+      "week": 13,
+      "nine": "F",
+      "date": "2026-07-27",
+      "note": "",
+      "holes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "par": 35,
+      "results": [
+        {
+          "player": "Brian Holland",
+          "gross": 39,
+          "to_par": 4,
+          "par": 35,
+          "handicap": 8.25,
+          "net": -4.25,
+          "notes": "",
+          "holes": {
+            "1": 4,
+            "2": 3,
+            "3": 9,
+            "4": 4,
+            "5": 4,
+            "6": 4,
+            "7": 3,
+            "8": 5,
+            "9": 3
+          }
+        },
+        {
+          "player": "Ryan Dimitrov",
+          "gross": 43,
+          "to_par": 8,
+          "par": 35,
+          "handicap": 8.6,
+          "net": -0.6,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 4,
+            "3": 5,
+            "4": 5,
+            "5": 4,
+            "6": 4,
+            "7": 5,
+            "8": 5,
+            "9": 5
+          }
+        },
+        {
+          "player": "Alex Djordjevski",
+          "gross": 45,
+          "to_par": 10,
+          "par": 35,
+          "handicap": 7.8,
+          "net": 2.2,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 7,
+            "3": 5,
+            "4": 6,
+            "5": 4,
+            "6": 5,
+            "7": 4,
+            "8": 4,
+            "9": 5
+          }
+        },
+        {
+          "player": "Nate Hodgins",
+          "gross": 49,
+          "to_par": 14,
+          "par": 35,
+          "handicap": 11.8,
+          "net": 2.2,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 6,
+            "3": 6,
+            "4": 8,
+            "5": 5,
+            "6": 5,
+            "7": 5,
+            "8": 4,
+            "9": 4
+          }
+        },
+        {
+          "player": "Travis Valdez",
+          "gross": 48,
+          "to_par": 13,
+          "par": 35,
+          "handicap": 9.6,
+          "net": 3.4,
+          "notes": "",
+          "holes": {
+            "1": 6,
+            "2": 4,
+            "3": 7,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 5,
+            "8": 6,
+            "9": 5
+          }
+        },
+        {
+          "player": "Austin Crough",
+          "gross": 44,
+          "to_par": 9,
+          "par": 35,
+          "handicap": 4.4,
+          "net": 4.6,
+          "notes": "",
+          "holes": {
+            "1": 5,
+            "2": 5,
+            "3": 8,
+            "4": 4,
+            "5": 4,
+            "6": 5,
+            "7": 4,
+            "8": 4,
+            "9": 5
+          }
+        },
+        {
+          "player": "Dylan Bell",
+          "gross": 47,
+          "to_par": 12,
+          "par": 35,
+          "handicap": 7.4,
+          "net": 4.6,
+          "notes": "Play ahead 04-27",
+          "holes": {
+            "1": 6,
+            "2": 4,
+            "3": 6,
+            "4": 5,
+            "5": 4,
+            "6": 7,
+            "7": 4,
+            "8": 5,
+            "9": 6
+          }
+        }
+      ],
+      "winner": "Brian Holland"
     }
   ],
   "handicaps": {
@@ -2224,16 +2828,12 @@
           "handicap": 9.67
         },
         {
-          "week": 4,
+          "week": 5,
           "handicap": 9.5
         },
         {
-          "week": 5,
-          "handicap": 8.6
-        },
-        {
           "week": 6,
-          "handicap": 7.6
+          "handicap": 8.6
         },
         {
           "week": 7,
@@ -2244,23 +2844,27 @@
           "handicap": 7.6
         },
         {
-          "week": 10,
-          "handicap": 7.8
-        },
-        {
-          "week": 11,
+          "week": 9,
           "handicap": 7.6
         },
         {
+          "week": 11,
+          "handicap": 7.8
+        },
+        {
           "week": 12,
+          "handicap": 7.8
+        },
+        {
+          "week": 13,
           "handicap": 8.0
         }
       ]
     },
     "Austin Crough": {
-      "current": 4.8,
+      "current": 4.4,
       "starting": 7.0,
-      "delta": -2.2,
+      "delta": -2.6,
       "trend": [
         {
           "week": 1,
@@ -2275,35 +2879,58 @@
           "handicap": 10.67
         },
         {
-          "week": 5,
-          "handicap": 9.5
+          "week": 4,
+          "handicap": 8.5
         },
         {
           "week": 6,
-          "handicap": 8.2
+          "handicap": 8.0
         },
         {
           "week": 7,
-          "handicap": 6.6
-        },
-        {
-          "week": 8,
           "handicap": 5.6
         },
         {
+          "week": 8,
+          "handicap": 5.0
+        },
+        {
           "week": 9,
-          "handicap": 5.4
+          "handicap": 4.2
         },
         {
           "week": 10,
-          "handicap": 4.8
+          "handicap": 4.0
+        },
+        {
+          "week": 11,
+          "handicap": 4.0
+        },
+        {
+          "week": 12,
+          "handicap": 4.4
+        },
+        {
+          "week": 13,
+          "handicap": 4.4
+        }
+      ]
+    },
+    "Boots": {
+      "current": 17.0,
+      "starting": 17.0,
+      "delta": 0.0,
+      "trend": [
+        {
+          "week": 3,
+          "handicap": 17.0
         }
       ]
     },
     "Brian Holland": {
-      "current": 8.8,
+      "current": 6.5,
       "starting": 13.0,
-      "delta": -4.2,
+      "delta": -6.5,
       "trend": [
         {
           "week": 2,
@@ -2315,19 +2942,27 @@
         },
         {
           "week": 4,
-          "handicap": 11.67
+          "handicap": 13.33
         },
         {
           "week": 5,
-          "handicap": 11.5
+          "handicap": 12.75
         },
         {
-          "week": 7,
+          "week": 6,
+          "handicap": 12.4
+        },
+        {
+          "week": 8,
           "handicap": 9.8
         },
         {
-          "week": 9,
+          "week": 10,
           "handicap": 8.8
+        },
+        {
+          "week": 13,
+          "handicap": 6.5
         }
       ]
     },
@@ -2341,15 +2976,26 @@
           "handicap": 12.0
         },
         {
-          "week": 5,
+          "week": 6,
           "handicap": 6.0
         }
       ]
     },
+    "Dragan Lukic": {
+      "current": 19.0,
+      "starting": 19.0,
+      "delta": 0.0,
+      "trend": [
+        {
+          "week": 5,
+          "handicap": 19.0
+        }
+      ]
+    },
     "Dylan Bell": {
-      "current": 7.6,
+      "current": 7.8,
       "starting": 10.0,
-      "delta": -2.4,
+      "delta": -2.2,
       "trend": [
         {
           "week": 1,
@@ -2361,23 +3007,23 @@
         },
         {
           "week": 3,
-          "handicap": 9.67
+          "handicap": 10.0
         },
         {
           "week": 4,
-          "handicap": 9.0
+          "handicap": 9.5
         },
         {
           "week": 5,
-          "handicap": 9.2
+          "handicap": 9.0
         },
         {
           "week": 6,
-          "handicap": 8.8
+          "handicap": 9.0
         },
         {
           "week": 7,
-          "handicap": 8.2
+          "handicap": 8.6
         },
         {
           "week": 8,
@@ -2385,18 +3031,26 @@
         },
         {
           "week": 9,
-          "handicap": 8.0
+          "handicap": 7.8
+        },
+        {
+          "week": 10,
+          "handicap": 7.6
         },
         {
           "week": 11,
-          "handicap": 7.6
+          "handicap": 7.4
+        },
+        {
+          "week": 13,
+          "handicap": 7.8
         }
       ]
     },
     "Eddie Sauve": {
-      "current": 3.2,
+      "current": 3.0,
       "starting": 6.0,
-      "delta": -2.8,
+      "delta": -3.0,
       "trend": [
         {
           "week": 2,
@@ -2407,27 +3061,58 @@
           "handicap": 5.0
         },
         {
-          "week": 5,
-          "handicap": 4.67
+          "week": 4,
+          "handicap": 5.33
         },
         {
           "week": 6,
-          "handicap": 4.5
+          "handicap": 5.0
         },
         {
-          "week": 9,
-          "handicap": 3.8
+          "week": 7,
+          "handicap": 4.8
         },
         {
           "week": 10,
-          "handicap": 3.2
+          "handicap": 3.8
+        },
+        {
+          "week": 12,
+          "handicap": 3.0
+        }
+      ]
+    },
+    "Marc Berthiaume": {
+      "current": 13.2,
+      "starting": 9.0,
+      "delta": 4.2,
+      "trend": [
+        {
+          "week": 6,
+          "handicap": 9.0
+        },
+        {
+          "week": 7,
+          "handicap": 12.5
+        },
+        {
+          "week": 8,
+          "handicap": 14.33
+        },
+        {
+          "week": 10,
+          "handicap": 13.5
+        },
+        {
+          "week": 11,
+          "handicap": 13.2
         }
       ]
     },
     "Mike Bondy": {
-      "current": 12.0,
+      "current": 11.6,
       "starting": 17.0,
-      "delta": -5.0,
+      "delta": -5.4,
       "trend": [
         {
           "week": 1,
@@ -2438,36 +3123,36 @@
           "handicap": 14.5
         },
         {
-          "week": 4,
-          "handicap": 12.67
-        },
-        {
           "week": 5,
-          "handicap": 12.75
+          "handicap": 12.33
         },
         {
           "week": 6,
-          "handicap": 12.4
+          "handicap": 12.25
         },
         {
           "week": 7,
-          "handicap": 11.8
+          "handicap": 12.0
         },
         {
           "week": 8,
-          "handicap": 11.8
+          "handicap": 11.4
         },
         {
           "week": 9,
-          "handicap": 11.8
+          "handicap": 11.4
         },
         {
           "week": 10,
-          "handicap": 12.2
+          "handicap": 12.0
         },
         {
           "week": 11,
-          "handicap": 12.0
+          "handicap": 11.6
+        },
+        {
+          "week": 12,
+          "handicap": 11.6
         }
       ]
     },
@@ -2489,31 +3174,31 @@
           "handicap": 6.67
         },
         {
-          "week": 4,
+          "week": 5,
           "handicap": 5.75
         },
         {
-          "week": 5,
+          "week": 6,
           "handicap": 5.8
         },
         {
-          "week": 8,
-          "handicap": 4.8
-        },
-        {
           "week": 9,
-          "handicap": 4.2
+          "handicap": 5.2
         },
         {
           "week": 10,
+          "handicap": 4.6
+        },
+        {
+          "week": 12,
           "handicap": 4.0
         }
       ]
     },
     "Nate Hodgins": {
-      "current": 12.0,
+      "current": 12.2,
       "starting": 23.0,
-      "delta": -11.0,
+      "delta": -10.8,
       "trend": [
         {
           "week": 1,
@@ -2525,23 +3210,23 @@
         },
         {
           "week": 4,
-          "handicap": 15.67
+          "handicap": 17.0
         },
         {
           "week": 5,
-          "handicap": 16.25
+          "handicap": 15.75
         },
         {
           "week": 6,
-          "handicap": 15.8
+          "handicap": 16.2
         },
         {
           "week": 7,
-          "handicap": 13.2
+          "handicap": 14.4
         },
         {
           "week": 8,
-          "handicap": 11.8
+          "handicap": 12.8
         },
         {
           "week": 9,
@@ -2549,18 +3234,26 @@
         },
         {
           "week": 10,
-          "handicap": 12.2
+          "handicap": 12.0
         },
         {
           "week": 11,
-          "handicap": 12.0
+          "handicap": 11.8
+        },
+        {
+          "week": 12,
+          "handicap": 11.8
+        },
+        {
+          "week": 13,
+          "handicap": 12.2
         }
       ]
     },
     "Riley Pekar": {
-      "current": 8.4,
+      "current": 7.5,
       "starting": 15.0,
-      "delta": -6.6,
+      "delta": -7.5,
       "trend": [
         {
           "week": 1,
@@ -2571,27 +3264,27 @@
           "handicap": 13.5
         },
         {
-          "week": 6,
+          "week": 7,
           "handicap": 11.33
         },
         {
-          "week": 7,
+          "week": 8,
           "handicap": 10.75
         },
         {
-          "week": 8,
-          "handicap": 10.0
+          "week": 9,
+          "handicap": 8.75
         },
         {
-          "week": 9,
-          "handicap": 8.4
+          "week": 10,
+          "handicap": 7.5
         }
       ]
     },
     "Ryan Dimitrov": {
-      "current": 8.6,
+      "current": 8.0,
       "starting": 12.0,
-      "delta": -3.4,
+      "delta": -4.0,
       "trend": [
         {
           "week": 1,
@@ -2607,23 +3300,23 @@
         },
         {
           "week": 4,
-          "handicap": 13.25
+          "handicap": 11.0
         },
         {
           "week": 5,
-          "handicap": 13.8
+          "handicap": 12.2
         },
         {
           "week": 6,
-          "handicap": 12.4
+          "handicap": 12.0
         },
         {
           "week": 7,
-          "handicap": 11.8
+          "handicap": 10.8
         },
         {
           "week": 8,
-          "handicap": 11.2
+          "handicap": 10.6
         },
         {
           "week": 9,
@@ -2631,18 +3324,37 @@
         },
         {
           "week": 10,
-          "handicap": 10.4
+          "handicap": 10.0
         },
         {
           "week": 11,
+          "handicap": 8.2
+        },
+        {
+          "week": 12,
           "handicap": 8.6
+        },
+        {
+          "week": 13,
+          "handicap": 8.0
+        }
+      ]
+    },
+    "Scotty": {
+      "current": 7.0,
+      "starting": 7.0,
+      "delta": 0.0,
+      "trend": [
+        {
+          "week": 3,
+          "handicap": 7.0
         }
       ]
     },
     "Travis Valdez": {
-      "current": 9.6,
+      "current": 10.0,
       "starting": 13.0,
-      "delta": -3.4,
+      "delta": -3.0,
       "trend": [
         {
           "week": 1,
@@ -2654,27 +3366,50 @@
         },
         {
           "week": 4,
-          "handicap": 11.67
+          "handicap": 13.0
         },
         {
           "week": 5,
-          "handicap": 12.0
+          "handicap": 12.5
         },
         {
           "week": 6,
-          "handicap": 10.8
+          "handicap": 12.6
         },
         {
           "week": 7,
-          "handicap": 10.2
+          "handicap": 10.8
         },
         {
           "week": 8,
+          "handicap": 10.2
+        },
+        {
+          "week": 9,
           "handicap": 10.0
         },
         {
-          "week": 10,
+          "week": 12,
           "handicap": 9.6
+        },
+        {
+          "week": 13,
+          "handicap": 10.0
+        }
+      ]
+    },
+    "Ty": {
+      "current": 7.0,
+      "starting": 5.0,
+      "delta": 2.0,
+      "trend": [
+        {
+          "week": 6,
+          "handicap": 5.0
+        },
+        {
+          "week": 9,
+          "handicap": 7.0
         }
       ]
     }
@@ -2695,20 +3430,20 @@
         "11": 6,
         "12": 3,
         "13": 4,
-        "14": 3,
+        "14": 4,
         "15": 3,
         "16": 4,
         "17": 5,
-        "18": 4
+        "18": 5
       },
-      "total": 72,
+      "total": 74,
       "par": 70,
       "holes_played": 18
     },
     "Austin Crough": {
       "holes": {
         "1": 4,
-        "2": 5,
+        "2": 3,
         "3": 3,
         "4": 4,
         "5": 4,
@@ -2720,19 +3455,35 @@
         "11": 4,
         "12": 3,
         "13": 4,
-        "14": 4,
-        "15": 4,
+        "14": 3,
+        "15": 2,
         "16": 3,
         "17": 4,
         "18": 3
       },
-      "total": 68,
+      "total": 63,
       "par": 70,
       "holes_played": 18
     },
+    "Boots": {
+      "holes": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 6,
+        "5": 5,
+        "6": 6,
+        "7": 6,
+        "8": 5,
+        "9": 5
+      },
+      "total": 52,
+      "par": 35,
+      "holes_played": 9
+    },
     "Brian Holland": {
       "holes": {
-        "10": 7,
+        "10": 6,
         "11": 6,
         "12": 3,
         "13": 4,
@@ -2741,17 +3492,17 @@
         "16": 4,
         "17": 7,
         "18": 4,
-        "1": 5,
-        "2": 4,
+        "1": 4,
+        "2": 3,
         "3": 5,
         "4": 4,
         "5": 4,
         "6": 4,
         "7": 2,
         "8": 5,
-        "9": 5
+        "9": 3
       },
-      "total": 81,
+      "total": 76,
       "par": 70,
       "holes_played": 18
     },
@@ -2768,6 +3519,22 @@
         "9": 4
       },
       "total": 35,
+      "par": 35,
+      "holes_played": 9
+    },
+    "Dragan Lukic": {
+      "holes": {
+        "10": 7,
+        "11": 8,
+        "12": 5,
+        "13": 5,
+        "14": 5,
+        "15": 4,
+        "16": 5,
+        "17": 8,
+        "18": 7
+      },
+      "total": 54,
       "par": 35,
       "holes_played": 9
     },
@@ -2790,9 +3557,9 @@
         "15": 4,
         "16": 4,
         "17": 5,
-        "18": 5
+        "18": 4
       },
-      "total": 73,
+      "total": 72,
       "par": 70,
       "holes_played": 18
     },
@@ -2818,6 +3585,31 @@
         "9": 3
       },
       "total": 65,
+      "par": 70,
+      "holes_played": 18
+    },
+    "Marc Berthiaume": {
+      "holes": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 3,
+        "8": 5,
+        "9": 5,
+        "10": 5,
+        "11": 7,
+        "12": 5,
+        "13": 5,
+        "14": 5,
+        "15": 4,
+        "16": 6,
+        "17": 8,
+        "18": 6
+      },
+      "total": 91,
       "par": 70,
       "holes_played": 18
     },
@@ -2878,9 +3670,9 @@
         "3": 4,
         "4": 5,
         "5": 3,
-        "6": 6,
+        "6": 5,
         "7": 4,
-        "8": 5,
+        "8": 4,
         "9": 4,
         "10": 5,
         "11": 4,
@@ -2892,7 +3684,7 @@
         "17": 5,
         "18": 5
       },
-      "total": 78,
+      "total": 76,
       "par": 70,
       "holes_played": 18
     },
@@ -2935,21 +3727,37 @@
         "10": 5,
         "11": 4,
         "12": 3,
-        "13": 5,
+        "13": 4,
         "14": 4,
-        "15": 4,
+        "15": 3,
         "16": 5,
         "17": 5,
         "18": 4
       },
-      "total": 73,
+      "total": 71,
       "par": 70,
       "holes_played": 18
+    },
+    "Scotty": {
+      "holes": {
+        "1": 5,
+        "2": 6,
+        "3": 6,
+        "4": 4,
+        "5": 3,
+        "6": 5,
+        "7": 3,
+        "8": 5,
+        "9": 5
+      },
+      "total": 42,
+      "par": 35,
+      "holes_played": 9
     },
     "Travis Valdez": {
       "holes": {
         "1": 5,
-        "2": 5,
+        "2": 4,
         "3": 6,
         "4": 4,
         "5": 4,
@@ -2967,7 +3775,32 @@
         "17": 5,
         "18": 4
       },
-      "total": 76,
+      "total": 75,
+      "par": 70,
+      "holes_played": 18
+    },
+    "Ty": {
+      "holes": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 4,
+        "7": 5,
+        "8": 5,
+        "9": 4,
+        "10": 5,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 3,
+        "16": 7,
+        "17": 7,
+        "18": 6
+      },
+      "total": 84,
       "par": 70,
       "holes_played": 18
     }
@@ -2984,7 +3817,7 @@
         "7": 4,
         "8": 6,
         "9": 5,
-        "10": 8,
+        "10": 5,
         "11": 7,
         "12": 5,
         "13": 6,
@@ -2994,7 +3827,7 @@
         "17": 8,
         "18": 6
       },
-      "total": 109,
+      "total": 106,
       "par": 70,
       "holes_played": 18
     },
@@ -3002,9 +3835,9 @@
       "holes": {
         "1": 6,
         "2": 8,
-        "3": 7,
+        "3": 8,
         "4": 7,
-        "5": 5,
+        "5": 7,
         "6": 6,
         "7": 5,
         "8": 6,
@@ -3019,24 +3852,40 @@
         "17": 6,
         "18": 6
       },
-      "total": 104,
+      "total": 107,
       "par": 70,
       "holes_played": 18
+    },
+    "Boots": {
+      "holes": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 6,
+        "5": 5,
+        "6": 6,
+        "7": 6,
+        "8": 5,
+        "9": 5
+      },
+      "total": 52,
+      "par": 35,
+      "holes_played": 9
     },
     "Brian Holland": {
       "holes": {
         "10": 8,
-        "11": 6,
+        "11": 10,
         "12": 5,
         "13": 5,
-        "14": 4,
+        "14": 5,
         "15": 5,
         "16": 5,
         "17": 8,
         "18": 5,
         "1": 5,
         "2": 5,
-        "3": 7,
+        "3": 9,
         "4": 6,
         "5": 5,
         "6": 6,
@@ -3044,7 +3893,7 @@
         "8": 7,
         "9": 5
       },
-      "total": 102,
+      "total": 109,
       "par": 70,
       "holes_played": 18
     },
@@ -3064,6 +3913,22 @@
       "par": 35,
       "holes_played": 9
     },
+    "Dragan Lukic": {
+      "holes": {
+        "10": 7,
+        "11": 8,
+        "12": 5,
+        "13": 5,
+        "14": 5,
+        "15": 4,
+        "16": 5,
+        "17": 8,
+        "18": 7
+      },
+      "total": 54,
+      "par": 35,
+      "holes_played": 9
+    },
     "Dylan Bell": {
       "holes": {
         "1": 7,
@@ -3071,10 +3936,10 @@
         "3": 7,
         "4": 6,
         "5": 5,
-        "6": 6,
+        "6": 7,
         "7": 5,
         "8": 6,
-        "9": 5,
+        "9": 6,
         "10": 7,
         "11": 7,
         "12": 5,
@@ -3085,7 +3950,7 @@
         "17": 6,
         "18": 5
       },
-      "total": 103,
+      "total": 105,
       "par": 70,
       "holes_played": 18
     },
@@ -3096,7 +3961,7 @@
         "12": 4,
         "13": 4,
         "14": 5,
-        "15": 4,
+        "15": 5,
         "16": 5,
         "17": 5,
         "18": 6,
@@ -3110,7 +3975,32 @@
         "8": 5,
         "9": 5
       },
-      "total": 88,
+      "total": 89,
+      "par": 70,
+      "holes_played": 18
+    },
+    "Marc Berthiaume": {
+      "holes": {
+        "1": 7,
+        "2": 6,
+        "3": 7,
+        "4": 6,
+        "5": 6,
+        "6": 6,
+        "7": 6,
+        "8": 6,
+        "9": 6,
+        "10": 5,
+        "11": 7,
+        "12": 5,
+        "13": 5,
+        "14": 5,
+        "15": 4,
+        "16": 6,
+        "17": 8,
+        "18": 6
+      },
+      "total": 107,
       "par": 70,
       "holes_played": 18
     },
@@ -3169,7 +4059,7 @@
         "1": 7,
         "2": 9,
         "3": 8,
-        "4": 7,
+        "4": 8,
         "5": 6,
         "6": 8,
         "7": 6,
@@ -3183,9 +4073,9 @@
         "15": 5,
         "16": 7,
         "17": 7,
-        "18": 6
+        "18": 7
       },
-      "total": 127,
+      "total": 129,
       "par": 70,
       "holes_played": 18
     },
@@ -3226,7 +4116,7 @@
         "8": 10,
         "9": 6,
         "10": 7,
-        "11": 6,
+        "11": 7,
         "12": 7,
         "13": 8,
         "14": 5,
@@ -3235,9 +4125,25 @@
         "17": 6,
         "18": 5
       },
-      "total": 115,
+      "total": 116,
       "par": 70,
       "holes_played": 18
+    },
+    "Scotty": {
+      "holes": {
+        "1": 5,
+        "2": 6,
+        "3": 6,
+        "4": 4,
+        "5": 3,
+        "6": 5,
+        "7": 3,
+        "8": 5,
+        "9": 5
+      },
+      "total": 42,
+      "par": 35,
+      "holes_played": 9
     },
     "Travis Valdez": {
       "holes": {
@@ -3247,11 +4153,11 @@
         "4": 7,
         "5": 5,
         "6": 6,
-        "7": 4,
+        "7": 5,
         "8": 6,
         "9": 6,
-        "10": 7,
-        "11": 7,
+        "10": 8,
+        "11": 9,
         "12": 6,
         "13": 5,
         "14": 5,
@@ -3260,7 +4166,32 @@
         "17": 7,
         "18": 5
       },
-      "total": 110,
+      "total": 114,
+      "par": 70,
+      "holes_played": 18
+    },
+    "Ty": {
+      "holes": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 4,
+        "7": 5,
+        "8": 5,
+        "9": 4,
+        "10": 5,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 3,
+        "16": 7,
+        "17": 7,
+        "18": 6
+      },
+      "total": 84,
       "par": 70,
       "holes_played": 18
     }
@@ -3280,7 +4211,7 @@
     "12": 3,
     "13": 3,
     "14": 2,
-    "15": 3,
+    "15": 2,
     "16": 3,
     "17": 4,
     "18": 3
@@ -3288,59 +4219,71 @@
   "league_dinger": {
     "1": 8,
     "2": 9,
-    "3": 8,
-    "4": 7,
-    "5": 6,
+    "3": 9,
+    "4": 8,
+    "5": 7,
     "6": 8,
     "7": 8,
     "8": 10,
     "9": 7,
     "10": 8,
-    "11": 9,
+    "11": 10,
     "12": 7,
     "13": 8,
     "14": 6,
     "15": 7,
     "16": 7,
     "17": 8,
-    "18": 6
+    "18": 7
   },
   "distribution": {
     "Alex Djordjevski": {
       "counts": {
         "eagle": 0,
-        "birdie": 3,
-        "par": 27,
+        "birdie": 2,
+        "par": 28,
         "bogey": 43,
         "double": 20,
         "triple_plus": 6
       },
       "holes": 99,
-      "birdies_or_better": 3
+      "birdies_or_better": 2
     },
     "Austin Crough": {
       "counts": {
         "eagle": 1,
-        "birdie": 4,
-        "par": 28,
-        "bogey": 30,
+        "birdie": 8,
+        "par": 36,
+        "bogey": 43,
         "double": 16,
+        "triple_plus": 4
+      },
+      "holes": 108,
+      "birdies_or_better": 9
+    },
+    "Boots": {
+      "counts": {
+        "eagle": 0,
+        "birdie": 0,
+        "par": 0,
+        "bogey": 3,
+        "double": 4,
         "triple_plus": 2
       },
-      "holes": 81,
-      "birdies_or_better": 5
+      "holes": 9,
+      "birdies_or_better": 0
     },
     "Brian Holland": {
       "counts": {
         "eagle": 0,
-        "birdie": 1,
-        "par": 16,
-        "bogey": 23,
-        "double": 9,
-        "triple_plus": 5
+        "birdie": 3,
+        "par": 21,
+        "bogey": 29,
+        "double": 11,
+        "triple_plus": 8
       },
-      "holes": 54,
-      "birdies_or_better": 1
+      "holes": 72,
+      "birdies_or_better": 3
     },
     "Brock Seguin": {
       "counts": {
@@ -3354,37 +4297,61 @@
       "holes": 18,
       "birdies_or_better": 1
     },
+    "Dragan Lukic": {
+      "counts": {
+        "eagle": 0,
+        "birdie": 0,
+        "par": 0,
+        "bogey": 4,
+        "double": 1,
+        "triple_plus": 4
+      },
+      "holes": 9,
+      "birdies_or_better": 0
+    },
     "Dylan Bell": {
       "counts": {
         "eagle": 0,
         "birdie": 2,
-        "par": 23,
-        "bogey": 44,
-        "double": 19,
-        "triple_plus": 2
+        "par": 25,
+        "bogey": 57,
+        "double": 21,
+        "triple_plus": 3
       },
-      "holes": 90,
+      "holes": 108,
       "birdies_or_better": 2
     },
     "Eddie Sauve": {
       "counts": {
         "eagle": 0,
         "birdie": 6,
-        "par": 24,
-        "bogey": 20,
-        "double": 4,
+        "par": 29,
+        "bogey": 22,
+        "double": 6,
         "triple_plus": 0
       },
-      "holes": 54,
+      "holes": 63,
       "birdies_or_better": 6
+    },
+    "Marc Berthiaume": {
+      "counts": {
+        "eagle": 0,
+        "birdie": 0,
+        "par": 5,
+        "bogey": 19,
+        "double": 17,
+        "triple_plus": 4
+      },
+      "holes": 45,
+      "birdies_or_better": 0
     },
     "Mike Bondy": {
       "counts": {
         "eagle": 0,
         "birdie": 0,
         "par": 14,
-        "bogey": 31,
-        "double": 34,
+        "bogey": 33,
+        "double": 32,
         "triple_plus": 11
       },
       "holes": 90,
@@ -3406,12 +4373,12 @@
       "counts": {
         "eagle": 0,
         "birdie": 4,
-        "par": 12,
-        "bogey": 32,
-        "double": 22,
-        "triple_plus": 20
+        "par": 15,
+        "bogey": 37,
+        "double": 28,
+        "triple_plus": 24
       },
-      "holes": 90,
+      "holes": 108,
       "birdies_or_better": 4
     },
     "Riley Pekar": {
@@ -3430,24 +4397,48 @@
       "counts": {
         "eagle": 0,
         "birdie": 2,
-        "par": 20,
-        "bogey": 43,
-        "double": 24,
+        "par": 27,
+        "bogey": 49,
+        "double": 29,
         "triple_plus": 10
       },
-      "holes": 99,
+      "holes": 117,
       "birdies_or_better": 2
+    },
+    "Scotty": {
+      "counts": {
+        "eagle": 0,
+        "birdie": 0,
+        "par": 3,
+        "bogey": 5,
+        "double": 1,
+        "triple_plus": 0
+      },
+      "holes": 9,
+      "birdies_or_better": 0
     },
     "Travis Valdez": {
       "counts": {
         "eagle": 1,
         "birdie": 0,
-        "par": 18,
-        "bogey": 28,
-        "double": 17,
-        "triple_plus": 8
+        "par": 21,
+        "bogey": 34,
+        "double": 24,
+        "triple_plus": 10
       },
-      "holes": 72,
+      "holes": 90,
+      "birdies_or_better": 1
+    },
+    "Ty": {
+      "counts": {
+        "eagle": 0,
+        "birdie": 1,
+        "par": 8,
+        "bogey": 5,
+        "double": 2,
+        "triple_plus": 2
+      },
+      "holes": 18,
       "birdies_or_better": 1
     }
   },
@@ -3464,157 +4455,157 @@
       "hole": 10,
       "par": 4,
       "si": 1,
-      "avg": 5.54,
-      "over_par": 1.54,
-      "plays": 46
-    },
-    {
-      "hole": 1,
-      "par": 4,
-      "si": 3,
-      "avg": 5.47,
-      "over_par": 1.47,
-      "plays": 51
+      "avg": 5.56,
+      "over_par": 1.56,
+      "plays": 55
     },
     {
       "hole": 17,
       "par": 4,
       "si": 4,
-      "avg": 5.46,
-      "over_par": 1.46,
-      "plays": 46
+      "avg": 5.55,
+      "over_par": 1.55,
+      "plays": 55
+    },
+    {
+      "hole": 1,
+      "par": 4,
+      "si": 3,
+      "avg": 5.48,
+      "over_par": 1.48,
+      "plays": 66
     },
     {
       "hole": 6,
       "par": 4,
       "si": 2,
-      "avg": 5.33,
-      "over_par": 1.33,
-      "plays": 51
+      "avg": 5.27,
+      "over_par": 1.27,
+      "plays": 66
     },
     {
       "hole": 12,
       "par": 3,
       "si": 9,
-      "avg": 4.26,
-      "over_par": 1.26,
-      "plays": 46
-    },
-    {
-      "hole": 15,
-      "par": 3,
-      "si": 17,
-      "avg": 4.22,
-      "over_par": 1.22,
-      "plays": 46
+      "avg": 4.27,
+      "over_par": 1.27,
+      "plays": 55
     },
     {
       "hole": 5,
       "par": 3,
       "si": 5,
-      "avg": 4.2,
-      "over_par": 1.2,
-      "plays": 51
-    },
-    {
-      "hole": 2,
-      "par": 4,
-      "si": 15,
-      "avg": 5.16,
-      "over_par": 1.16,
-      "plays": 51
-    },
-    {
-      "hole": 4,
-      "par": 4,
-      "si": 8,
-      "avg": 5.1,
-      "over_par": 1.1,
-      "plays": 51
+      "avg": 4.26,
+      "over_par": 1.26,
+      "plays": 66
     },
     {
       "hole": 7,
       "par": 3,
       "si": 7,
-      "avg": 4.1,
-      "over_par": 1.1,
-      "plays": 51
+      "avg": 4.15,
+      "over_par": 1.15,
+      "plays": 66
+    },
+    {
+      "hole": 2,
+      "par": 4,
+      "si": 15,
+      "avg": 5.12,
+      "over_par": 1.12,
+      "plays": 66
+    },
+    {
+      "hole": 15,
+      "par": 3,
+      "si": 17,
+      "avg": 4.11,
+      "over_par": 1.11,
+      "plays": 55
+    },
+    {
+      "hole": 4,
+      "par": 4,
+      "si": 8,
+      "avg": 5.06,
+      "over_par": 1.06,
+      "plays": 66
     },
     {
       "hole": 8,
       "par": 4,
       "si": 11,
-      "avg": 5.06,
-      "over_par": 1.06,
-      "plays": 51
+      "avg": 5.05,
+      "over_par": 1.05,
+      "plays": 66
     },
     {
       "hole": 11,
       "par": 5,
       "si": 12,
-      "avg": 5.89,
-      "over_par": 0.89,
-      "plays": 46
+      "avg": 6.05,
+      "over_par": 1.05,
+      "plays": 55
     },
     {
       "hole": 16,
       "par": 4,
       "si": 13,
-      "avg": 4.8,
-      "over_par": 0.8,
-      "plays": 46
+      "avg": 4.91,
+      "over_par": 0.91,
+      "plays": 55
     },
     {
       "hole": 18,
       "par": 4,
       "si": 10,
-      "avg": 4.8,
-      "over_par": 0.8,
-      "plays": 46
+      "avg": 4.87,
+      "over_par": 0.87,
+      "plays": 55
     },
     {
       "hole": 3,
       "par": 5,
       "si": 6,
-      "avg": 5.69,
-      "over_par": 0.69,
-      "plays": 51
+      "avg": 5.8,
+      "over_par": 0.8,
+      "plays": 66
     },
     {
       "hole": 9,
       "par": 4,
       "si": 18,
-      "avg": 4.69,
-      "over_par": 0.69,
-      "plays": 51
+      "avg": 4.71,
+      "over_par": 0.71,
+      "plays": 66
     },
     {
       "hole": 13,
       "par": 4,
       "si": 14,
-      "avg": 4.67,
-      "over_par": 0.67,
-      "plays": 46
+      "avg": 4.69,
+      "over_par": 0.69,
+      "plays": 55
     },
     {
       "hole": 14,
       "par": 4,
       "si": 16,
-      "avg": 4.52,
-      "over_par": 0.52,
-      "plays": 46
+      "avg": 4.51,
+      "over_par": 0.51,
+      "plays": 55
     }
   ],
   "consistency": [
     {
       "player": "Dylan Bell",
-      "std": 1.2,
-      "rounds": 10
+      "std": 1.52,
+      "rounds": 12
     },
     {
       "player": "Eddie Sauve",
-      "std": 1.49,
-      "rounds": 6
+      "std": 1.6,
+      "rounds": 7
     },
     {
       "player": "Nate Emery",
@@ -3622,9 +4613,9 @@
       "rounds": 8
     },
     {
-      "player": "Mike Bondy",
-      "std": 2.15,
-      "rounds": 10
+      "player": "Ty",
+      "std": 2.0,
+      "rounds": 2
     },
     {
       "player": "Alex Djordjevski",
@@ -3632,9 +4623,14 @@
       "rounds": 11
     },
     {
+      "player": "Mike Bondy",
+      "std": 2.39,
+      "rounds": 10
+    },
+    {
       "player": "Travis Valdez",
-      "std": 2.18,
-      "rounds": 8
+      "std": 2.41,
+      "rounds": 10
     },
     {
       "player": "Riley Pekar",
@@ -3642,24 +4638,29 @@
       "rounds": 6
     },
     {
-      "player": "Brian Holland",
-      "std": 3.25,
-      "rounds": 6
-    },
-    {
-      "player": "Austin Crough",
-      "std": 3.4,
-      "rounds": 9
+      "player": "Marc Berthiaume",
+      "std": 3.31,
+      "rounds": 5
     },
     {
       "player": "Ryan Dimitrov",
-      "std": 3.5,
-      "rounds": 11
+      "std": 3.44,
+      "rounds": 13
+    },
+    {
+      "player": "Austin Crough",
+      "std": 3.45,
+      "rounds": 12
     },
     {
       "player": "Nate Hodgins",
-      "std": 3.66,
-      "rounds": 10
+      "std": 3.48,
+      "rounds": 12
+    },
+    {
+      "player": "Brian Holland",
+      "std": 4.12,
+      "rounds": 8
     },
     {
       "player": "Brock Seguin",
@@ -3668,18 +4669,23 @@
     }
   ],
   "skins": {
-    "Alex Djordjevski": 4,
-    "Austin Crough": 2,
-    "Brian Holland": 4,
-    "Brock Seguin": 0,
-    "Dylan Bell": 3,
+    "Alex Djordjevski": 3,
+    "Austin Crough": 7,
+    "Boots": 1,
+    "Brian Holland": 7,
+    "Brock Seguin": 1,
+    "Dragan Lukic": 0,
+    "Dylan Bell": 2,
     "Eddie Sauve": 2,
+    "Marc Berthiaume": 1,
     "Mike Bondy": 3,
     "Nate Emery": 1,
-    "Nate Hodgins": 12,
+    "Nate Hodgins": 11,
     "Riley Pekar": 3,
     "Ryan Dimitrov": 5,
-    "Travis Valdez": 3
+    "Scotty": 0,
+    "Travis Valdez": 4,
+    "Ty": 0
   },
   "skins_log": [
     {
@@ -3744,133 +4750,133 @@
     },
     {
       "week": 3,
-      "hole": 4,
-      "player": "Dylan Bell"
-    },
-    {
-      "week": 3,
-      "hole": 5,
-      "player": "Ryan Dimitrov"
+      "hole": 8,
+      "player": "Boots"
     },
     {
       "week": 4,
       "hole": 10,
-      "player": "Mike Bondy"
+      "player": "Austin Crough"
     },
     {
       "week": 4,
+      "hole": 12,
+      "player": "Ryan Dimitrov"
+    },
+    {
+      "week": 4,
+      "hole": 13,
+      "player": "Ryan Dimitrov"
+    },
+    {
+      "week": 4,
+      "hole": 14,
+      "player": "Austin Crough"
+    },
+    {
+      "week": 4,
+      "hole": 15,
+      "player": "Austin Crough"
+    },
+    {
+      "week": 4,
+      "hole": 16,
+      "player": "Travis Valdez"
+    },
+    {
+      "week": 4,
+      "hole": 17,
+      "player": "Austin Crough"
+    },
+    {
+      "week": 5,
+      "hole": 10,
+      "player": "Mike Bondy"
+    },
+    {
+      "week": 5,
       "hole": 11,
       "player": "Nate Emery"
     },
     {
-      "week": 4,
+      "week": 5,
       "hole": 12,
       "player": "Brian Holland"
     },
     {
-      "week": 4,
+      "week": 5,
       "hole": 14,
       "player": "Nate Hodgins"
     },
     {
-      "week": 5,
+      "week": 6,
       "hole": 1,
       "player": "Ryan Dimitrov"
     },
     {
       "week": 6,
+      "hole": 6,
+      "player": "Brock Seguin"
+    },
+    {
+      "week": 7,
       "hole": 12,
       "player": "Riley Pekar"
     },
     {
-      "week": 6,
+      "week": 7,
       "hole": 14,
       "player": "Travis Valdez"
     },
     {
-      "week": 6,
+      "week": 7,
       "hole": 15,
       "player": "Alex Djordjevski"
     },
     {
-      "week": 6,
+      "week": 7,
       "hole": 17,
       "player": "Mike Bondy"
     },
     {
-      "week": 7,
+      "week": 8,
       "hole": 7,
       "player": "Brian Holland"
     },
     {
-      "week": 7,
+      "week": 8,
       "hole": 9,
       "player": "Dylan Bell"
     },
     {
-      "week": 8,
+      "week": 9,
       "hole": 10,
       "player": "Riley Pekar"
     },
     {
-      "week": 8,
-      "hole": 14,
-      "player": "Alex Djordjevski"
-    },
-    {
-      "week": 8,
+      "week": 9,
       "hole": 17,
       "player": "Riley Pekar"
     },
     {
-      "week": 8,
+      "week": 9,
       "hole": 18,
       "player": "Austin Crough"
     },
     {
-      "week": 9,
+      "week": 10,
       "hole": 3,
       "player": "Eddie Sauve"
     },
     {
-      "week": 9,
+      "week": 10,
       "hole": 4,
       "player": "Brian Holland"
     },
     {
-      "week": 9,
+      "week": 10,
       "hole": 5,
       "player": "Eddie Sauve"
-    },
-    {
-      "week": 10,
-      "hole": 11,
-      "player": "Nate Hodgins"
-    },
-    {
-      "week": 10,
-      "hole": 14,
-      "player": "Nate Hodgins"
-    },
-    {
-      "week": 10,
-      "hole": 15,
-      "player": "Travis Valdez"
-    },
-    {
-      "week": 10,
-      "hole": 18,
-      "player": "Austin Crough"
-    },
-    {
-      "week": 11,
-      "hole": 1,
-      "player": "Ryan Dimitrov"
-    },
-    {
-      "week": 11,
-      "hole": 2,
-      "player": "Nate Hodgins"
     },
     {
       "week": 11,
@@ -3889,37 +4895,73 @@
     },
     {
       "week": 11,
+      "hole": 7,
+      "player": "Marc Berthiaume"
+    },
+    {
+      "week": 11,
       "hole": 8,
       "player": "Ryan Dimitrov"
+    },
+    {
+      "week": 12,
+      "hole": 10,
+      "player": "Austin Crough"
+    },
+    {
+      "week": 12,
+      "hole": 11,
+      "player": "Nate Hodgins"
+    },
+    {
+      "week": 12,
+      "hole": 14,
+      "player": "Nate Hodgins"
+    },
+    {
+      "week": 12,
+      "hole": 15,
+      "player": "Travis Valdez"
+    },
+    {
+      "week": 12,
+      "hole": 18,
+      "player": "Austin Crough"
+    },
+    {
+      "week": 13,
+      "hole": 1,
+      "player": "Brian Holland"
+    },
+    {
+      "week": 13,
+      "hole": 2,
+      "player": "Brian Holland"
+    },
+    {
+      "week": 13,
+      "hole": 7,
+      "player": "Brian Holland"
     }
   ],
   "standings": [
     {
       "player": "Brian Holland",
-      "rounds": 6,
-      "weekly_wins": 2,
-      "avg_net": -2.33,
-      "total_net": -13.97,
-      "skins": 4,
-      "handicap": 8.8
+      "rounds": 8,
+      "weekly_wins": 3,
+      "avg_net": -2.19,
+      "total_net": -17.53,
+      "skins": 7,
+      "handicap": 6.5
     },
     {
-      "player": "Austin Crough",
-      "rounds": 9,
+      "player": "Travis Valdez",
+      "rounds": 10,
       "weekly_wins": 2,
-      "avg_net": -0.61,
-      "total_net": -5.47,
-      "skins": 2,
-      "handicap": 4.8
-    },
-    {
-      "player": "Alex Djordjevski",
-      "rounds": 11,
-      "weekly_wins": 2,
-      "avg_net": 0.5,
-      "total_net": 5.53,
+      "avg_net": -0.41,
+      "total_net": -4.1,
       "skins": 4,
-      "handicap": 8.0
+      "handicap": 10.0
     },
     {
       "player": "Brock Seguin",
@@ -3927,80 +4969,134 @@
       "weekly_wins": 1,
       "avg_net": -6.0,
       "total_net": -12.0,
-      "skins": 0,
+      "skins": 1,
       "handicap": 6.0
     },
     {
       "player": "Riley Pekar",
       "rounds": 6,
       "weekly_wins": 1,
-      "avg_net": -3.1,
-      "total_net": -18.58,
+      "avg_net": -2.89,
+      "total_net": -17.33,
       "skins": 3,
-      "handicap": 8.4
+      "handicap": 7.5
     },
     {
       "player": "Nate Hodgins",
-      "rounds": 10,
+      "rounds": 12,
       "weekly_wins": 1,
-      "avg_net": -1.95,
-      "total_net": -19.52,
-      "skins": 12,
-      "handicap": 12.0
+      "avg_net": -1.36,
+      "total_net": -16.35,
+      "skins": 11,
+      "handicap": 12.2
     },
     {
       "player": "Eddie Sauve",
-      "rounds": 6,
+      "rounds": 7,
       "weekly_wins": 1,
-      "avg_net": -1.33,
-      "total_net": -7.97,
+      "avg_net": -1.13,
+      "total_net": -7.88,
       "skins": 2,
-      "handicap": 3.2
-    },
-    {
-      "player": "Ryan Dimitrov",
-      "rounds": 11,
-      "weekly_wins": 1,
-      "avg_net": -0.48,
-      "total_net": -5.25,
-      "skins": 5,
-      "handicap": 8.6
+      "handicap": 3.0
     },
     {
       "player": "Mike Bondy",
       "rounds": 10,
       "weekly_wins": 1,
-      "avg_net": -0.09,
-      "total_net": -0.92,
+      "avg_net": -0.05,
+      "total_net": -0.48,
       "skins": 3,
-      "handicap": 12.0
+      "handicap": 11.6
     },
     {
-      "player": "Travis Valdez",
-      "rounds": 8,
-      "weekly_wins": 0,
-      "avg_net": -0.96,
-      "total_net": -7.67,
+      "player": "Ryan Dimitrov",
+      "rounds": 13,
+      "weekly_wins": 1,
+      "avg_net": 0.02,
+      "total_net": 0.2,
+      "skins": 5,
+      "handicap": 8.0
+    },
+    {
+      "player": "Austin Crough",
+      "rounds": 12,
+      "weekly_wins": 1,
+      "avg_net": 0.18,
+      "total_net": 2.13,
+      "skins": 7,
+      "handicap": 4.4
+    },
+    {
+      "player": "Alex Djordjevski",
+      "rounds": 11,
+      "weekly_wins": 1,
+      "avg_net": 0.45,
+      "total_net": 4.93,
       "skins": 3,
-      "handicap": 9.6
+      "handicap": 8.0
     },
     {
       "player": "Nate Emery",
       "rounds": 8,
       "weekly_wins": 0,
       "avg_net": -0.65,
-      "total_net": -5.22,
+      "total_net": -5.17,
       "skins": 1,
       "handicap": 4.0
     },
     {
       "player": "Dylan Bell",
-      "rounds": 10,
+      "rounds": 12,
       "weekly_wins": 0,
-      "avg_net": -0.49,
-      "total_net": -4.87,
-      "skins": 3,
-      "handicap": 7.6
+      "avg_net": -0.08,
+      "total_net": -0.9,
+      "skins": 2,
+      "handicap": 7.8
+    },
+    {
+      "player": "Boots",
+      "rounds": 1,
+      "weekly_wins": 0,
+      "avg_net": 0.0,
+      "total_net": 0.0,
+      "skins": 1,
+      "handicap": 17.0
+    },
+    {
+      "player": "Dragan Lukic",
+      "rounds": 1,
+      "weekly_wins": 0,
+      "avg_net": 0.0,
+      "total_net": 0.0,
+      "skins": 0,
+      "handicap": 19.0
+    },
+    {
+      "player": "Scotty",
+      "rounds": 1,
+      "weekly_wins": 0,
+      "avg_net": 0.0,
+      "total_net": 0.0,
+      "skins": 0,
+      "handicap": 7.0
+    },
+    {
+      "player": "Marc Berthiaume",
+      "rounds": 5,
+      "weekly_wins": 0,
+      "avg_net": 1.53,
+      "total_net": 7.67,
+      "skins": 1,
+      "handicap": 13.2
+    },
+    {
+      "player": "Ty",
+      "rounds": 2,
+      "weekly_wins": 0,
+      "avg_net": 2.0,
+      "total_net": 4.0,
+      "skins": 0,
+      "handicap": 7.0
     }
   ],
   "profiles": {
@@ -4024,16 +5120,12 @@
             "handicap": 9.67
           },
           {
-            "week": 4,
+            "week": 5,
             "handicap": 9.5
           },
           {
-            "week": 5,
-            "handicap": 8.6
-          },
-          {
             "week": 6,
-            "handicap": 7.6
+            "handicap": 8.6
           },
           {
             "week": 7,
@@ -4044,21 +5136,25 @@
             "handicap": 7.6
           },
           {
-            "week": 10,
-            "handicap": 7.8
-          },
-          {
-            "week": 11,
+            "week": 9,
             "handicap": 7.6
           },
           {
+            "week": 11,
+            "handicap": 7.8
+          },
+          {
             "week": 12,
+            "handicap": 7.8
+          },
+          {
+            "week": 13,
             "handicap": 8.0
           }
         ]
       },
       "best_round": {
-        "week": 5,
+        "week": 6,
         "nine": "F",
         "gross": 40,
         "to_par": 5,
@@ -4066,7 +5162,7 @@
         "handicap": 9.5
       },
       "worst_round": {
-        "week": 7,
+        "week": 8,
         "nine": "F",
         "gross": 47,
         "to_par": 12,
@@ -4099,7 +5195,7 @@
           "handicap": 9.5
         },
         {
-          "week": 4,
+          "week": 5,
           "nine": "B",
           "gross": 44,
           "to_par": 9,
@@ -4107,7 +5203,7 @@
           "handicap": 9.67
         },
         {
-          "week": 5,
+          "week": 6,
           "nine": "F",
           "gross": 40,
           "to_par": 5,
@@ -4115,7 +5211,7 @@
           "handicap": 9.5
         },
         {
-          "week": 6,
+          "week": 7,
           "nine": "B",
           "gross": 40,
           "to_par": 5,
@@ -4123,7 +5219,7 @@
           "handicap": 8.6
         },
         {
-          "week": 7,
+          "week": 8,
           "nine": "F",
           "gross": 47,
           "to_par": 12,
@@ -4131,15 +5227,7 @@
           "handicap": 7.6
         },
         {
-          "week": 8,
-          "nine": "B",
-          "gross": 45,
-          "to_par": 10,
-          "net": 2.4,
-          "handicap": 7.6
-        },
-        {
-          "week": 10,
+          "week": 9,
           "nine": "B",
           "gross": 46,
           "to_par": 11,
@@ -4151,29 +5239,37 @@
           "nine": "F",
           "gross": 44,
           "to_par": 9,
-          "net": 1.2,
-          "handicap": 7.8
+          "net": 1.0,
+          "handicap": 8.0
         },
         {
           "week": 12,
           "nine": "B",
           "gross": 46,
           "to_par": 11,
-          "net": 3.4,
-          "handicap": 7.6
+          "net": 3.2,
+          "handicap": 7.8
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 45,
+          "to_par": 10,
+          "net": 2.2,
+          "handicap": 7.8
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 0,
-          "birdie": 3,
-          "par": 27,
+          "birdie": 2,
+          "par": 28,
           "bogey": 43,
           "double": 20,
           "triple_plus": 6
         },
         "holes": 99,
-        "birdies_or_better": 3
+        "birdies_or_better": 2
       },
       "ringer": {
         "holes": {
@@ -4190,13 +5286,13 @@
           "11": 6,
           "12": 3,
           "13": 4,
-          "14": 3,
+          "14": 4,
           "15": 3,
           "16": 4,
           "17": 5,
-          "18": 4
+          "18": 5
         },
-        "total": 72,
+        "total": 74,
         "par": 70,
         "holes_played": 18
       },
@@ -4211,7 +5307,7 @@
           "7": 4,
           "8": 6,
           "9": 5,
-          "10": 8,
+          "10": 5,
           "11": 7,
           "12": 5,
           "13": 6,
@@ -4221,40 +5317,40 @@
           "17": 8,
           "18": 6
         },
-        "total": 109,
+        "total": 106,
         "par": 70,
         "holes_played": 18
       },
-      "skins": 4,
+      "skins": 3,
       "hole_avg": {
-        "1": 6.2,
-        "2": 5.2,
-        "3": 4.6,
-        "4": 5.2,
-        "5": 4.6,
-        "6": 5.4,
-        "7": 3.8,
-        "8": 4.8,
-        "9": 4.4,
-        "10": 5.17,
-        "11": 6.33,
-        "12": 3.67,
-        "13": 4.67,
-        "14": 4.5,
-        "15": 4.33,
-        "16": 4.5,
-        "17": 5.67,
-        "18": 5.33
+        "1": 6,
+        "2": 5.5,
+        "3": 4.67,
+        "4": 5.33,
+        "5": 4.5,
+        "6": 5.33,
+        "7": 3.83,
+        "8": 4.67,
+        "9": 4.5,
+        "10": 4.6,
+        "11": 6.4,
+        "12": 3.6,
+        "13": 4.6,
+        "14": 4.8,
+        "15": 4.4,
+        "16": 4.4,
+        "17": 5.6,
+        "18": 5.6
       },
       "avg_gross": 44.18,
-      "birdies_or_better": 3
+      "birdies_or_better": 2
     },
     "Austin Crough": {
-      "rounds": 9,
+      "rounds": 12,
       "handicap": {
-        "current": 4.8,
+        "current": 4.4,
         "starting": 7.0,
-        "delta": -2.2,
+        "delta": -2.6,
         "trend": [
           {
             "week": 1,
@@ -4269,38 +5365,50 @@
             "handicap": 10.67
           },
           {
-            "week": 5,
-            "handicap": 9.5
+            "week": 4,
+            "handicap": 8.5
           },
           {
             "week": 6,
-            "handicap": 8.2
+            "handicap": 8.0
           },
           {
             "week": 7,
-            "handicap": 6.6
-          },
-          {
-            "week": 8,
             "handicap": 5.6
           },
           {
+            "week": 8,
+            "handicap": 5.0
+          },
+          {
             "week": 9,
-            "handicap": 5.4
+            "handicap": 4.2
           },
           {
             "week": 10,
-            "handicap": 4.8
+            "handicap": 4.0
+          },
+          {
+            "week": 11,
+            "handicap": 4.0
+          },
+          {
+            "week": 12,
+            "handicap": 4.4
+          },
+          {
+            "week": 13,
+            "handicap": 4.4
           }
         ]
       },
       "best_round": {
-        "week": 6,
+        "week": 4,
         "nine": "B",
-        "gross": 38,
-        "to_par": 3,
-        "net": -6.5,
-        "handicap": 9.5
+        "gross": 37,
+        "to_par": 2,
+        "net": -8.67,
+        "handicap": 10.67
       },
       "worst_round": {
         "week": 3,
@@ -4336,70 +5444,94 @@
           "handicap": 8.5
         },
         {
-          "week": 5,
-          "nine": "F",
-          "gross": 41,
-          "to_par": 6,
-          "net": -4.67,
+          "week": 4,
+          "nine": "B",
+          "gross": 37,
+          "to_par": 2,
+          "net": -8.67,
           "handicap": 10.67
         },
         {
           "week": 6,
-          "nine": "B",
-          "gross": 38,
-          "to_par": 3,
-          "net": -6.5,
-          "handicap": 9.5
-        },
-        {
-          "week": 7,
-          "nine": "F",
-          "gross": 42,
-          "to_par": 7,
-          "net": -1.2,
-          "handicap": 8.2
-        },
-        {
-          "week": 8,
-          "nine": "B",
-          "gross": 40,
-          "to_par": 5,
-          "net": -1.6,
-          "handicap": 6.6
-        },
-        {
-          "week": 9,
           "nine": "F",
           "gross": 41,
           "to_par": 6,
-          "net": 0.4,
+          "net": -2.5,
+          "handicap": 8.5
+        },
+        {
+          "week": 7,
+          "nine": "B",
+          "gross": 38,
+          "to_par": 3,
+          "net": -5.0,
+          "handicap": 8.0
+        },
+        {
+          "week": 8,
+          "nine": "F",
+          "gross": 42,
+          "to_par": 7,
+          "net": 1.4,
           "handicap": 5.6
         },
         {
+          "week": 9,
+          "nine": "B",
+          "gross": 38,
+          "to_par": 3,
+          "net": -2.0,
+          "handicap": 5.0
+        },
+        {
           "week": 10,
+          "nine": "F",
+          "gross": 41,
+          "to_par": 6,
+          "net": 1.8,
+          "handicap": 4.2
+        },
+        {
+          "week": 11,
+          "nine": "F",
+          "gross": 42,
+          "to_par": 7,
+          "net": 3.0,
+          "handicap": 4.0
+        },
+        {
+          "week": 12,
           "nine": "B",
           "gross": 39,
           "to_par": 4,
-          "net": -1.4,
-          "handicap": 5.4
+          "net": 0.0,
+          "handicap": 4.0
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 44,
+          "to_par": 9,
+          "net": 4.6,
+          "handicap": 4.4
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 1,
-          "birdie": 4,
-          "par": 28,
-          "bogey": 30,
+          "birdie": 8,
+          "par": 36,
+          "bogey": 43,
           "double": 16,
-          "triple_plus": 2
+          "triple_plus": 4
         },
-        "holes": 81,
-        "birdies_or_better": 5
+        "holes": 108,
+        "birdies_or_better": 9
       },
       "ringer": {
         "holes": {
           "1": 4,
-          "2": 5,
+          "2": 3,
           "3": 3,
           "4": 4,
           "5": 4,
@@ -4411,13 +5543,13 @@
           "11": 4,
           "12": 3,
           "13": 4,
-          "14": 4,
-          "15": 4,
+          "14": 3,
+          "15": 2,
           "16": 3,
           "17": 4,
           "18": 3
         },
-        "total": 68,
+        "total": 63,
         "par": 70,
         "holes_played": 18
       },
@@ -4425,9 +5557,9 @@
         "holes": {
           "1": 6,
           "2": 8,
-          "3": 7,
+          "3": 8,
           "4": 7,
-          "5": 5,
+          "5": 7,
           "6": 6,
           "7": 5,
           "8": 6,
@@ -4442,40 +5574,138 @@
           "17": 6,
           "18": 6
         },
-        "total": 104,
+        "total": 107,
         "par": 70,
         "holes_played": 18
       },
-      "skins": 2,
+      "skins": 7,
       "hole_avg": {
         "1": 5,
-        "2": 5.8,
-        "3": 5.6,
-        "4": 5,
-        "5": 4.2,
+        "2": 5.29,
+        "3": 5.86,
+        "4": 4.71,
+        "5": 4.57,
         "6": 5,
-        "7": 3.6,
-        "8": 4.8,
-        "9": 4.2,
-        "10": 5,
+        "7": 3.71,
+        "8": 4.71,
+        "9": 4.29,
+        "10": 4.8,
         "11": 5,
-        "12": 3.5,
-        "13": 4.5,
-        "14": 4.5,
-        "15": 4.25,
-        "16": 4.25,
-        "17": 5.25,
-        "18": 4.25
+        "12": 3.6,
+        "13": 4.6,
+        "14": 3.8,
+        "15": 3.8,
+        "16": 4.4,
+        "17": 5,
+        "18": 4.4
       },
-      "avg_gross": 42,
-      "birdies_or_better": 5
+      "avg_gross": 41.58,
+      "birdies_or_better": 9
+    },
+    "Boots": {
+      "rounds": 1,
+      "handicap": {
+        "current": 17.0,
+        "starting": 17.0,
+        "delta": 0.0,
+        "trend": [
+          {
+            "week": 3,
+            "handicap": 17.0
+          }
+        ]
+      },
+      "best_round": {
+        "week": 3,
+        "nine": "F",
+        "gross": 52,
+        "to_par": 17,
+        "net": 0.0,
+        "handicap": 17.0
+      },
+      "worst_round": {
+        "week": 3,
+        "nine": "F",
+        "gross": 52,
+        "to_par": 17,
+        "net": 0.0,
+        "handicap": 17.0
+      },
+      "series": [
+        {
+          "week": 3,
+          "nine": "F",
+          "gross": 52,
+          "to_par": 17,
+          "net": 0.0,
+          "handicap": 17.0
+        }
+      ],
+      "distribution": {
+        "counts": {
+          "eagle": 0,
+          "birdie": 0,
+          "par": 0,
+          "bogey": 3,
+          "double": 4,
+          "triple_plus": 2
+        },
+        "holes": 9,
+        "birdies_or_better": 0
+      },
+      "ringer": {
+        "holes": {
+          "1": 7,
+          "2": 6,
+          "3": 6,
+          "4": 6,
+          "5": 5,
+          "6": 6,
+          "7": 6,
+          "8": 5,
+          "9": 5
+        },
+        "total": 52,
+        "par": 35,
+        "holes_played": 9
+      },
+      "dinger": {
+        "holes": {
+          "1": 7,
+          "2": 6,
+          "3": 6,
+          "4": 6,
+          "5": 5,
+          "6": 6,
+          "7": 6,
+          "8": 5,
+          "9": 5
+        },
+        "total": 52,
+        "par": 35,
+        "holes_played": 9
+      },
+      "skins": 1,
+      "hole_avg": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 6,
+        "5": 5,
+        "6": 6,
+        "7": 6,
+        "8": 5,
+        "9": 5
+      },
+      "avg_gross": 52,
+      "birdies_or_better": 0
     },
     "Brian Holland": {
-      "rounds": 6,
+      "rounds": 8,
       "handicap": {
-        "current": 8.8,
+        "current": 6.5,
         "starting": 13.0,
-        "delta": -4.2,
+        "delta": -6.5,
         "trend": [
           {
             "week": 2,
@@ -4487,37 +5717,45 @@
           },
           {
             "week": 4,
-            "handicap": 11.67
+            "handicap": 13.33
           },
           {
             "week": 5,
-            "handicap": 11.5
+            "handicap": 12.75
           },
           {
-            "week": 7,
+            "week": 6,
+            "handicap": 12.4
+          },
+          {
+            "week": 8,
             "handicap": 9.8
           },
           {
-            "week": 9,
+            "week": 10,
             "handicap": 8.8
+          },
+          {
+            "week": 13,
+            "handicap": 6.5
           }
         ]
       },
       "best_round": {
-        "week": 7,
+        "week": 8,
         "nine": "F",
         "gross": 38,
         "to_par": 3,
-        "net": -8.5,
-        "handicap": 11.5
+        "net": -9.4,
+        "handicap": 12.4
       },
       "worst_round": {
-        "week": 2,
+        "week": 4,
         "nine": "B",
-        "gross": 48,
-        "to_par": 13,
-        "net": 0.0,
-        "handicap": 13.0
+        "gross": 51,
+        "to_par": 16,
+        "net": 4.0,
+        "handicap": 12.0
       },
       "series": [
         {
@@ -4539,51 +5777,67 @@
         {
           "week": 4,
           "nine": "B",
-          "gross": 46,
-          "to_par": 11,
-          "net": -1.0,
+          "gross": 51,
+          "to_par": 16,
+          "net": 4.0,
           "handicap": 12.0
         },
         {
           "week": 5,
+          "nine": "B",
+          "gross": 46,
+          "to_par": 11,
+          "net": -2.33,
+          "handicap": 13.33
+        },
+        {
+          "week": 6,
           "nine": "F",
           "gross": 46,
           "to_par": 11,
-          "net": -0.67,
-          "handicap": 11.67
+          "net": -1.75,
+          "handicap": 12.75
         },
         {
-          "week": 7,
+          "week": 8,
           "nine": "F",
           "gross": 38,
           "to_par": 3,
-          "net": -8.5,
-          "handicap": 11.5
+          "net": -9.4,
+          "handicap": 12.4
         },
         {
-          "week": 9,
+          "week": 10,
           "nine": "F",
           "gross": 43,
           "to_par": 8,
           "net": -1.8,
           "handicap": 9.8
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 39,
+          "to_par": 4,
+          "net": -4.25,
+          "handicap": 8.25
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 0,
-          "birdie": 1,
-          "par": 16,
-          "bogey": 23,
-          "double": 9,
-          "triple_plus": 5
+          "birdie": 3,
+          "par": 21,
+          "bogey": 29,
+          "double": 11,
+          "triple_plus": 8
         },
-        "holes": 54,
-        "birdies_or_better": 1
+        "holes": 72,
+        "birdies_or_better": 3
       },
       "ringer": {
         "holes": {
-          "10": 7,
+          "10": 6,
           "11": 6,
           "12": 3,
           "13": 4,
@@ -4592,34 +5846,34 @@
           "16": 4,
           "17": 7,
           "18": 4,
-          "1": 5,
-          "2": 4,
+          "1": 4,
+          "2": 3,
           "3": 5,
           "4": 4,
           "5": 4,
           "6": 4,
           "7": 2,
           "8": 5,
-          "9": 5
+          "9": 3
         },
-        "total": 81,
+        "total": 76,
         "par": 70,
         "holes_played": 18
       },
       "dinger": {
         "holes": {
           "10": 8,
-          "11": 6,
+          "11": 10,
           "12": 5,
           "13": 5,
-          "14": 4,
+          "14": 5,
           "15": 5,
           "16": 5,
           "17": 8,
           "18": 5,
           "1": 5,
           "2": 5,
-          "3": 7,
+          "3": 9,
           "4": 6,
           "5": 5,
           "6": 6,
@@ -4627,33 +5881,33 @@
           "8": 7,
           "9": 5
         },
-        "total": 102,
+        "total": 109,
         "par": 70,
         "holes_played": 18
       },
-      "skins": 4,
+      "skins": 7,
       "hole_avg": {
-        "1": 5,
-        "2": 4.5,
-        "3": 5.5,
-        "4": 4.75,
-        "5": 4.5,
-        "6": 5.25,
-        "7": 3.25,
-        "8": 5.5,
-        "9": 5,
-        "10": 7.5,
-        "11": 6,
-        "12": 4,
-        "13": 4.5,
-        "14": 4,
-        "15": 4.5,
-        "16": 4.5,
-        "17": 7.5,
-        "18": 4.5
+        "1": 4.8,
+        "2": 4.2,
+        "3": 6.2,
+        "4": 4.6,
+        "5": 4.4,
+        "6": 5,
+        "7": 3.2,
+        "8": 5.4,
+        "9": 4.6,
+        "10": 7,
+        "11": 7.33,
+        "12": 4.33,
+        "13": 4.67,
+        "14": 4.33,
+        "15": 4.33,
+        "16": 4.67,
+        "17": 7.33,
+        "18": 4.33
       },
-      "avg_gross": 44.5,
-      "birdies_or_better": 1
+      "avg_gross": 44.62,
+      "birdies_or_better": 3
     },
     "Brock Seguin": {
       "rounds": 2,
@@ -4667,13 +5921,13 @@
             "handicap": 12.0
           },
           {
-            "week": 5,
+            "week": 6,
             "handicap": 6.0
           }
         ]
       },
       "best_round": {
-        "week": 5,
+        "week": 6,
         "nine": "F",
         "gross": 35,
         "to_par": 0,
@@ -4698,7 +5952,7 @@
           "handicap": 12.0
         },
         {
-          "week": 5,
+          "week": 6,
           "nine": "F",
           "gross": 35,
           "to_par": 0,
@@ -4750,7 +6004,7 @@
         "par": 35,
         "holes_played": 9
       },
-      "skins": 0,
+      "skins": 1,
       "hole_avg": {
         "1": 5,
         "2": 4.5,
@@ -4765,12 +6019,110 @@
       "avg_gross": 41,
       "birdies_or_better": 1
     },
-    "Dylan Bell": {
-      "rounds": 10,
+    "Dragan Lukic": {
+      "rounds": 1,
       "handicap": {
-        "current": 7.6,
+        "current": 19.0,
+        "starting": 19.0,
+        "delta": 0.0,
+        "trend": [
+          {
+            "week": 5,
+            "handicap": 19.0
+          }
+        ]
+      },
+      "best_round": {
+        "week": 5,
+        "nine": "B",
+        "gross": 54,
+        "to_par": 19,
+        "net": 0.0,
+        "handicap": 19.0
+      },
+      "worst_round": {
+        "week": 5,
+        "nine": "B",
+        "gross": 54,
+        "to_par": 19,
+        "net": 0.0,
+        "handicap": 19.0
+      },
+      "series": [
+        {
+          "week": 5,
+          "nine": "B",
+          "gross": 54,
+          "to_par": 19,
+          "net": 0.0,
+          "handicap": 19.0
+        }
+      ],
+      "distribution": {
+        "counts": {
+          "eagle": 0,
+          "birdie": 0,
+          "par": 0,
+          "bogey": 4,
+          "double": 1,
+          "triple_plus": 4
+        },
+        "holes": 9,
+        "birdies_or_better": 0
+      },
+      "ringer": {
+        "holes": {
+          "10": 7,
+          "11": 8,
+          "12": 5,
+          "13": 5,
+          "14": 5,
+          "15": 4,
+          "16": 5,
+          "17": 8,
+          "18": 7
+        },
+        "total": 54,
+        "par": 35,
+        "holes_played": 9
+      },
+      "dinger": {
+        "holes": {
+          "10": 7,
+          "11": 8,
+          "12": 5,
+          "13": 5,
+          "14": 5,
+          "15": 4,
+          "16": 5,
+          "17": 8,
+          "18": 7
+        },
+        "total": 54,
+        "par": 35,
+        "holes_played": 9
+      },
+      "skins": 0,
+      "hole_avg": {
+        "10": 7,
+        "11": 8,
+        "12": 5,
+        "13": 5,
+        "14": 5,
+        "15": 4,
+        "16": 5,
+        "17": 8,
+        "18": 7
+      },
+      "avg_gross": 54,
+      "birdies_or_better": 0
+    },
+    "Dylan Bell": {
+      "rounds": 12,
+      "handicap": {
+        "current": 7.8,
         "starting": 10.0,
-        "delta": -2.4,
+        "delta": -2.2,
         "trend": [
           {
             "week": 1,
@@ -4782,23 +6134,23 @@
           },
           {
             "week": 3,
-            "handicap": 9.67
+            "handicap": 10.0
           },
           {
             "week": 4,
-            "handicap": 9.0
+            "handicap": 9.5
           },
           {
             "week": 5,
-            "handicap": 9.2
+            "handicap": 9.0
           },
           {
             "week": 6,
-            "handicap": 8.8
+            "handicap": 9.0
           },
           {
             "week": 7,
-            "handicap": 8.2
+            "handicap": 8.6
           },
           {
             "week": 8,
@@ -4806,29 +6158,37 @@
           },
           {
             "week": 9,
-            "handicap": 8.0
+            "handicap": 7.8
+          },
+          {
+            "week": 10,
+            "handicap": 7.6
           },
           {
             "week": 11,
-            "handicap": 7.6
+            "handicap": 7.4
+          },
+          {
+            "week": 13,
+            "handicap": 7.8
           }
         ]
       },
       "best_round": {
-        "week": 4,
+        "week": 5,
         "nine": "B",
         "gross": 42,
         "to_par": 7,
-        "net": -2.67,
-        "handicap": 9.67
+        "net": -2.5,
+        "handicap": 9.5
       },
       "worst_round": {
-        "week": 1,
+        "week": 13,
         "nine": "F",
-        "gross": 45,
-        "to_par": 10,
-        "net": 0.0,
-        "handicap": 10.0
+        "gross": 47,
+        "to_par": 12,
+        "net": 4.6,
+        "handicap": 7.4
       },
       "series": [
         {
@@ -4850,21 +6210,29 @@
         {
           "week": 3,
           "nine": "F",
-          "gross": 44,
-          "to_par": 9,
-          "net": -1.0,
+          "gross": 45,
+          "to_par": 10,
+          "net": 0.0,
           "handicap": 10.0
         },
         {
           "week": 4,
           "nine": "B",
-          "gross": 42,
-          "to_par": 7,
-          "net": -2.67,
-          "handicap": 9.67
+          "gross": 43,
+          "to_par": 8,
+          "net": -2.0,
+          "handicap": 10.0
         },
         {
           "week": 5,
+          "nine": "B",
+          "gross": 42,
+          "to_par": 7,
+          "net": -2.5,
+          "handicap": 9.5
+        },
+        {
+          "week": 6,
           "nine": "F",
           "gross": 45,
           "to_par": 10,
@@ -4872,56 +6240,64 @@
           "handicap": 9.0
         },
         {
-          "week": 6,
+          "week": 7,
           "nine": "B",
           "gross": 43,
           "to_par": 8,
-          "net": -1.2,
-          "handicap": 9.2
-        },
-        {
-          "week": 7,
-          "nine": "F",
-          "gross": 42,
-          "to_par": 7,
-          "net": -1.8,
-          "handicap": 8.8
+          "net": -1.0,
+          "handicap": 9.0
         },
         {
           "week": 8,
-          "nine": "B",
-          "gross": 44,
-          "to_par": 9,
-          "net": 0.8,
-          "handicap": 8.2
+          "nine": "F",
+          "gross": 42,
+          "to_par": 7,
+          "net": -1.6,
+          "handicap": 8.6
         },
         {
           "week": 9,
-          "nine": "F",
+          "nine": "B",
           "gross": 44,
           "to_par": 9,
           "net": 1.0,
           "handicap": 8.0
         },
         {
+          "week": 10,
+          "nine": "F",
+          "gross": 43,
+          "to_par": 8,
+          "net": 0.2,
+          "handicap": 7.8
+        },
+        {
           "week": 11,
           "nine": "F",
           "gross": 42,
           "to_par": 7,
-          "net": -1.0,
-          "handicap": 8.0
+          "net": -0.6,
+          "handicap": 7.6
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 47,
+          "to_par": 12,
+          "net": 4.6,
+          "handicap": 7.4
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 0,
           "birdie": 2,
-          "par": 23,
-          "bogey": 44,
-          "double": 19,
-          "triple_plus": 2
+          "par": 25,
+          "bogey": 57,
+          "double": 21,
+          "triple_plus": 3
         },
-        "holes": 90,
+        "holes": 108,
         "birdies_or_better": 2
       },
       "ringer": {
@@ -4943,9 +6319,9 @@
           "15": 4,
           "16": 4,
           "17": 5,
-          "18": 5
+          "18": 4
         },
-        "total": 73,
+        "total": 72,
         "par": 70,
         "holes_played": 18
       },
@@ -4956,10 +6332,10 @@
           "3": 7,
           "4": 6,
           "5": 5,
-          "6": 6,
+          "6": 7,
           "7": 5,
           "8": 6,
-          "9": 5,
+          "9": 6,
           "10": 7,
           "11": 7,
           "12": 5,
@@ -4970,40 +6346,40 @@
           "17": 6,
           "18": 5
         },
-        "total": 103,
+        "total": 105,
         "par": 70,
         "holes_played": 18
       },
-      "skins": 3,
+      "skins": 2,
       "hole_avg": {
-        "1": 5.5,
-        "2": 4.83,
-        "3": 6,
-        "4": 5.17,
+        "1": 5.57,
+        "2": 4.71,
+        "3": 5.86,
+        "4": 5.14,
         "5": 4,
-        "6": 5.33,
-        "7": 3.83,
-        "8": 4.83,
-        "9": 4.17,
-        "10": 5.5,
-        "11": 6.25,
-        "12": 3.75,
-        "13": 4.5,
-        "14": 4.5,
-        "15": 4.25,
-        "16": 4.5,
-        "17": 5.25,
-        "18": 5
+        "6": 5.57,
+        "7": 4,
+        "8": 4.86,
+        "9": 4.43,
+        "10": 5.4,
+        "11": 6.2,
+        "12": 4,
+        "13": 4.6,
+        "14": 4.4,
+        "15": 4.2,
+        "16": 4.6,
+        "17": 5.2,
+        "18": 4.8
       },
-      "avg_gross": 43.6,
+      "avg_gross": 43.83,
       "birdies_or_better": 2
     },
     "Eddie Sauve": {
-      "rounds": 6,
+      "rounds": 7,
       "handicap": {
-        "current": 3.2,
+        "current": 3.0,
         "starting": 6.0,
-        "delta": -2.8,
+        "delta": -3.0,
         "trend": [
           {
             "week": 2,
@@ -5014,30 +6390,34 @@
             "handicap": 5.0
           },
           {
-            "week": 5,
-            "handicap": 4.67
+            "week": 4,
+            "handicap": 5.33
           },
           {
             "week": 6,
-            "handicap": 4.5
+            "handicap": 5.0
           },
           {
-            "week": 9,
-            "handicap": 3.8
+            "week": 7,
+            "handicap": 4.8
           },
           {
             "week": 10,
-            "handicap": 3.2
+            "handicap": 3.8
+          },
+          {
+            "week": 12,
+            "handicap": 3.0
           }
         ]
       },
       "best_round": {
-        "week": 9,
+        "week": 10,
         "nine": "F",
         "gross": 36,
         "to_par": 1,
-        "net": -3.5,
-        "handicap": 4.5
+        "net": -3.8,
+        "handicap": 4.8
       },
       "worst_round": {
         "week": 2,
@@ -5065,48 +6445,56 @@
           "handicap": 6.0
         },
         {
-          "week": 5,
+          "week": 4,
+          "nine": "B",
+          "gross": 41,
+          "to_par": 6,
+          "net": 1.0,
+          "handicap": 5.0
+        },
+        {
+          "week": 6,
           "nine": "F",
+          "gross": 39,
+          "to_par": 4,
+          "net": -1.33,
+          "handicap": 5.33
+        },
+        {
+          "week": 7,
+          "nine": "B",
           "gross": 39,
           "to_par": 4,
           "net": -1.0,
           "handicap": 5.0
         },
         {
-          "week": 6,
-          "nine": "B",
-          "gross": 39,
-          "to_par": 4,
-          "net": -0.67,
-          "handicap": 4.67
-        },
-        {
-          "week": 9,
+          "week": 10,
           "nine": "F",
           "gross": 36,
           "to_par": 1,
-          "net": -3.5,
-          "handicap": 4.5
+          "net": -3.8,
+          "handicap": 4.8
         },
         {
-          "week": 10,
+          "week": 12,
           "nine": "B",
           "gross": 38,
           "to_par": 3,
-          "net": -0.8,
-          "handicap": 3.8
+          "net": -0.75,
+          "handicap": 3.75
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 0,
           "birdie": 6,
-          "par": 24,
-          "bogey": 20,
-          "double": 4,
+          "par": 29,
+          "bogey": 22,
+          "double": 6,
           "triple_plus": 0
         },
-        "holes": 54,
+        "holes": 63,
         "birdies_or_better": 6
       },
       "ringer": {
@@ -5141,7 +6529,7 @@
           "12": 4,
           "13": 4,
           "14": 5,
-          "15": 4,
+          "15": 5,
           "16": 5,
           "17": 5,
           "18": 6,
@@ -5155,7 +6543,7 @@
           "8": 5,
           "9": 5
         },
-        "total": 88,
+        "total": 89,
         "par": 70,
         "holes_played": 18
       },
@@ -5170,25 +6558,198 @@
         "7": 4,
         "8": 4.67,
         "9": 4,
-        "10": 5,
+        "10": 5.25,
         "11": 5,
-        "12": 3.67,
-        "13": 3.67,
-        "14": 4.67,
-        "15": 3.67,
-        "16": 4.33,
+        "12": 3.5,
+        "13": 3.75,
+        "14": 4.5,
+        "15": 4,
+        "16": 4.25,
         "17": 5,
-        "18": 4.33
+        "18": 4.5
       },
-      "avg_gross": 38.67,
+      "avg_gross": 39,
       "birdies_or_better": 6
+    },
+    "Marc Berthiaume": {
+      "rounds": 5,
+      "handicap": {
+        "current": 13.2,
+        "starting": 9.0,
+        "delta": 4.2,
+        "trend": [
+          {
+            "week": 6,
+            "handicap": 9.0
+          },
+          {
+            "week": 7,
+            "handicap": 12.5
+          },
+          {
+            "week": 8,
+            "handicap": 14.33
+          },
+          {
+            "week": 10,
+            "handicap": 13.5
+          },
+          {
+            "week": 11,
+            "handicap": 13.2
+          }
+        ]
+      },
+      "best_round": {
+        "week": 6,
+        "nine": "F",
+        "gross": 44,
+        "to_par": 9,
+        "net": 0.0,
+        "handicap": 9.0
+      },
+      "worst_round": {
+        "week": 8,
+        "nine": "F",
+        "gross": 53,
+        "to_par": 18,
+        "net": 5.5,
+        "handicap": 12.5
+      },
+      "series": [
+        {
+          "week": 6,
+          "nine": "F",
+          "gross": 44,
+          "to_par": 9,
+          "net": 0.0,
+          "handicap": 9.0
+        },
+        {
+          "week": 7,
+          "nine": "B",
+          "gross": 51,
+          "to_par": 16,
+          "net": 7.0,
+          "handicap": 9.0
+        },
+        {
+          "week": 8,
+          "nine": "F",
+          "gross": 53,
+          "to_par": 18,
+          "net": 5.5,
+          "handicap": 12.5
+        },
+        {
+          "week": 10,
+          "nine": "F",
+          "gross": 46,
+          "to_par": 11,
+          "net": -3.33,
+          "handicap": 14.33
+        },
+        {
+          "week": 11,
+          "nine": "F",
+          "gross": 47,
+          "to_par": 12,
+          "net": -1.5,
+          "handicap": 13.5
+        }
+      ],
+      "distribution": {
+        "counts": {
+          "eagle": 0,
+          "birdie": 0,
+          "par": 5,
+          "bogey": 19,
+          "double": 17,
+          "triple_plus": 4
+        },
+        "holes": 45,
+        "birdies_or_better": 0
+      },
+      "ringer": {
+        "holes": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 4,
+          "7": 3,
+          "8": 5,
+          "9": 5,
+          "10": 5,
+          "11": 7,
+          "12": 5,
+          "13": 5,
+          "14": 5,
+          "15": 4,
+          "16": 6,
+          "17": 8,
+          "18": 6
+        },
+        "total": 91,
+        "par": 70,
+        "holes_played": 18
+      },
+      "dinger": {
+        "holes": {
+          "1": 7,
+          "2": 6,
+          "3": 7,
+          "4": 6,
+          "5": 6,
+          "6": 6,
+          "7": 6,
+          "8": 6,
+          "9": 6,
+          "10": 5,
+          "11": 7,
+          "12": 5,
+          "13": 5,
+          "14": 5,
+          "15": 4,
+          "16": 6,
+          "17": 8,
+          "18": 6
+        },
+        "total": 107,
+        "par": 70,
+        "holes_played": 18
+      },
+      "skins": 1,
+      "hole_avg": {
+        "1": 5.75,
+        "2": 5.5,
+        "3": 6.5,
+        "4": 5,
+        "5": 4.75,
+        "6": 5.25,
+        "7": 4,
+        "8": 5.5,
+        "9": 5.25,
+        "10": 5,
+        "11": 7,
+        "12": 5,
+        "13": 5,
+        "14": 5,
+        "15": 4,
+        "16": 6,
+        "17": 8,
+        "18": 6
+      },
+      "avg_gross": 48.2,
+      "birdies_or_better": 0
     },
     "Mike Bondy": {
       "rounds": 10,
       "handicap": {
-        "current": 12.0,
+        "current": 11.6,
         "starting": 17.0,
-        "delta": -5.0,
+        "delta": -5.4,
         "trend": [
           {
             "week": 1,
@@ -5199,45 +6760,45 @@
             "handicap": 14.5
           },
           {
-            "week": 4,
-            "handicap": 12.67
-          },
-          {
             "week": 5,
-            "handicap": 12.75
+            "handicap": 12.33
           },
           {
             "week": 6,
-            "handicap": 12.4
+            "handicap": 12.25
           },
           {
             "week": 7,
-            "handicap": 11.8
+            "handicap": 12.0
           },
           {
             "week": 8,
-            "handicap": 11.8
+            "handicap": 11.4
           },
           {
             "week": 9,
-            "handicap": 11.8
+            "handicap": 11.4
           },
           {
             "week": 10,
-            "handicap": 12.2
+            "handicap": 12.0
           },
           {
             "week": 11,
-            "handicap": 12.0
+            "handicap": 11.6
+          },
+          {
+            "week": 12,
+            "handicap": 11.6
           }
         ]
       },
       "best_round": {
-        "week": 4,
+        "week": 5,
         "nine": "B",
-        "gross": 44,
-        "to_par": 9,
-        "net": -5.5,
+        "gross": 43,
+        "to_par": 8,
+        "net": -6.5,
         "handicap": 14.5
       },
       "worst_round": {
@@ -5266,68 +6827,68 @@
           "handicap": 17.0
         },
         {
-          "week": 4,
+          "week": 5,
           "nine": "B",
-          "gross": 44,
-          "to_par": 9,
-          "net": -5.5,
+          "gross": 43,
+          "to_par": 8,
+          "net": -6.5,
           "handicap": 14.5
         },
         {
-          "week": 5,
-          "nine": "F",
-          "gross": 48,
-          "to_par": 13,
-          "net": 0.33,
-          "handicap": 12.67
-        },
-        {
           "week": 6,
-          "nine": "B",
-          "gross": 46,
-          "to_par": 11,
-          "net": -1.75,
-          "handicap": 12.75
+          "nine": "F",
+          "gross": 47,
+          "to_par": 12,
+          "net": -0.33,
+          "handicap": 12.33
         },
         {
           "week": 7,
-          "nine": "F",
-          "gross": 49,
-          "to_par": 14,
-          "net": 1.6,
-          "handicap": 12.4
+          "nine": "B",
+          "gross": 46,
+          "to_par": 11,
+          "net": -1.25,
+          "handicap": 12.25
         },
         {
           "week": 8,
-          "nine": "B",
-          "gross": 50,
-          "to_par": 15,
-          "net": 3.2,
-          "handicap": 11.8
+          "nine": "F",
+          "gross": 49,
+          "to_par": 14,
+          "net": 2.0,
+          "handicap": 12.0
         },
         {
           "week": 9,
-          "nine": "F",
+          "nine": "B",
           "gross": 50,
           "to_par": 15,
-          "net": 3.2,
-          "handicap": 11.8
+          "net": 3.6,
+          "handicap": 11.4
         },
         {
           "week": 10,
-          "nine": "B",
-          "gross": 49,
-          "to_par": 14,
-          "net": 2.2,
-          "handicap": 11.8
+          "nine": "F",
+          "gross": 50,
+          "to_par": 15,
+          "net": 3.6,
+          "handicap": 11.4
         },
         {
           "week": 11,
           "nine": "F",
           "gross": 48,
           "to_par": 13,
-          "net": 0.8,
-          "handicap": 12.2
+          "net": 1.0,
+          "handicap": 12.0
+        },
+        {
+          "week": 12,
+          "nine": "B",
+          "gross": 49,
+          "to_par": 14,
+          "net": 2.4,
+          "handicap": 11.6
         }
       ],
       "distribution": {
@@ -5335,8 +6896,8 @@
           "eagle": 0,
           "birdie": 0,
           "par": 14,
-          "bogey": 31,
-          "double": 34,
+          "bogey": 33,
+          "double": 32,
           "triple_plus": 11
         },
         "holes": 90,
@@ -5399,7 +6960,7 @@
         "3": 6.4,
         "4": 5,
         "5": 4.6,
-        "6": 5.8,
+        "6": 5.6,
         "7": 5.4,
         "8": 4.8,
         "9": 5.2,
@@ -5411,9 +6972,9 @@
         "15": 4.2,
         "16": 4.6,
         "17": 5.8,
-        "18": 5.4
+        "18": 5.2
       },
-      "avg_gross": 48.3,
+      "avg_gross": 48.1,
       "birdies_or_better": 0
     },
     "Nate Emery": {
@@ -5436,29 +6997,29 @@
             "handicap": 6.67
           },
           {
-            "week": 4,
+            "week": 5,
             "handicap": 5.75
           },
           {
-            "week": 5,
+            "week": 6,
             "handicap": 5.8
           },
           {
-            "week": 8,
-            "handicap": 4.8
-          },
-          {
             "week": 9,
-            "handicap": 4.2
+            "handicap": 5.2
           },
           {
             "week": 10,
+            "handicap": 4.6
+          },
+          {
+            "week": 12,
             "handicap": 4.0
           }
         ]
       },
       "best_round": {
-        "week": 4,
+        "week": 5,
         "nine": "B",
         "gross": 38,
         "to_par": 3,
@@ -5499,7 +7060,7 @@
           "handicap": 6.0
         },
         {
-          "week": 4,
+          "week": 5,
           "nine": "B",
           "gross": 38,
           "to_par": 3,
@@ -5507,7 +7068,7 @@
           "handicap": 6.67
         },
         {
-          "week": 5,
+          "week": 6,
           "nine": "F",
           "gross": 41,
           "to_par": 6,
@@ -5515,7 +7076,7 @@
           "handicap": 5.75
         },
         {
-          "week": 8,
+          "week": 9,
           "nine": "B",
           "gross": 38,
           "to_par": 3,
@@ -5523,20 +7084,20 @@
           "handicap": 5.8
         },
         {
-          "week": 9,
+          "week": 10,
           "nine": "F",
           "gross": 38,
           "to_par": 3,
-          "net": -1.8,
-          "handicap": 4.8
+          "net": -2.2,
+          "handicap": 5.2
         },
         {
-          "week": 10,
+          "week": 12,
           "nine": "B",
           "gross": 40,
           "to_par": 5,
-          "net": 0.8,
-          "handicap": 4.2
+          "net": 1.25,
+          "handicap": 3.75
         }
       ],
       "distribution": {
@@ -5626,11 +7187,11 @@
       "birdies_or_better": 3
     },
     "Nate Hodgins": {
-      "rounds": 10,
+      "rounds": 12,
       "handicap": {
-        "current": 12.0,
+        "current": 12.2,
         "starting": 23.0,
-        "delta": -11.0,
+        "delta": -10.8,
         "trend": [
           {
             "week": 1,
@@ -5642,23 +7203,23 @@
           },
           {
             "week": 4,
-            "handicap": 15.67
+            "handicap": 17.0
           },
           {
             "week": 5,
-            "handicap": 16.25
+            "handicap": 15.75
           },
           {
             "week": 6,
-            "handicap": 15.8
+            "handicap": 16.2
           },
           {
             "week": 7,
-            "handicap": 13.2
+            "handicap": 14.4
           },
           {
             "week": 8,
-            "handicap": 11.8
+            "handicap": 12.8
           },
           {
             "week": 9,
@@ -5666,21 +7227,29 @@
           },
           {
             "week": 10,
-            "handicap": 12.2
+            "handicap": 12.0
           },
           {
             "week": 11,
-            "handicap": 12.0
+            "handicap": 11.8
+          },
+          {
+            "week": 12,
+            "handicap": 11.8
+          },
+          {
+            "week": 13,
+            "handicap": 12.2
           }
         ]
       },
       "best_round": {
-        "week": 7,
+        "week": 8,
         "nine": "F",
         "gross": 45,
         "to_par": 10,
-        "net": -5.8,
-        "handicap": 15.8
+        "net": -4.4,
+        "handicap": 14.4
       },
       "worst_round": {
         "week": 1,
@@ -5710,57 +7279,57 @@
         {
           "week": 4,
           "nine": "B",
-          "gross": 48,
-          "to_par": 13,
-          "net": -4.0,
+          "gross": 52,
+          "to_par": 17,
+          "net": 0.0,
           "handicap": 17.0
         },
         {
           "week": 5,
-          "nine": "F",
-          "gross": 53,
-          "to_par": 18,
-          "net": 2.33,
-          "handicap": 15.67
+          "nine": "B",
+          "gross": 47,
+          "to_par": 12,
+          "net": -5.0,
+          "handicap": 17.0
         },
         {
           "week": 6,
-          "nine": "B",
-          "gross": 49,
-          "to_par": 14,
-          "net": -2.25,
-          "handicap": 16.25
+          "nine": "F",
+          "gross": 53,
+          "to_par": 18,
+          "net": 2.25,
+          "handicap": 15.75
         },
         {
           "week": 7,
-          "nine": "F",
-          "gross": 45,
-          "to_par": 10,
-          "net": -5.8,
-          "handicap": 15.8
-        },
-        {
-          "week": 8,
-          "nine": "B",
-          "gross": 46,
-          "to_par": 11,
-          "net": -2.2,
-          "handicap": 13.2
-        },
-        {
-          "week": 9,
-          "nine": "F",
-          "gross": 48,
-          "to_par": 13,
-          "net": 1.2,
-          "handicap": 11.8
-        },
-        {
-          "week": 10,
           "nine": "B",
           "gross": 49,
           "to_par": 14,
-          "net": 2.4,
+          "net": -2.2,
+          "handicap": 16.2
+        },
+        {
+          "week": 8,
+          "nine": "F",
+          "gross": 45,
+          "to_par": 10,
+          "net": -4.4,
+          "handicap": 14.4
+        },
+        {
+          "week": 9,
+          "nine": "B",
+          "gross": 46,
+          "to_par": 11,
+          "net": -1.8,
+          "handicap": 12.8
+        },
+        {
+          "week": 10,
+          "nine": "F",
+          "gross": 48,
+          "to_par": 13,
+          "net": 1.4,
           "handicap": 11.6
         },
         {
@@ -5768,20 +7337,36 @@
           "nine": "F",
           "gross": 48,
           "to_par": 13,
-          "net": 0.8,
-          "handicap": 12.2
+          "net": 1.0,
+          "handicap": 12.0
+        },
+        {
+          "week": 12,
+          "nine": "B",
+          "gross": 49,
+          "to_par": 14,
+          "net": 2.2,
+          "handicap": 11.8
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 49,
+          "to_par": 14,
+          "net": 2.2,
+          "handicap": 11.8
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 0,
           "birdie": 4,
-          "par": 12,
-          "bogey": 32,
-          "double": 22,
-          "triple_plus": 20
+          "par": 15,
+          "bogey": 37,
+          "double": 28,
+          "triple_plus": 24
         },
-        "holes": 90,
+        "holes": 108,
         "birdies_or_better": 4
       },
       "ringer": {
@@ -5791,9 +7376,9 @@
           "3": 4,
           "4": 5,
           "5": 3,
-          "6": 6,
+          "6": 5,
           "7": 4,
-          "8": 5,
+          "8": 4,
           "9": 4,
           "10": 5,
           "11": 4,
@@ -5805,7 +7390,7 @@
           "17": 5,
           "18": 5
         },
-        "total": 78,
+        "total": 76,
         "par": 70,
         "holes_played": 18
       },
@@ -5814,7 +7399,7 @@
           "1": 7,
           "2": 9,
           "3": 8,
-          "4": 7,
+          "4": 8,
           "5": 6,
           "6": 8,
           "7": 6,
@@ -5828,42 +7413,42 @@
           "15": 5,
           "16": 7,
           "17": 7,
-          "18": 6
+          "18": 7
         },
-        "total": 127,
+        "total": 129,
         "par": 70,
         "holes_played": 18
       },
-      "skins": 12,
+      "skins": 11,
       "hole_avg": {
-        "1": 5.8,
+        "1": 5.83,
         "2": 6,
-        "3": 5.6,
-        "4": 6.2,
-        "5": 4.6,
-        "6": 6.8,
-        "7": 4.6,
-        "8": 5.8,
-        "9": 5,
-        "10": 5.6,
-        "11": 6.2,
-        "12": 5,
-        "13": 5.4,
-        "14": 4.2,
-        "15": 4.2,
-        "16": 5.8,
-        "17": 5.8,
-        "18": 5.4
+        "3": 5.67,
+        "4": 6.5,
+        "5": 4.67,
+        "6": 6.5,
+        "7": 4.67,
+        "8": 5.5,
+        "9": 4.83,
+        "10": 5.83,
+        "11": 6.33,
+        "12": 4.83,
+        "13": 5.5,
+        "14": 4.33,
+        "15": 4,
+        "16": 6,
+        "17": 5.83,
+        "18": 5.5
       },
-      "avg_gross": 49,
+      "avg_gross": 49.17,
       "birdies_or_better": 4
     },
     "Riley Pekar": {
       "rounds": 6,
       "handicap": {
-        "current": 8.4,
+        "current": 7.5,
         "starting": 15.0,
-        "delta": -6.6,
+        "delta": -7.5,
         "trend": [
           {
             "week": 1,
@@ -5874,25 +7459,25 @@
             "handicap": 13.5
           },
           {
-            "week": 6,
+            "week": 7,
             "handicap": 11.33
           },
           {
-            "week": 7,
+            "week": 8,
             "handicap": 10.75
           },
           {
-            "week": 8,
-            "handicap": 10.0
+            "week": 9,
+            "handicap": 8.75
           },
           {
-            "week": 9,
-            "handicap": 8.4
+            "week": 10,
+            "handicap": 7.5
           }
         ]
       },
       "best_round": {
-        "week": 6,
+        "week": 7,
         "nine": "B",
         "gross": 42,
         "to_par": 7,
@@ -5925,7 +7510,7 @@
           "handicap": 15.0
         },
         {
-          "week": 6,
+          "week": 7,
           "nine": "B",
           "gross": 42,
           "to_par": 7,
@@ -5933,7 +7518,7 @@
           "handicap": 13.5
         },
         {
-          "week": 7,
+          "week": 8,
           "nine": "F",
           "gross": 44,
           "to_par": 9,
@@ -5941,7 +7526,7 @@
           "handicap": 11.33
         },
         {
-          "week": 8,
+          "week": 9,
           "nine": "B",
           "gross": 42,
           "to_par": 7,
@@ -5949,12 +7534,12 @@
           "handicap": 10.75
         },
         {
-          "week": 9,
+          "week": 10,
           "nine": "F",
           "gross": 42,
           "to_par": 7,
-          "net": -3.0,
-          "handicap": 10.0
+          "net": -1.75,
+          "handicap": 8.75
         }
       ],
       "distribution": {
@@ -6044,11 +7629,11 @@
       "birdies_or_better": 0
     },
     "Ryan Dimitrov": {
-      "rounds": 11,
+      "rounds": 13,
       "handicap": {
-        "current": 8.6,
+        "current": 8.0,
         "starting": 12.0,
-        "delta": -3.4,
+        "delta": -4.0,
         "trend": [
           {
             "week": 1,
@@ -6064,23 +7649,23 @@
           },
           {
             "week": 4,
-            "handicap": 13.25
+            "handicap": 11.0
           },
           {
             "week": 5,
-            "handicap": 13.8
+            "handicap": 12.2
           },
           {
             "week": 6,
-            "handicap": 12.4
+            "handicap": 12.0
           },
           {
             "week": 7,
-            "handicap": 11.8
+            "handicap": 10.8
           },
           {
             "week": 8,
-            "handicap": 11.2
+            "handicap": 10.6
           },
           {
             "week": 9,
@@ -6088,11 +7673,19 @@
           },
           {
             "week": 10,
-            "handicap": 10.4
+            "handicap": 10.0
           },
           {
             "week": 11,
+            "handicap": 8.2
+          },
+          {
+            "week": 12,
             "handicap": 8.6
+          },
+          {
+            "week": 13,
+            "handicap": 8.0
           }
         ]
       },
@@ -6101,16 +7694,16 @@
         "nine": "F",
         "gross": 39,
         "to_par": 4,
-        "net": -6.4,
-        "handicap": 10.4
+        "net": -6.0,
+        "handicap": 10.0
       },
       "worst_round": {
-        "week": 4,
+        "week": 5,
         "nine": "B",
         "gross": 52,
         "to_par": 17,
-        "net": 5.0,
-        "handicap": 12.0
+        "net": 6.0,
+        "handicap": 11.0
       },
       "series": [
         {
@@ -6140,57 +7733,57 @@
         {
           "week": 4,
           "nine": "B",
-          "gross": 52,
-          "to_par": 17,
-          "net": 5.0,
+          "gross": 43,
+          "to_par": 8,
+          "net": -4.0,
           "handicap": 12.0
         },
         {
           "week": 5,
-          "nine": "F",
-          "gross": 51,
-          "to_par": 16,
-          "net": 2.75,
-          "handicap": 13.25
+          "nine": "B",
+          "gross": 52,
+          "to_par": 17,
+          "net": 6.0,
+          "handicap": 11.0
         },
         {
           "week": 6,
-          "nine": "B",
-          "gross": 45,
-          "to_par": 10,
-          "net": -3.8,
-          "handicap": 13.8
+          "nine": "F",
+          "gross": 51,
+          "to_par": 16,
+          "net": 3.8,
+          "handicap": 12.2
         },
         {
           "week": 7,
-          "nine": "F",
-          "gross": 48,
-          "to_par": 13,
-          "net": 0.6,
-          "handicap": 12.4
-        },
-        {
-          "week": 8,
-          "nine": "B",
-          "gross": 46,
-          "to_par": 11,
-          "net": -0.8,
-          "handicap": 11.8
-        },
-        {
-          "week": 9,
-          "nine": "F",
-          "gross": 43,
-          "to_par": 8,
-          "net": -3.2,
-          "handicap": 11.2
-        },
-        {
-          "week": 10,
           "nine": "B",
           "gross": 45,
           "to_par": 10,
-          "net": -0.4,
+          "net": -2.0,
+          "handicap": 12.0
+        },
+        {
+          "week": 8,
+          "nine": "F",
+          "gross": 48,
+          "to_par": 13,
+          "net": 2.2,
+          "handicap": 10.8
+        },
+        {
+          "week": 9,
+          "nine": "B",
+          "gross": 46,
+          "to_par": 11,
+          "net": 0.4,
+          "handicap": 10.6
+        },
+        {
+          "week": 10,
+          "nine": "F",
+          "gross": 43,
+          "to_par": 8,
+          "net": -2.4,
           "handicap": 10.4
         },
         {
@@ -6198,20 +7791,36 @@
           "nine": "F",
           "gross": 39,
           "to_par": 4,
-          "net": -6.4,
-          "handicap": 10.4
+          "net": -6.0,
+          "handicap": 10.0
+        },
+        {
+          "week": 12,
+          "nine": "B",
+          "gross": 45,
+          "to_par": 10,
+          "net": 1.8,
+          "handicap": 8.2
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 43,
+          "to_par": 8,
+          "net": -0.6,
+          "handicap": 8.6
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 0,
           "birdie": 2,
-          "par": 20,
-          "bogey": 43,
-          "double": 24,
+          "par": 27,
+          "bogey": 49,
+          "double": 29,
           "triple_plus": 10
         },
-        "holes": 99,
+        "holes": 117,
         "birdies_or_better": 2
       },
       "ringer": {
@@ -6228,14 +7837,14 @@
           "10": 5,
           "11": 4,
           "12": 3,
-          "13": 5,
+          "13": 4,
           "14": 4,
-          "15": 4,
+          "15": 3,
           "16": 5,
           "17": 5,
           "18": 4
         },
-        "total": 73,
+        "total": 71,
         "par": 70,
         "holes_played": 18
       },
@@ -6251,7 +7860,7 @@
           "8": 10,
           "9": 6,
           "10": 7,
-          "11": 6,
+          "11": 7,
           "12": 7,
           "13": 8,
           "14": 5,
@@ -6260,40 +7869,138 @@
           "17": 6,
           "18": 5
         },
-        "total": 115,
+        "total": 116,
         "par": 70,
         "holes_played": 18
       },
       "skins": 5,
       "hole_avg": {
-        "1": 5.33,
-        "2": 5,
-        "3": 5.67,
-        "4": 5.17,
-        "5": 4.17,
-        "6": 5.17,
-        "7": 4.33,
-        "8": 5.83,
-        "9": 5.5,
-        "10": 5.6,
-        "11": 5.4,
-        "12": 4.8,
-        "13": 6,
-        "14": 4.6,
-        "15": 4.8,
-        "16": 5.6,
-        "17": 5.2,
-        "18": 4.6
+        "1": 5.43,
+        "2": 4.86,
+        "3": 5.57,
+        "4": 5.14,
+        "5": 4.14,
+        "6": 5,
+        "7": 4.43,
+        "8": 5.71,
+        "9": 5.43,
+        "10": 5.67,
+        "11": 5.67,
+        "12": 4.5,
+        "13": 5.67,
+        "14": 4.67,
+        "15": 4.5,
+        "16": 5.67,
+        "17": 5.17,
+        "18": 4.5
       },
-      "avg_gross": 46.36,
+      "avg_gross": 45.85,
       "birdies_or_better": 2
     },
-    "Travis Valdez": {
-      "rounds": 8,
+    "Scotty": {
+      "rounds": 1,
       "handicap": {
-        "current": 9.6,
+        "current": 7.0,
+        "starting": 7.0,
+        "delta": 0.0,
+        "trend": [
+          {
+            "week": 3,
+            "handicap": 7.0
+          }
+        ]
+      },
+      "best_round": {
+        "week": 3,
+        "nine": "F",
+        "gross": 42,
+        "to_par": 7,
+        "net": 0.0,
+        "handicap": 7.0
+      },
+      "worst_round": {
+        "week": 3,
+        "nine": "F",
+        "gross": 42,
+        "to_par": 7,
+        "net": 0.0,
+        "handicap": 7.0
+      },
+      "series": [
+        {
+          "week": 3,
+          "nine": "F",
+          "gross": 42,
+          "to_par": 7,
+          "net": 0.0,
+          "handicap": 7.0
+        }
+      ],
+      "distribution": {
+        "counts": {
+          "eagle": 0,
+          "birdie": 0,
+          "par": 3,
+          "bogey": 5,
+          "double": 1,
+          "triple_plus": 0
+        },
+        "holes": 9,
+        "birdies_or_better": 0
+      },
+      "ringer": {
+        "holes": {
+          "1": 5,
+          "2": 6,
+          "3": 6,
+          "4": 4,
+          "5": 3,
+          "6": 5,
+          "7": 3,
+          "8": 5,
+          "9": 5
+        },
+        "total": 42,
+        "par": 35,
+        "holes_played": 9
+      },
+      "dinger": {
+        "holes": {
+          "1": 5,
+          "2": 6,
+          "3": 6,
+          "4": 4,
+          "5": 3,
+          "6": 5,
+          "7": 3,
+          "8": 5,
+          "9": 5
+        },
+        "total": 42,
+        "par": 35,
+        "holes_played": 9
+      },
+      "skins": 0,
+      "hole_avg": {
+        "1": 5,
+        "2": 6,
+        "3": 6,
+        "4": 4,
+        "5": 3,
+        "6": 5,
+        "7": 3,
+        "8": 5,
+        "9": 5
+      },
+      "avg_gross": 42,
+      "birdies_or_better": 0
+    },
+    "Travis Valdez": {
+      "rounds": 10,
+      "handicap": {
+        "current": 10.0,
         "starting": 13.0,
-        "delta": -3.4,
+        "delta": -3.0,
         "trend": [
           {
             "week": 1,
@@ -6305,45 +8012,53 @@
           },
           {
             "week": 4,
-            "handicap": 11.67
+            "handicap": 13.0
           },
           {
             "week": 5,
-            "handicap": 12.0
+            "handicap": 12.5
           },
           {
             "week": 6,
-            "handicap": 10.8
+            "handicap": 12.6
           },
           {
             "week": 7,
-            "handicap": 10.2
+            "handicap": 10.8
           },
           {
             "week": 8,
+            "handicap": 10.2
+          },
+          {
+            "week": 9,
             "handicap": 10.0
           },
           {
-            "week": 10,
+            "week": 12,
             "handicap": 9.6
+          },
+          {
+            "week": 13,
+            "handicap": 10.0
           }
         ]
       },
       "best_round": {
-        "week": 6,
+        "week": 7,
         "nine": "B",
         "gross": 41,
         "to_par": 6,
-        "net": -6.0,
-        "handicap": 12.0
+        "net": -6.6,
+        "handicap": 12.6
       },
       "worst_round": {
-        "week": 1,
-        "nine": "F",
-        "gross": 48,
-        "to_par": 13,
-        "net": 0.0,
-        "handicap": 13.0
+        "week": 4,
+        "nine": "B",
+        "gross": 50,
+        "to_par": 15,
+        "net": 3.0,
+        "handicap": 12.0
       },
       "series": [
         {
@@ -6365,29 +8080,37 @@
         {
           "week": 4,
           "nine": "B",
-          "gross": 46,
-          "to_par": 11,
-          "net": -1.0,
+          "gross": 50,
+          "to_par": 15,
+          "net": 3.0,
           "handicap": 12.0
         },
         {
           "week": 5,
-          "nine": "F",
-          "gross": 48,
-          "to_par": 13,
-          "net": 1.33,
-          "handicap": 11.67
+          "nine": "B",
+          "gross": 46,
+          "to_par": 11,
+          "net": -2.0,
+          "handicap": 13.0
         },
         {
           "week": 6,
-          "nine": "B",
-          "gross": 41,
-          "to_par": 6,
-          "net": -6.0,
-          "handicap": 12.0
+          "nine": "F",
+          "gross": 48,
+          "to_par": 13,
+          "net": 0.5,
+          "handicap": 12.5
         },
         {
           "week": 7,
+          "nine": "B",
+          "gross": 41,
+          "to_par": 6,
+          "net": -6.6,
+          "handicap": 12.6
+        },
+        {
+          "week": 8,
           "nine": "F",
           "gross": 45,
           "to_par": 10,
@@ -6395,7 +8118,7 @@
           "handicap": 10.8
         },
         {
-          "week": 8,
+          "week": 9,
           "nine": "B",
           "gross": 47,
           "to_par": 12,
@@ -6403,30 +8126,38 @@
           "handicap": 10.2
         },
         {
-          "week": 10,
+          "week": 12,
           "nine": "B",
           "gross": 44,
           "to_par": 9,
-          "net": -1.0,
-          "handicap": 10.0
+          "net": -1.4,
+          "handicap": 10.4
+        },
+        {
+          "week": 13,
+          "nine": "F",
+          "gross": 48,
+          "to_par": 13,
+          "net": 3.4,
+          "handicap": 9.6
         }
       ],
       "distribution": {
         "counts": {
           "eagle": 1,
           "birdie": 0,
-          "par": 18,
-          "bogey": 28,
-          "double": 17,
-          "triple_plus": 8
+          "par": 21,
+          "bogey": 34,
+          "double": 24,
+          "triple_plus": 10
         },
-        "holes": 72,
+        "holes": 90,
         "birdies_or_better": 1
       },
       "ringer": {
         "holes": {
           "1": 5,
-          "2": 5,
+          "2": 4,
           "3": 6,
           "4": 4,
           "5": 4,
@@ -6444,7 +8175,7 @@
           "17": 5,
           "18": 4
         },
-        "total": 76,
+        "total": 75,
         "par": 70,
         "holes_played": 18
       },
@@ -6456,11 +8187,11 @@
           "4": 7,
           "5": 5,
           "6": 6,
-          "7": 4,
+          "7": 5,
           "8": 6,
           "9": 6,
-          "10": 7,
-          "11": 7,
+          "10": 8,
+          "11": 9,
           "12": 6,
           "13": 5,
           "14": 5,
@@ -6469,39 +8200,176 @@
           "17": 7,
           "18": 5
         },
-        "total": 110,
+        "total": 114,
         "par": 70,
         "holes_played": 18
       },
-      "skins": 3,
+      "skins": 4,
       "hole_avg": {
-        "1": 5.67,
-        "2": 6,
-        "3": 6.67,
-        "4": 5.67,
-        "5": 4.33,
-        "6": 5.33,
-        "7": 3.33,
-        "8": 5,
+        "1": 5.75,
+        "2": 5.5,
+        "3": 6.75,
+        "4": 5.25,
+        "5": 4.5,
+        "6": 5.5,
+        "7": 3.75,
+        "8": 5.25,
         "9": 5,
-        "10": 6,
-        "11": 6,
+        "10": 6.33,
+        "11": 6.5,
         "12": 5,
-        "13": 4.6,
-        "14": 3.8,
-        "15": 4.4,
-        "16": 4.8,
-        "17": 5.8,
-        "18": 4.4
+        "13": 4.67,
+        "14": 4,
+        "15": 4.33,
+        "16": 4.67,
+        "17": 5.67,
+        "18": 4.5
       },
-      "avg_gross": 45.62,
+      "avg_gross": 46.3,
+      "birdies_or_better": 1
+    },
+    "Ty": {
+      "rounds": 2,
+      "handicap": {
+        "current": 7.0,
+        "starting": 5.0,
+        "delta": 2.0,
+        "trend": [
+          {
+            "week": 6,
+            "handicap": 5.0
+          },
+          {
+            "week": 9,
+            "handicap": 7.0
+          }
+        ]
+      },
+      "best_round": {
+        "week": 6,
+        "nine": "F",
+        "gross": 40,
+        "to_par": 5,
+        "net": 0.0,
+        "handicap": 5.0
+      },
+      "worst_round": {
+        "week": 9,
+        "nine": "B",
+        "gross": 44,
+        "to_par": 9,
+        "net": 4.0,
+        "handicap": 5.0
+      },
+      "series": [
+        {
+          "week": 6,
+          "nine": "F",
+          "gross": 40,
+          "to_par": 5,
+          "net": 0.0,
+          "handicap": 5.0
+        },
+        {
+          "week": 9,
+          "nine": "B",
+          "gross": 44,
+          "to_par": 9,
+          "net": 4.0,
+          "handicap": 5.0
+        }
+      ],
+      "distribution": {
+        "counts": {
+          "eagle": 0,
+          "birdie": 1,
+          "par": 8,
+          "bogey": 5,
+          "double": 2,
+          "triple_plus": 2
+        },
+        "holes": 18,
+        "birdies_or_better": 1
+      },
+      "ringer": {
+        "holes": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 4,
+          "5": 3,
+          "6": 4,
+          "7": 5,
+          "8": 5,
+          "9": 4,
+          "10": 5,
+          "11": 4,
+          "12": 4,
+          "13": 4,
+          "14": 4,
+          "15": 3,
+          "16": 7,
+          "17": 7,
+          "18": 6
+        },
+        "total": 84,
+        "par": 70,
+        "holes_played": 18
+      },
+      "dinger": {
+        "holes": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 4,
+          "5": 3,
+          "6": 4,
+          "7": 5,
+          "8": 5,
+          "9": 4,
+          "10": 5,
+          "11": 4,
+          "12": 4,
+          "13": 4,
+          "14": 4,
+          "15": 3,
+          "16": 7,
+          "17": 7,
+          "18": 6
+        },
+        "total": 84,
+        "par": 70,
+        "holes_played": 18
+      },
+      "skins": 0,
+      "hole_avg": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 4,
+        "7": 5,
+        "8": 5,
+        "9": 4,
+        "10": 5,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 3,
+        "16": 7,
+        "17": 7,
+        "18": 6
+      },
+      "avg_gross": 42,
       "birdies_or_better": 1
     }
   },
   "records": {
     "low_gross": {
       "player": "Brock Seguin",
-      "week": 5,
+      "week": 6,
       "gross": 35,
       "to_par": 0
     },
@@ -6511,17 +8379,17 @@
       "net": -12.0
     },
     "most_birdies": {
-      "player": "Eddie Sauve",
-      "count": 6
+      "player": "Austin Crough",
+      "count": 9
     },
     "most_consistent": {
       "player": "Dylan Bell",
-      "std": 1.2,
-      "rounds": 10
+      "std": 1.52,
+      "rounds": 12
     },
     "skins_leader": {
       "player": "Nate Hodgins",
-      "skins": 12
+      "skins": 11
     },
     "sandbagger": {
       "player": "Brock Seguin",
@@ -6536,26 +8404,34 @@
     "Alex Djordjevski": {
       "par_or_better": 4,
       "current": 0,
-      "bounce_back_pct": 36,
-      "bounce_back_n": 25,
+      "bounce_back_pct": 35,
+      "bounce_back_n": 26,
       "clean_holes": 30,
       "total_holes": 99
     },
     "Austin Crough": {
       "par_or_better": 4,
-      "current": 1,
-      "bounce_back_pct": 44,
-      "bounce_back_n": 18,
-      "clean_holes": 33,
-      "total_holes": 81
+      "current": 0,
+      "bounce_back_pct": 45,
+      "bounce_back_n": 20,
+      "clean_holes": 45,
+      "total_holes": 108
+    },
+    "Boots": {
+      "par_or_better": 0,
+      "current": 0,
+      "bounce_back_pct": 0,
+      "bounce_back_n": 6,
+      "clean_holes": 0,
+      "total_holes": 9
     },
     "Brian Holland": {
       "par_or_better": 3,
-      "current": 0,
-      "bounce_back_pct": 29,
-      "bounce_back_n": 14,
-      "clean_holes": 17,
-      "total_holes": 54
+      "current": 1,
+      "bounce_back_pct": 32,
+      "bounce_back_n": 19,
+      "clean_holes": 24,
+      "total_holes": 72
     },
     "Brock Seguin": {
       "par_or_better": 8,
@@ -6565,27 +8441,43 @@
       "clean_holes": 10,
       "total_holes": 18
     },
+    "Dragan Lukic": {
+      "par_or_better": 0,
+      "current": 0,
+      "bounce_back_pct": 0,
+      "bounce_back_n": 4,
+      "clean_holes": 0,
+      "total_holes": 9
+    },
     "Dylan Bell": {
       "par_or_better": 3,
-      "current": 1,
+      "current": 0,
       "bounce_back_pct": 52,
-      "bounce_back_n": 21,
-      "clean_holes": 25,
-      "total_holes": 90
+      "bounce_back_n": 23,
+      "clean_holes": 27,
+      "total_holes": 108
     },
     "Eddie Sauve": {
       "par_or_better": 5,
       "current": 1,
-      "bounce_back_pct": 25,
-      "bounce_back_n": 4,
-      "clean_holes": 30,
-      "total_holes": 54
+      "bounce_back_pct": 50,
+      "bounce_back_n": 6,
+      "clean_holes": 35,
+      "total_holes": 63
+    },
+    "Marc Berthiaume": {
+      "par_or_better": 1,
+      "current": 0,
+      "bounce_back_pct": 10,
+      "bounce_back_n": 21,
+      "clean_holes": 5,
+      "total_holes": 45
     },
     "Mike Bondy": {
       "par_or_better": 2,
       "current": 0,
-      "bounce_back_pct": 11,
-      "bounce_back_n": 44,
+      "bounce_back_pct": 12,
+      "bounce_back_n": 42,
       "clean_holes": 14,
       "total_holes": 90
     },
@@ -6599,11 +8491,11 @@
     },
     "Nate Hodgins": {
       "par_or_better": 2,
-      "current": 1,
-      "bounce_back_pct": 17,
-      "bounce_back_n": 42,
-      "clean_holes": 16,
-      "total_holes": 90
+      "current": 2,
+      "bounce_back_pct": 15,
+      "bounce_back_n": 52,
+      "clean_holes": 19,
+      "total_holes": 108
     },
     "Riley Pekar": {
       "par_or_better": 5,
@@ -6615,42 +8507,65 @@
     },
     "Ryan Dimitrov": {
       "par_or_better": 2,
-      "current": 2,
-      "bounce_back_pct": 24,
-      "bounce_back_n": 34,
-      "clean_holes": 22,
-      "total_holes": 99
+      "current": 0,
+      "bounce_back_pct": 26,
+      "bounce_back_n": 39,
+      "clean_holes": 29,
+      "total_holes": 117
+    },
+    "Scotty": {
+      "par_or_better": 2,
+      "current": 0,
+      "bounce_back_pct": 0,
+      "bounce_back_n": 1,
+      "clean_holes": 3,
+      "total_holes": 9
     },
     "Travis Valdez": {
       "par_or_better": 2,
-      "current": 1,
-      "bounce_back_pct": 20,
-      "bounce_back_n": 25,
-      "clean_holes": 19,
-      "total_holes": 72
+      "current": 0,
+      "bounce_back_pct": 21,
+      "bounce_back_n": 34,
+      "clean_holes": 22,
+      "total_holes": 90
+    },
+    "Ty": {
+      "par_or_better": 4,
+      "current": 0,
+      "bounce_back_pct": 0,
+      "bounce_back_n": 3,
+      "clean_holes": 9,
+      "total_holes": 18
     }
   },
   "splits": {
     "Alex Djordjevski": {
       "par3": 1.09,
-      "par4": 1.08,
-      "par5": 0.55,
-      "front": 1.02,
-      "back": 1.02
+      "par4": 1.09,
+      "par5": 0.45,
+      "front": 1.04,
+      "back": 1.0
     },
     "Austin Crough": {
-      "par3": 0.89,
-      "par4": 0.81,
-      "par5": 0.33,
-      "front": 0.91,
-      "back": 0.61
+      "par3": 0.96,
+      "par4": 0.69,
+      "par5": 0.5,
+      "front": 0.9,
+      "back": 0.49
+    },
+    "Boots": {
+      "par3": 2.5,
+      "par4": 1.83,
+      "par5": 1.0,
+      "front": 1.89,
+      "back": null
     },
     "Brian Holland": {
       "par3": 1.0,
-      "par4": 1.14,
-      "par5": 0.67,
-      "front": 0.92,
-      "back": 1.33
+      "par4": 1.0,
+      "par5": 1.62,
+      "front": 0.82,
+      "back": 1.48
     },
     "Brock Seguin": {
       "par3": 1.75,
@@ -6659,26 +8574,40 @@
       "front": 0.67,
       "back": null
     },
+    "Dragan Lukic": {
+      "par3": 1.5,
+      "par4": 2.17,
+      "par5": 3.0,
+      "front": null,
+      "back": 2.11
+    },
     "Dylan Bell": {
-      "par3": 0.95,
-      "par4": 0.93,
-      "par5": 1.1,
-      "front": 0.96,
-      "back": 0.94
+      "par3": 1.04,
+      "par4": 0.96,
+      "par5": 1.0,
+      "front": 1.02,
+      "back": 0.93
     },
     "Eddie Sauve": {
-      "par3": 0.58,
-      "par4": 0.44,
-      "par5": -0.17,
+      "par3": 0.64,
+      "par4": 0.48,
+      "par5": -0.14,
       "front": 0.33,
-      "back": 0.48
+      "back": 0.53
+    },
+    "Marc Berthiaume": {
+      "par3": 1.4,
+      "par4": 1.47,
+      "par5": 1.6,
+      "front": 1.39,
+      "back": 1.78
     },
     "Mike Bondy": {
       "par3": 1.7,
-      "par4": 1.38,
+      "par4": 1.35,
       "par5": 1.6,
-      "front": 1.6,
-      "back": 1.36
+      "front": 1.58,
+      "back": 1.33
     },
     "Nate Emery": {
       "par3": 0.69,
@@ -6688,11 +8617,11 @@
       "back": 0.47
     },
     "Nate Hodgins": {
-      "par3": 1.6,
-      "par4": 1.65,
-      "par5": 0.9,
-      "front": 1.71,
-      "back": 1.4
+      "par3": 1.54,
+      "par4": 1.68,
+      "par5": 1.0,
+      "front": 1.69,
+      "back": 1.46
     },
     "Riley Pekar": {
       "par3": 1.17,
@@ -6702,54 +8631,80 @@
       "back": 0.96
     },
     "Ryan Dimitrov": {
-      "par3": 1.5,
-      "par4": 1.3,
-      "par5": 0.55,
-      "front": 1.24,
-      "back": 1.29
+      "par3": 1.38,
+      "par4": 1.24,
+      "par5": 0.62,
+      "front": 1.19,
+      "back": 1.22
+    },
+    "Scotty": {
+      "par3": 0.0,
+      "par4": 1.0,
+      "par5": 1.0,
+      "front": 0.78,
+      "back": null
     },
     "Travis Valdez": {
-      "par3": 1.38,
-      "par4": 1.1,
-      "par5": 1.25,
-      "front": 1.33,
-      "back": 1.09
+      "par3": 1.45,
+      "par4": 1.13,
+      "par5": 1.6,
+      "front": 1.36,
+      "back": 1.19
+    },
+    "Ty": {
+      "par3": 0.75,
+      "par4": 1.0,
+      "par5": -0.5,
+      "front": 0.56,
+      "back": 1.0
     }
   },
   "favorites": {
     "Alex Djordjevski": {
       "nemesis": {
         "hole": 1,
-        "over": 2.2,
+        "over": 2.0,
         "par": 4
       },
       "favorite": {
         "hole": 3,
-        "over": -0.4,
+        "over": -0.33,
         "par": 5
       }
     },
     "Austin Crough": {
       "nemesis": {
-        "hole": 2,
-        "over": 1.8,
+        "hole": 5,
+        "over": 1.57,
+        "par": 3
+      },
+      "favorite": {
+        "hole": 14,
+        "over": -0.2,
+        "par": 4
+      }
+    },
+    "Boots": {
+      "nemesis": {
+        "hole": 1,
+        "over": 3.0,
         "par": 4
       },
       "favorite": {
-        "hole": 11,
-        "over": 0.0,
+        "hole": 3,
+        "over": 1.0,
         "par": 5
       }
     },
     "Brian Holland": {
       "nemesis": {
-        "hole": 10,
-        "over": 3.5,
+        "hole": 17,
+        "over": 3.33,
         "par": 4
       },
       "favorite": {
-        "hole": 14,
-        "over": 0.0,
+        "hole": 2,
+        "over": 0.2,
         "par": 4
       }
     },
@@ -6765,27 +8720,51 @@
         "par": 5
       }
     },
-    "Dylan Bell": {
+    "Dragan Lukic": {
       "nemesis": {
-        "hole": 1,
-        "over": 1.5,
+        "hole": 17,
+        "over": 4.0,
         "par": 4
       },
       "favorite": {
-        "hole": 9,
-        "over": 0.17,
+        "hole": 13,
+        "over": 1.0,
+        "par": 4
+      }
+    },
+    "Dylan Bell": {
+      "nemesis": {
+        "hole": 1,
+        "over": 1.57,
+        "par": 4
+      },
+      "favorite": {
+        "hole": 14,
+        "over": 0.4,
         "par": 4
       }
     },
     "Eddie Sauve": {
       "nemesis": {
         "hole": 10,
-        "over": 1.0,
+        "over": 1.25,
         "par": 4
       },
       "favorite": {
-        "hole": 13,
+        "hole": 2,
         "over": -0.33,
+        "par": 4
+      }
+    },
+    "Marc Berthiaume": {
+      "nemesis": {
+        "hole": 17,
+        "over": 4.0,
+        "par": 4
+      },
+      "favorite": {
+        "hole": 4,
+        "over": 1.0,
         "par": 4
       }
     },
@@ -6815,13 +8794,13 @@
     },
     "Nate Hodgins": {
       "nemesis": {
-        "hole": 6,
-        "over": 2.8,
+        "hole": 4,
+        "over": 2.5,
         "par": 4
       },
       "favorite": {
         "hole": 14,
-        "over": 0.2,
+        "over": 0.33,
         "par": 4
       }
     },
@@ -6839,26 +8818,50 @@
     },
     "Ryan Dimitrov": {
       "nemesis": {
-        "hole": 13,
-        "over": 2.0,
+        "hole": 8,
+        "over": 1.71,
         "par": 4
       },
       "favorite": {
-        "hole": 11,
-        "over": 0.4,
-        "par": 5
+        "hole": 18,
+        "over": 0.5,
+        "par": 4
       }
     },
-    "Travis Valdez": {
+    "Scotty": {
       "nemesis": {
         "hole": 2,
         "over": 2.0,
         "par": 4
       },
       "favorite": {
-        "hole": 14,
-        "over": -0.2,
+        "hole": 4,
+        "over": 0.0,
         "par": 4
+      }
+    },
+    "Travis Valdez": {
+      "nemesis": {
+        "hole": 10,
+        "over": 2.33,
+        "par": 4
+      },
+      "favorite": {
+        "hole": 14,
+        "over": 0.0,
+        "par": 4
+      }
+    },
+    "Ty": {
+      "nemesis": {
+        "hole": 16,
+        "over": 3.0,
+        "par": 4
+      },
+      "favorite": {
+        "hole": 11,
+        "over": -1.0,
+        "par": 5
       }
     }
   },
@@ -6910,10 +8913,68 @@
       },
       {
         "x": 12,
-        "y": 2
+        "y": 1
+      },
+      {
+        "x": 13,
+        "y": 1
       }
     ],
     "Austin Crough": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 7,
+        "y": 1
+      },
+      {
+        "x": 8,
+        "y": 1
+      },
+      {
+        "x": 9,
+        "y": 1
+      },
+      {
+        "x": 10,
+        "y": 1
+      },
+      {
+        "x": 11,
+        "y": 1
+      },
+      {
+        "x": 12,
+        "y": 1
+      },
+      {
+        "x": 13,
+        "y": 1
+      }
+    ],
+    "Boots": [
       {
         "x": 1,
         "y": 0
@@ -6936,31 +8997,35 @@
       },
       {
         "x": 6,
-        "y": 1
+        "y": 0
       },
       {
         "x": 7,
-        "y": 1
+        "y": 0
       },
       {
         "x": 8,
-        "y": 1
+        "y": 0
       },
       {
         "x": 9,
-        "y": 1
+        "y": 0
       },
       {
         "x": 10,
-        "y": 2
+        "y": 0
       },
       {
         "x": 11,
-        "y": 2
+        "y": 0
       },
       {
         "x": 12,
-        "y": 2
+        "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
       }
     ],
     "Brian Holland": [
@@ -6990,7 +9055,7 @@
       },
       {
         "x": 7,
-        "y": 2
+        "y": 1
       },
       {
         "x": 8,
@@ -7011,6 +9076,10 @@
       {
         "x": 12,
         "y": 2
+      },
+      {
+        "x": 13,
+        "y": 3
       }
     ],
     "Brock Seguin": [
@@ -7032,7 +9101,7 @@
       },
       {
         "x": 5,
-        "y": 1
+        "y": 0
       },
       {
         "x": 6,
@@ -7061,6 +9130,64 @@
       {
         "x": 12,
         "y": 1
+      },
+      {
+        "x": 13,
+        "y": 1
+      }
+    ],
+    "Dragan Lukic": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 6,
+        "y": 0
+      },
+      {
+        "x": 7,
+        "y": 0
+      },
+      {
+        "x": 8,
+        "y": 0
+      },
+      {
+        "x": 9,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 0
+      },
+      {
+        "x": 11,
+        "y": 0
+      },
+      {
+        "x": 12,
+        "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
       }
     ],
     "Dylan Bell": [
@@ -7111,6 +9238,10 @@
       {
         "x": 12,
         "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
       }
     ],
     "Eddie Sauve": [
@@ -7148,7 +9279,7 @@
       },
       {
         "x": 9,
-        "y": 1
+        "y": 0
       },
       {
         "x": 10,
@@ -7161,6 +9292,64 @@
       {
         "x": 12,
         "y": 1
+      },
+      {
+        "x": 13,
+        "y": 1
+      }
+    ],
+    "Marc Berthiaume": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 6,
+        "y": 0
+      },
+      {
+        "x": 7,
+        "y": 0
+      },
+      {
+        "x": 8,
+        "y": 0
+      },
+      {
+        "x": 9,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 0
+      },
+      {
+        "x": 11,
+        "y": 0
+      },
+      {
+        "x": 12,
+        "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
       }
     ],
     "Mike Bondy": [
@@ -7178,7 +9367,7 @@
       },
       {
         "x": 4,
-        "y": 1
+        "y": 0
       },
       {
         "x": 5,
@@ -7210,6 +9399,10 @@
       },
       {
         "x": 12,
+        "y": 1
+      },
+      {
+        "x": 13,
         "y": 1
       }
     ],
@@ -7261,6 +9454,10 @@
       {
         "x": 12,
         "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
       }
     ],
     "Nate Hodgins": [
@@ -7311,6 +9508,10 @@
       {
         "x": 12,
         "y": 1
+      },
+      {
+        "x": 13,
+        "y": 1
       }
     ],
     "Riley Pekar": [
@@ -7344,7 +9545,7 @@
       },
       {
         "x": 8,
-        "y": 1
+        "y": 0
       },
       {
         "x": 9,
@@ -7360,6 +9561,10 @@
       },
       {
         "x": 12,
+        "y": 1
+      },
+      {
+        "x": 13,
         "y": 1
       }
     ],
@@ -7411,9 +9616,13 @@
       {
         "x": 12,
         "y": 1
+      },
+      {
+        "x": 13,
+        "y": 1
       }
     ],
-    "Travis Valdez": [
+    "Scotty": [
       {
         "x": 1,
         "y": 0
@@ -7461,6 +9670,118 @@
       {
         "x": 12,
         "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
+      }
+    ],
+    "Travis Valdez": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 6,
+        "y": 0
+      },
+      {
+        "x": 7,
+        "y": 1
+      },
+      {
+        "x": 8,
+        "y": 1
+      },
+      {
+        "x": 9,
+        "y": 1
+      },
+      {
+        "x": 10,
+        "y": 1
+      },
+      {
+        "x": 11,
+        "y": 1
+      },
+      {
+        "x": 12,
+        "y": 2
+      },
+      {
+        "x": 13,
+        "y": 2
+      }
+    ],
+    "Ty": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 6,
+        "y": 0
+      },
+      {
+        "x": 7,
+        "y": 0
+      },
+      {
+        "x": 8,
+        "y": 0
+      },
+      {
+        "x": 9,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 0
+      },
+      {
+        "x": 11,
+        "y": 0
+      },
+      {
+        "x": 12,
+        "y": 0
+      },
+      {
+        "x": 13,
+        "y": 0
       }
     ]
   },
@@ -7468,16 +9789,21 @@
     "players": [
       "Alex Djordjevski",
       "Austin Crough",
+      "Boots",
       "Brian Holland",
       "Brock Seguin",
+      "Dragan Lukic",
       "Dylan Bell",
       "Eddie Sauve",
+      "Marc Berthiaume",
       "Mike Bondy",
       "Nate Emery",
       "Nate Hodgins",
       "Riley Pekar",
       "Ryan Dimitrov",
-      "Travis Valdez"
+      "Scotty",
+      "Travis Valdez",
+      "Ty"
     ],
     "holes": [
       1,
@@ -7501,64 +9827,75 @@
     ],
     "values": {
       "Alex Djordjevski": {
-        "1": 2.2,
-        "2": 1.2,
-        "3": -0.4,
-        "4": 1.2,
-        "5": 1.6,
-        "6": 1.4,
-        "7": 0.8,
-        "8": 0.8,
-        "9": 0.4,
-        "10": 1.17,
-        "11": 1.33,
-        "12": 0.67,
-        "13": 0.67,
-        "14": 0.5,
-        "15": 1.33,
-        "16": 0.5,
-        "17": 1.67,
-        "18": 1.33
+        "1": 2.0,
+        "2": 1.5,
+        "3": -0.33,
+        "4": 1.33,
+        "5": 1.5,
+        "6": 1.33,
+        "7": 0.83,
+        "8": 0.67,
+        "9": 0.5,
+        "10": 0.6,
+        "11": 1.4,
+        "12": 0.6,
+        "13": 0.6,
+        "14": 0.8,
+        "15": 1.4,
+        "16": 0.4,
+        "17": 1.6,
+        "18": 1.6
       },
       "Austin Crough": {
         "1": 1.0,
-        "2": 1.8,
-        "3": 0.6,
-        "4": 1.0,
-        "5": 1.2,
+        "2": 1.29,
+        "3": 0.86,
+        "4": 0.71,
+        "5": 1.57,
         "6": 1.0,
-        "7": 0.6,
-        "8": 0.8,
-        "9": 0.2,
-        "10": 1.0,
+        "7": 0.71,
+        "8": 0.71,
+        "9": 0.29,
+        "10": 0.8,
         "11": 0.0,
-        "12": 0.5,
-        "13": 0.5,
-        "14": 0.5,
-        "15": 1.25,
-        "16": 0.25,
-        "17": 1.25,
-        "18": 0.25
+        "12": 0.6,
+        "13": 0.6,
+        "14": -0.2,
+        "15": 0.8,
+        "16": 0.4,
+        "17": 1.0,
+        "18": 0.4
+      },
+      "Boots": {
+        "1": 3.0,
+        "2": 2.0,
+        "3": 1.0,
+        "4": 2.0,
+        "5": 2.0,
+        "6": 2.0,
+        "7": 3.0,
+        "8": 1.0,
+        "9": 1.0
       },
       "Brian Holland": {
-        "10": 3.5,
-        "11": 1.0,
-        "12": 1.0,
-        "13": 0.5,
-        "14": 0.0,
-        "15": 1.5,
-        "16": 0.5,
-        "17": 3.5,
-        "18": 0.5,
-        "1": 1.0,
-        "2": 0.5,
-        "3": 0.5,
-        "4": 0.75,
-        "5": 1.5,
-        "6": 1.25,
-        "7": 0.25,
-        "8": 1.5,
-        "9": 1.0
+        "10": 3.0,
+        "11": 2.33,
+        "12": 1.33,
+        "13": 0.67,
+        "14": 0.33,
+        "15": 1.33,
+        "16": 0.67,
+        "17": 3.33,
+        "18": 0.33,
+        "1": 0.8,
+        "2": 0.2,
+        "3": 1.2,
+        "4": 0.6,
+        "5": 1.4,
+        "6": 1.0,
+        "7": 0.2,
+        "8": 1.4,
+        "9": 0.6
       },
       "Brock Seguin": {
         "1": 1.0,
@@ -7571,36 +9908,47 @@
         "8": 0.5,
         "9": 0.0
       },
+      "Dragan Lukic": {
+        "10": 3.0,
+        "11": 3.0,
+        "12": 2.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 1.0,
+        "16": 1.0,
+        "17": 4.0,
+        "18": 3.0
+      },
       "Dylan Bell": {
-        "1": 1.5,
-        "2": 0.83,
-        "3": 1.0,
-        "4": 1.17,
+        "1": 1.57,
+        "2": 0.71,
+        "3": 0.86,
+        "4": 1.14,
         "5": 1.0,
-        "6": 1.33,
-        "7": 0.83,
-        "8": 0.83,
-        "9": 0.17,
-        "10": 1.5,
-        "11": 1.25,
-        "12": 0.75,
-        "13": 0.5,
-        "14": 0.5,
-        "15": 1.25,
-        "16": 0.5,
-        "17": 1.25,
-        "18": 1.0
+        "6": 1.57,
+        "7": 1.0,
+        "8": 0.86,
+        "9": 0.43,
+        "10": 1.4,
+        "11": 1.2,
+        "12": 1.0,
+        "13": 0.6,
+        "14": 0.4,
+        "15": 1.2,
+        "16": 0.6,
+        "17": 1.2,
+        "18": 0.8
       },
       "Eddie Sauve": {
-        "10": 1.0,
+        "10": 1.25,
         "11": 0.0,
-        "12": 0.67,
-        "13": -0.33,
-        "14": 0.67,
-        "15": 0.67,
-        "16": 0.33,
+        "12": 0.5,
+        "13": -0.25,
+        "14": 0.5,
+        "15": 1.0,
+        "16": 0.25,
         "17": 1.0,
-        "18": 0.33,
+        "18": 0.5,
         "1": 0.67,
         "2": -0.33,
         "3": -0.33,
@@ -7611,13 +9959,33 @@
         "8": 0.67,
         "9": 0.0
       },
+      "Marc Berthiaume": {
+        "1": 1.75,
+        "2": 1.5,
+        "3": 1.5,
+        "4": 1.0,
+        "5": 1.75,
+        "6": 1.25,
+        "7": 1.0,
+        "8": 1.5,
+        "9": 1.25,
+        "10": 1.0,
+        "11": 2.0,
+        "12": 2.0,
+        "13": 1.0,
+        "14": 1.0,
+        "15": 1.0,
+        "16": 2.0,
+        "17": 4.0,
+        "18": 2.0
+      },
       "Mike Bondy": {
         "1": 2.2,
         "2": 2.0,
         "3": 1.4,
         "4": 1.0,
         "5": 1.6,
-        "6": 1.8,
+        "6": 1.6,
         "7": 2.4,
         "8": 0.8,
         "9": 1.2,
@@ -7629,7 +9997,7 @@
         "15": 1.2,
         "16": 0.6,
         "17": 1.8,
-        "18": 1.4
+        "18": 1.2
       },
       "Nate Emery": {
         "1": 1.0,
@@ -7652,24 +10020,24 @@
         "18": 0.25
       },
       "Nate Hodgins": {
-        "1": 1.8,
+        "1": 1.83,
         "2": 2.0,
-        "3": 0.6,
-        "4": 2.2,
-        "5": 1.6,
-        "6": 2.8,
-        "7": 1.6,
-        "8": 1.8,
-        "9": 1.0,
-        "10": 1.6,
-        "11": 1.2,
-        "12": 2.0,
-        "13": 1.4,
-        "14": 0.2,
-        "15": 1.2,
-        "16": 1.8,
-        "17": 1.8,
-        "18": 1.4
+        "3": 0.67,
+        "4": 2.5,
+        "5": 1.67,
+        "6": 2.5,
+        "7": 1.67,
+        "8": 1.5,
+        "9": 0.83,
+        "10": 1.83,
+        "11": 1.33,
+        "12": 1.83,
+        "13": 1.5,
+        "14": 0.33,
+        "15": 1.0,
+        "16": 2.0,
+        "17": 1.83,
+        "18": 1.5
       },
       "Riley Pekar": {
         "1": 1.67,
@@ -7692,44 +10060,75 @@
         "18": 0.67
       },
       "Ryan Dimitrov": {
-        "1": 1.33,
-        "2": 1.0,
-        "3": 0.67,
-        "4": 1.17,
-        "5": 1.17,
-        "6": 1.17,
-        "7": 1.33,
-        "8": 1.83,
-        "9": 1.5,
-        "10": 1.6,
-        "11": 0.4,
-        "12": 1.8,
-        "13": 2.0,
-        "14": 0.6,
-        "15": 1.8,
-        "16": 1.6,
-        "17": 1.2,
-        "18": 0.6
+        "1": 1.43,
+        "2": 0.86,
+        "3": 0.57,
+        "4": 1.14,
+        "5": 1.14,
+        "6": 1.0,
+        "7": 1.43,
+        "8": 1.71,
+        "9": 1.43,
+        "10": 1.67,
+        "11": 0.67,
+        "12": 1.5,
+        "13": 1.67,
+        "14": 0.67,
+        "15": 1.5,
+        "16": 1.67,
+        "17": 1.17,
+        "18": 0.5
+      },
+      "Scotty": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 1.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 1.0,
+        "7": 0.0,
+        "8": 1.0,
+        "9": 1.0
       },
       "Travis Valdez": {
-        "1": 1.67,
-        "2": 2.0,
-        "3": 1.67,
-        "4": 1.67,
-        "5": 1.33,
-        "6": 1.33,
-        "7": 0.33,
-        "8": 1.0,
+        "1": 1.75,
+        "2": 1.5,
+        "3": 1.75,
+        "4": 1.25,
+        "5": 1.5,
+        "6": 1.5,
+        "7": 0.75,
+        "8": 1.25,
         "9": 1.0,
-        "10": 2.0,
-        "11": 1.0,
+        "10": 2.33,
+        "11": 1.5,
         "12": 2.0,
-        "13": 0.6,
-        "14": -0.2,
-        "15": 1.4,
-        "16": 0.8,
-        "17": 1.8,
-        "18": 0.4
+        "13": 0.67,
+        "14": 0.0,
+        "15": 1.33,
+        "16": 0.67,
+        "17": 1.67,
+        "18": 0.5
+      },
+      "Ty": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 2.0,
+        "8": 1.0,
+        "9": 0.0,
+        "10": 1.0,
+        "11": -1.0,
+        "12": 1.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 3.0,
+        "17": 3.0,
+        "18": 2.0
       }
     }
   },
@@ -7788,23 +10187,41 @@
     {
       "week": 4,
       "round": {
-        "player": "Mike Bondy",
-        "net": -5.5,
-        "gross": 44
+        "player": "Austin Crough",
+        "net": -8.67,
+        "gross": 37
       },
       "blowup": {
-        "player": "Ryan Dimitrov",
-        "hole": 12,
-        "strokes": 7,
-        "over": 4
+        "player": "Brian Holland",
+        "hole": 11,
+        "strokes": 10,
+        "over": 5
       },
       "improved": {
-        "player": "Mike Bondy",
-        "delta": -1.83
+        "player": "Austin Crough",
+        "delta": -2.17
       }
     },
     {
       "week": 5,
+      "round": {
+        "player": "Mike Bondy",
+        "net": -6.5,
+        "gross": 43
+      },
+      "blowup": {
+        "player": "Dragan Lukic",
+        "hole": 17,
+        "strokes": 8,
+        "over": 4
+      },
+      "improved": {
+        "player": "Mike Bondy",
+        "delta": -2.17
+      }
+    },
+    {
+      "week": 6,
       "round": {
         "player": "Brock Seguin",
         "net": -12.0,
@@ -7822,28 +10239,28 @@
       }
     },
     {
-      "week": 6,
+      "week": 7,
       "round": {
-        "player": "Austin Crough",
-        "net": -6.5,
-        "gross": 38
+        "player": "Travis Valdez",
+        "net": -6.6,
+        "gross": 41
       },
       "blowup": {
-        "player": "Austin Crough",
-        "hole": 15,
-        "strokes": 5,
-        "over": 2
+        "player": "Marc Berthiaume",
+        "hole": 17,
+        "strokes": 8,
+        "over": 4
       },
       "improved": {
-        "player": "Riley Pekar",
-        "delta": -2.17
+        "player": "Austin Crough",
+        "delta": -2.4
       }
     },
     {
-      "week": 7,
+      "week": 8,
       "round": {
         "player": "Brian Holland",
-        "net": -8.5,
+        "net": -9.4,
         "gross": 38
       },
       "blowup": {
@@ -7853,12 +10270,12 @@
         "over": 4
       },
       "improved": {
-        "player": "Nate Hodgins",
+        "player": "Brian Holland",
         "delta": -2.6
       }
     },
     {
-      "week": 8,
+      "week": 9,
       "round": {
         "player": "Riley Pekar",
         "net": -3.75,
@@ -7866,20 +10283,20 @@
       },
       "blowup": {
         "player": "Alex Djordjevski",
-        "hole": 10,
+        "hole": 17,
         "strokes": 8,
         "over": 4
       },
       "improved": {
-        "player": "Nate Hodgins",
-        "delta": -1.4
+        "player": "Riley Pekar",
+        "delta": -2.0
       }
     },
     {
-      "week": 9,
+      "week": 10,
       "round": {
         "player": "Eddie Sauve",
-        "net": -3.5,
+        "net": -3.8,
         "gross": 36
       },
       "blowup": {
@@ -7890,32 +10307,14 @@
       },
       "improved": {
         "player": "Riley Pekar",
-        "delta": -1.6
-      }
-    },
-    {
-      "week": 10,
-      "round": {
-        "player": "Austin Crough",
-        "net": -1.4,
-        "gross": 39
-      },
-      "blowup": {
-        "player": "Nate Hodgins",
-        "hole": 13,
-        "strokes": 8,
-        "over": 4
-      },
-      "improved": {
-        "player": "Austin Crough",
-        "delta": -0.6
+        "delta": -1.25
       }
     },
     {
       "week": 11,
       "round": {
         "player": "Ryan Dimitrov",
-        "net": -6.4,
+        "net": -6.0,
         "gross": 39
       },
       "blowup": {
@@ -7932,19 +10331,37 @@
     {
       "week": 12,
       "round": {
-        "player": "Alex Djordjevski",
-        "net": 3.4,
-        "gross": 46
+        "player": "Travis Valdez",
+        "net": -1.4,
+        "gross": 44
       },
       "blowup": {
-        "player": "Alex Djordjevski",
-        "hole": 12,
-        "strokes": 5,
-        "over": 2
+        "player": "Nate Hodgins",
+        "hole": 13,
+        "strokes": 8,
+        "over": 4
       },
       "improved": {
-        "player": "Alex Djordjevski",
-        "delta": 0.4
+        "player": "Eddie Sauve",
+        "delta": -0.8
+      }
+    },
+    {
+      "week": 13,
+      "round": {
+        "player": "Brian Holland",
+        "net": -4.25,
+        "gross": 39
+      },
+      "blowup": {
+        "player": "Brian Holland",
+        "hole": 3,
+        "strokes": 9,
+        "over": 4
+      },
+      "improved": {
+        "player": "Brian Holland",
+        "delta": -2.3
       }
     }
   ]

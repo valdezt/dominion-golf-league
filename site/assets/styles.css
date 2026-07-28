@@ -150,6 +150,7 @@ tbody tr:hover td { background: rgba(46,139,87,.06); }
 }
 @media (prefers-color-scheme: dark) { .wk-latest { color: #6fd39e; } }
 .wk-note { margin: -6px 0 14px; font-size: .85rem; color: var(--muted); font-style: italic; }
+.rnote { font-size: .78rem; color: var(--muted); cursor: help; }
 
 /* Awards */
 .awards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }

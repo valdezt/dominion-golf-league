@@ -23,7 +23,7 @@ SCORES = os.path.join(ROOT, "data", "scores.csv")
 WEEKS = os.path.join(ROOT, "data", "weeks.csv")
 INPUT = os.path.join(ROOT, "data", "this_week.txt")
 LOGDIR = os.path.join(ROOT, "data", "weeks_log")
-FIELDS = ["week", "date", "nine", "player"] + [f"h{i}" for i in range(1, 10)]
+FIELDS = ["week", "player"] + [f"h{i}" for i in range(1, 10)] + ["notes"]
 
 TEMPLATE = """# Paste this week's 9-hole scores below — one line per player — then run:
 #     python3 build/add_week.py
@@ -74,16 +74,28 @@ def parse_player_line(line):
 
 
 def load_existing():
+    """Return (have set of (week,player), max played week)."""
     if not os.path.exists(SCORES):
-        return [], set(), {}
+        return set(), 0
     with open(SCORES, newline="") as f:
         rows = list(csv.DictReader(f))
-    have = {(int(r["week"]), r["player"].strip()) for r in rows if r.get("week", "").strip()}
-    last_nine = {}
-    for r in rows:
-        if r.get("week", "").strip():
-            last_nine[int(r["week"])] = (r.get("nine") or "F").strip().upper()[:1]
-    return rows, have, last_nine
+    have = {(int(r["week"]), r["player"].strip()) for r in rows
+            if r.get("week", "").strip() and int(r["week"]) >= 1}
+    max_week = max((w for (w, _) in have), default=0)
+    return have, max_week
+
+
+def load_weeks():
+    """Return week -> [nine, date, note] from weeks.csv."""
+    wk = {}
+    if os.path.exists(WEEKS):
+        with open(WEEKS, newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("week", "").strip():
+                    wk[int(r["week"])] = [(r.get("nine") or "").strip().upper()[:1],
+                                          (r.get("date") or "").strip(),
+                                          (r.get("note") or "").strip()]
+    return wk
 
 
 def main():
@@ -114,59 +126,54 @@ def main():
     if not players:
         die("no player score lines found in this_week.txt.")
 
-    rows, have, last_nine = load_existing()
+    have, max_week = load_existing()
+    wk_meta = load_weeks()
 
     # week
-    if "week" in override:
-        week = int(override["week"])
-    else:
-        week = (max((w for (w, _) in have), default=0) + 1)
-    # nine
+    week = int(override["week"]) if "week" in override else max_week + 1
+    preset = wk_meta.get(week, ["", "", ""])
+    # nine: override, else weeks.csv value, else alternate from prior week, else F
     if "nine" in override:
         nine = "F" if override["nine"].strip().upper().startswith("F") else "B"
+    elif preset[0] in ("F", "B"):
+        nine = preset[0]
     else:
-        prev = last_nine.get(week - 1)
-        nine = "B" if prev == "F" else "F" if prev == "B" else "F"
-    # date: override wins, else a pre-registered weeks.csv date, else today
-    preset_date = ""
-    if os.path.exists(WEEKS):
-        with open(WEEKS, newline="") as f:
-            for r in csv.DictReader(f):
-                if r.get("week", "").strip() and int(r["week"]) == week:
-                    preset_date = (r.get("date") or "").strip()
-    wdate = override.get("date") or preset_date or date.today().isoformat()
+        prev = wk_meta.get(week - 1, ["", "", ""])[0]
+        nine = "B" if prev == "F" else "F"
+    # date: override, else pre-registered weeks.csv date, else today
+    wdate = override.get("date") or preset[1] or date.today().isoformat()
 
     new_rows, skipped = [], []
     for name, scores in players:
         if (week, name) in have:
             skipped.append(name)
             continue
-        new_rows.append([week, wdate, nine, name] + scores)
+        new_rows.append([week, name] + scores + [""])
 
     if not new_rows:
         die(f"every player already has week {week} in scores.csv — nothing to add. "
             f"(Set a different 'week:' to correct an existing week.)")
 
     write_header = not os.path.exists(SCORES)
+    needs_newline = False
+    if not write_header and os.path.getsize(SCORES) > 0:
+        with open(SCORES, "rb") as f:
+            f.seek(-1, os.SEEK_END)
+            needs_newline = f.read(1) != b"\n"
     with open(SCORES, "a", newline="") as f:
+        if needs_newline:
+            f.write("\n")  # guard against a source file with no trailing newline
         w = csv.writer(f)
         if write_header:
             w.writerow(FIELDS)
         w.writerows(new_rows)
 
-    # record the week's date in weeks.csv (create/append if new; preserve notes)
-    wk_meta = {}
-    if os.path.exists(WEEKS):
-        with open(WEEKS, newline="") as f:
-            for r in csv.DictReader(f):
-                if r.get("week", "").strip():
-                    wk_meta[int(r["week"])] = [(r.get("date") or "").strip(),
-                                               (r.get("note") or "").strip()]
+    # register the week in weeks.csv (create/append if new; preserve nine/note)
     if week not in wk_meta:
-        wk_meta[week] = [wdate, ""]
+        wk_meta[week] = [nine, wdate, ""]
         with open(WEEKS, "w", newline="") as f:
             w = csv.writer(f)
-            w.writerow(["week", "date", "note"])
+            w.writerow(["week", "nine", "date", "note"])
             for k in sorted(wk_meta):
                 w.writerow([k] + wk_meta[k])
 

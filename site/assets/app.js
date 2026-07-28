@@ -101,8 +101,9 @@ function viewWeek(main) {
       const s = r.holes[String(h)];
       return `<td class="${scoreClass(s, parOf(h))}">${s ?? ''}</td>`;
     }).join('');
+    const noteTag = r.notes ? ` <span class="rnote" title="${r.notes}">↩︎</span>` : '';
     return `<tr class="${isMe(r.player) ? 'me' : ''}">
-      <td class="name">${i === 0 ? '🏆 ' : ''}${r.player}</td>${cells}
+      <td class="name">${i === 0 ? '🏆 ' : ''}${r.player}${noteTag}</td>${cells}
       <td class="total-col">${r.gross}</td><td>${fmt(r.handicap)}</td>
       <td class="total-col">${signed(r.net)}</td></tr>`;
   }).join('');

@@ -74,7 +74,7 @@ function viewWeek(main) {
     <div class="week-nav">
       <button class="wk-btn" id="wk-prev" ${weekIdx === 0 ? 'disabled' : ''} aria-label="Previous week">‹</button>
       <select class="wk-select" id="wk-select">
-        ${weeks.map((w, i) => `<option value="${i}" ${i === weekIdx ? 'selected' : ''}>Week ${w.week} · ${w.nine === 'F' ? 'Front' : 'Back'}${w.date ? ' · ' + w.date : ''}</option>`).join('')}
+        ${weeks.map((w, i) => `<option value="${i}" ${i === weekIdx ? 'selected' : ''}>Week ${w.week} · ${w.nine === 'F' ? 'Front' : 'Back'}${w.date ? ' · ' + fmtDate(w.date) : ''}</option>`).join('')}
       </select>
       <button class="wk-btn" id="wk-next" ${isLatest ? 'disabled' : ''} aria-label="Next week">›</button>
       ${isLatest ? '<span class="pill">Current</span>' : `<button class="wk-latest" id="wk-latest">Jump to current ⟶</button>`}
@@ -84,7 +84,7 @@ function viewWeek(main) {
     <div class="tiles">
       <div class="tile"><div class="label">Winner (net)</div><div class="value">🏆 ${first(rows) ? shortName(first(rows).player) : '–'}</div><div class="who">net ${first(rows) ? signed(first(rows).net) : '–'}</div></div>
       <div class="tile"><div class="label">Low gross</div><div class="value">${Math.min(...rows.map(r => r.gross))}</div><div class="who">${shortName(rows.reduce((a, b) => a.gross <= b.gross ? a : b).player)}</div></div>
-      <div class="tile"><div class="label">Turnout</div><div class="value">${rows.length}</div><div class="who">${nineName} · par ${wk.par}</div></div>
+      <div class="tile"><div class="label">${wk.date ? 'Played' : 'Turnout'}</div><div class="value">${wk.date ? fmtDate(wk.date) : rows.length}</div><div class="who">${wk.date ? nineName + ' · ' + rows.length + ' played' : nineName + ' · par ' + wk.par}</div></div>
     </div>`;
 
   const head = `<tr><th class="name">Player</th>` +
@@ -108,7 +108,7 @@ function viewWeek(main) {
 
   main.innerHTML = `
     <h2 class="view-title">${isLatest ? 'This Week' : 'Week ' + wk.week}</h2>
-    <p class="view-intro">${isLatest ? 'Latest scorecard' : 'Scorecard'}, ranked by net — use ‹ › to browse the season. Colors: <span class="s-birdie">birdie+</span>, <span class="s-bogey">bogey</span>, <span class="s-double">double</span>, <span class="s-triple">worse</span>.</p>
+    <p class="view-intro">${isLatest ? 'Latest scorecard' : 'Scorecard'}${wk.date ? ' · ' + fmtDate(wk.date, true) : ''}, ranked by net — use ‹ › to browse the season. Colors: <span class="s-birdie">birdie+</span>, <span class="s-bogey">bogey</span>, <span class="s-double">double</span>, <span class="s-triple">worse</span>.</p>
     ${nav}
     ${tiles}
     ${awardsCard(DATA.awards.find(a => a.week === wk.week))}
@@ -462,6 +462,14 @@ function chartLegend(series) {
 // ---------- utils ----------
 function first(arr) { return arr && arr.length ? arr[0] : null; }
 function shortName(full) { const parts = full.split(' '); return parts.length > 1 ? `${parts[0]} ${parts[parts.length - 1][0]}.` : full; }
+function fmtDate(iso, long) {
+  const m = iso && /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return iso || '';
+  const d = new Date(+m[1], +m[2] - 1, +m[3]);
+  return d.toLocaleDateString('en-US', long
+    ? { weekday: 'short', month: 'short', day: 'numeric' }
+    : { month: 'short', day: 'numeric' });
+}
 function isMe(p) { return HIGHLIGHT_PLAYER && p === HIGHLIGHT_PLAYER; }
 
 // ---------- boot ----------

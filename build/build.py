@@ -22,6 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 COURSE_CSV = os.path.join(ROOT, "data", "course.csv")
 SCORES_CSV = os.path.join(ROOT, "data", "scores.csv")
+WEEKS_CSV = os.path.join(ROOT, "data", "weeks.csv")
 OUT = os.path.join(ROOT, "site", "data.json")
 
 WINDOW = 8       # look back this many league weeks
@@ -37,6 +38,17 @@ def load_course():
                 "si": int(r["stroke_index"]),
             }
     return holes
+
+
+def load_week_dates():
+    """Optional week -> date map (data/weeks.csv). Authoritative for display."""
+    dates = {}
+    if os.path.exists(WEEKS_CSV):
+        with open(WEEKS_CSV, newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("week", "").strip():
+                    dates[int(r["week"])] = (r.get("date") or "").strip()
+    return dates
 
 
 def load_rounds(course):
@@ -82,6 +94,7 @@ def rnd(x, n=2):
 def build():
     course = load_course()
     rounds = load_rounds(course)
+    week_dates = load_week_dates()
 
     players = sorted({p for (p, _) in rounds})
     league_weeks = sorted({w for (_, w) in rounds})
@@ -100,7 +113,8 @@ def build():
     weeks = []
     for w in league_weeks:
         nine = next((rd["nine"] for (p, ww), rd in rounds.items() if ww == w), "F")
-        wdate = next((rd["date"] for (p, ww), rd in rounds.items() if ww == w and rd["date"]), "")
+        wdate = week_dates.get(w) or next(
+            (rd["date"] for (p, ww), rd in rounds.items() if ww == w and rd["date"]), "")
         holes_played = sorted(
             {h for (p, ww), rd in rounds.items() if ww == w for h in rd["holes"]}
         )

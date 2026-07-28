@@ -20,6 +20,7 @@ from datetime import date
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SCORES = os.path.join(ROOT, "data", "scores.csv")
+WEEKS = os.path.join(ROOT, "data", "weeks.csv")
 INPUT = os.path.join(ROOT, "data", "this_week.txt")
 LOGDIR = os.path.join(ROOT, "data", "weeks_log")
 FIELDS = ["week", "date", "nine", "player"] + [f"h{i}" for i in range(1, 10)]
@@ -146,6 +147,21 @@ def main():
         if write_header:
             w.writerow(FIELDS)
         w.writerows(new_rows)
+
+    # record the week's date in weeks.csv (create/append if new)
+    wk_dates = {}
+    if os.path.exists(WEEKS):
+        with open(WEEKS, newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("week", "").strip():
+                    wk_dates[int(r["week"])] = (r.get("date") or "").strip()
+    if week not in wk_dates:
+        wk_dates[week] = wdate
+        with open(WEEKS, "w", newline="") as f:
+            w = csv.writer(f)
+            w.writerow(["week", "date"])
+            for k in sorted(wk_dates):
+                w.writerow([k, wk_dates[k]])
 
     # archive what was entered, then reset the input file
     os.makedirs(LOGDIR, exist_ok=True)

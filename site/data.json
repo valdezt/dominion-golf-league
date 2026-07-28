@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-28 16:39 UTC",
+    "generated_at": "2026-07-28 16:47 UTC",
     "players": [
       "Alex Djordjevski",
       "Austin Crough",
@@ -10987,5 +10987,580 @@
       "label": "Consistency",
       "score": 53.78
     }
-  ]
+  ],
+  "trophies": {
+    "badges": [
+      {
+        "id": "ace",
+        "emoji": "\ud83d\udd73\ufe0f",
+        "name": "Hole-in-One",
+        "desc": "Aced a par 3",
+        "holders": []
+      },
+      {
+        "id": "eagle",
+        "emoji": "\ud83e\udd85",
+        "name": "Eagle",
+        "desc": "2+ under par on a hole",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "3 on hole 3 (wk 8)"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "2 on hole 14 (wk 7)"
+          }
+        ]
+      },
+      {
+        "id": "sub40",
+        "emoji": "\ud83c\udfaf",
+        "name": "Sub-40",
+        "desc": "Broke 40 for nine holes",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "37 (wk 4)"
+          },
+          {
+            "player": "Brian Holland",
+            "detail": "38 (wk 8)"
+          },
+          {
+            "player": "Brock Seguin",
+            "detail": "35 (wk 6)"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "36 (wk 10)"
+          },
+          {
+            "player": "Nate Emery",
+            "detail": "38 (wk 5)"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "39 (wk 11)"
+          }
+        ]
+      },
+      {
+        "id": "birdie_hunter",
+        "emoji": "\ud83d\udc26",
+        "name": "Birdie Hunter",
+        "desc": "5+ birdies or better",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "9 birdies+"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "6 birdies+"
+          }
+        ]
+      },
+      {
+        "id": "winner",
+        "emoji": "\ud83c\udfc6",
+        "name": "Weekly Winner",
+        "desc": "Won a week on net",
+        "holders": [
+          {
+            "player": "Alex Djordjevski",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Austin Crough",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Brian Holland",
+            "detail": "3 win(s)"
+          },
+          {
+            "player": "Brock Seguin",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Mike Bondy",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Nate Hodgins",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Riley Pekar",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "1 win(s)"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "2 win(s)"
+          }
+        ]
+      },
+      {
+        "id": "skins",
+        "emoji": "\ud83d\udcb0",
+        "name": "Skins Baron",
+        "desc": "Won 5+ skins",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "7 skins"
+          },
+          {
+            "player": "Brian Holland",
+            "detail": "7 skins"
+          },
+          {
+            "player": "Nate Hodgins",
+            "detail": "11 skins"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "5 skins"
+          }
+        ]
+      },
+      {
+        "id": "sandbagger",
+        "emoji": "\ud83c\udfa3",
+        "name": "Sandbagger",
+        "desc": "Beat handicap by 5+ in a round",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "net -8.67 (wk 4)"
+          },
+          {
+            "player": "Brian Holland",
+            "detail": "net -9.4 (wk 8)"
+          },
+          {
+            "player": "Brock Seguin",
+            "detail": "net -12.0 (wk 6)"
+          },
+          {
+            "player": "Mike Bondy",
+            "detail": "net -6.5 (wk 5)"
+          },
+          {
+            "player": "Nate Hodgins",
+            "detail": "net -12.0 (wk 2)"
+          },
+          {
+            "player": "Riley Pekar",
+            "detail": "net -6.5 (wk 7)"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "net -6.0 (wk 11)"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "net -6.6 (wk 7)"
+          }
+        ]
+      },
+      {
+        "id": "comeback",
+        "emoji": "\ud83d\udcc9",
+        "name": "Comeback",
+        "desc": "Cut handicap by 3+ strokes",
+        "holders": [
+          {
+            "player": "Brian Holland",
+            "detail": "-6.5"
+          },
+          {
+            "player": "Brock Seguin",
+            "detail": "-6.0"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "-3.0"
+          },
+          {
+            "player": "Mike Bondy",
+            "detail": "-5.4"
+          },
+          {
+            "player": "Nate Hodgins",
+            "detail": "-10.8"
+          },
+          {
+            "player": "Riley Pekar",
+            "detail": "-7.5"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "-4.0"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "-3.0"
+          }
+        ]
+      },
+      {
+        "id": "reliable",
+        "emoji": "\ud83e\uddca",
+        "name": "Mr. Reliable",
+        "desc": "Std dev \u2264 2.5 (4+ rounds)",
+        "holders": [
+          {
+            "player": "Alex Djordjevski",
+            "detail": "\u00b12.17"
+          },
+          {
+            "player": "Dylan Bell",
+            "detail": "\u00b11.52"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "\u00b11.6"
+          },
+          {
+            "player": "Mike Bondy",
+            "detail": "\u00b12.39"
+          },
+          {
+            "player": "Nate Emery",
+            "detail": "\u00b11.73"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "\u00b12.41"
+          }
+        ]
+      },
+      {
+        "id": "onfire",
+        "emoji": "\ud83d\udd25",
+        "name": "On Fire",
+        "desc": "Par-or-better streak of 4+",
+        "holders": [
+          {
+            "player": "Alex Djordjevski",
+            "detail": "4 holes"
+          },
+          {
+            "player": "Austin Crough",
+            "detail": "4 holes"
+          },
+          {
+            "player": "Brock Seguin",
+            "detail": "8 holes"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "5 holes"
+          },
+          {
+            "player": "Nate Emery",
+            "detail": "4 holes"
+          },
+          {
+            "player": "Riley Pekar",
+            "detail": "5 holes"
+          },
+          {
+            "player": "Ty",
+            "detail": "4 holes"
+          }
+        ]
+      },
+      {
+        "id": "bounceback",
+        "emoji": "\ud83e\ude83",
+        "name": "Bounce-Back King",
+        "desc": "40%+ bounce-back (5+ chances)",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "45%"
+          },
+          {
+            "player": "Dylan Bell",
+            "detail": "52%"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "50%"
+          },
+          {
+            "player": "Nate Emery",
+            "detail": "80%"
+          }
+        ]
+      },
+      {
+        "id": "par5",
+        "emoji": "\ud83e\udd8f",
+        "name": "Par-5 Slayer",
+        "desc": "At or under par on par 5s (4+ rounds)",
+        "holders": [
+          {
+            "player": "Eddie Sauve",
+            "detail": "-0.14"
+          }
+        ]
+      },
+      {
+        "id": "dreamcard",
+        "emoji": "\ud83d\udc8e",
+        "name": "Dream Card",
+        "desc": "Ringer round 5+ under par",
+        "holders": [
+          {
+            "player": "Austin Crough",
+            "detail": "-7"
+          },
+          {
+            "player": "Eddie Sauve",
+            "detail": "-5"
+          }
+        ]
+      },
+      {
+        "id": "veteran",
+        "emoji": "\ud83c\udf96\ufe0f",
+        "name": "Veteran",
+        "desc": "Played 10+ rounds",
+        "holders": [
+          {
+            "player": "Alex Djordjevski",
+            "detail": "11 rounds"
+          },
+          {
+            "player": "Austin Crough",
+            "detail": "12 rounds"
+          },
+          {
+            "player": "Dylan Bell",
+            "detail": "12 rounds"
+          },
+          {
+            "player": "Mike Bondy",
+            "detail": "10 rounds"
+          },
+          {
+            "player": "Nate Hodgins",
+            "detail": "12 rounds"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "13 rounds"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "10 rounds"
+          }
+        ]
+      },
+      {
+        "id": "ironman",
+        "emoji": "\ud83e\uddf1",
+        "name": "Iron Man",
+        "desc": "Perfect attendance",
+        "holders": [
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "13/13"
+          }
+        ]
+      },
+      {
+        "id": "snowman",
+        "emoji": "\ud83d\udc80",
+        "name": "Snowman",
+        "desc": "Carded an 8 or worse on a hole",
+        "holders": [
+          {
+            "player": "Alex Djordjevski",
+            "detail": "8 on hole 17 (wk 9)"
+          },
+          {
+            "player": "Austin Crough",
+            "detail": "8 on hole 3 (wk 13)"
+          },
+          {
+            "player": "Brian Holland",
+            "detail": "9 on hole 3 (wk 13)"
+          },
+          {
+            "player": "Brock Seguin",
+            "detail": "8 on hole 7 (wk 1)"
+          },
+          {
+            "player": "Dragan Lukic",
+            "detail": "8 on hole 17 (wk 5)"
+          },
+          {
+            "player": "Marc Berthiaume",
+            "detail": "8 on hole 17 (wk 7)"
+          },
+          {
+            "player": "Mike Bondy",
+            "detail": "8 on hole 1 (wk 10)"
+          },
+          {
+            "player": "Nate Hodgins",
+            "detail": "8 on hole 4 (wk 13)"
+          },
+          {
+            "player": "Riley Pekar",
+            "detail": "8 on hole 3 (wk 1)"
+          },
+          {
+            "player": "Ryan Dimitrov",
+            "detail": "10 on hole 8 (wk 6)"
+          },
+          {
+            "player": "Travis Valdez",
+            "detail": "8 on hole 3 (wk 8)"
+          }
+        ]
+      }
+    ],
+    "by_player": {
+      "Austin Crough": [
+        "eagle",
+        "sub40",
+        "birdie_hunter",
+        "winner",
+        "skins",
+        "sandbagger",
+        "onfire",
+        "bounceback",
+        "dreamcard",
+        "veteran",
+        "snowman"
+      ],
+      "Travis Valdez": [
+        "eagle",
+        "winner",
+        "sandbagger",
+        "comeback",
+        "reliable",
+        "veteran",
+        "snowman"
+      ],
+      "Brian Holland": [
+        "sub40",
+        "winner",
+        "skins",
+        "sandbagger",
+        "comeback",
+        "snowman"
+      ],
+      "Brock Seguin": [
+        "sub40",
+        "winner",
+        "sandbagger",
+        "comeback",
+        "onfire",
+        "snowman"
+      ],
+      "Eddie Sauve": [
+        "sub40",
+        "birdie_hunter",
+        "winner",
+        "comeback",
+        "reliable",
+        "onfire",
+        "bounceback",
+        "par5",
+        "dreamcard"
+      ],
+      "Nate Emery": [
+        "sub40",
+        "reliable",
+        "onfire",
+        "bounceback"
+      ],
+      "Ryan Dimitrov": [
+        "sub40",
+        "winner",
+        "skins",
+        "sandbagger",
+        "comeback",
+        "veteran",
+        "ironman",
+        "snowman"
+      ],
+      "Alex Djordjevski": [
+        "winner",
+        "reliable",
+        "onfire",
+        "veteran",
+        "snowman"
+      ],
+      "Mike Bondy": [
+        "winner",
+        "sandbagger",
+        "comeback",
+        "reliable",
+        "veteran",
+        "snowman"
+      ],
+      "Nate Hodgins": [
+        "winner",
+        "skins",
+        "sandbagger",
+        "comeback",
+        "veteran",
+        "snowman"
+      ],
+      "Riley Pekar": [
+        "winner",
+        "sandbagger",
+        "comeback",
+        "onfire",
+        "snowman"
+      ],
+      "Dylan Bell": [
+        "reliable",
+        "bounceback",
+        "veteran"
+      ],
+      "Ty": [
+        "onfire"
+      ],
+      "Dragan Lukic": [
+        "snowman"
+      ],
+      "Marc Berthiaume": [
+        "snowman"
+      ]
+    },
+    "counts": {
+      "Austin Crough": 11,
+      "Travis Valdez": 7,
+      "Brian Holland": 6,
+      "Brock Seguin": 6,
+      "Eddie Sauve": 9,
+      "Nate Emery": 4,
+      "Ryan Dimitrov": 8,
+      "Alex Djordjevski": 5,
+      "Mike Bondy": 6,
+      "Nate Hodgins": 6,
+      "Riley Pekar": 5,
+      "Dylan Bell": 3,
+      "Ty": 1,
+      "Dragan Lukic": 1,
+      "Marc Berthiaume": 1
+    }
+  }
 }

@@ -37,6 +37,7 @@ const TABS = [
   ['dinger', 'Dinger'],
   ['fun', 'Fun Stats'],
   ['streaks', 'Streaks'],
+  ['trophies', 'Trophies'],
   ['players', 'Players'],
 ];
 
@@ -55,7 +56,8 @@ function show(tab) {
   window.scrollTo({ top: 0 });
   ({ week: viewWeek, standings: viewStandings, handicaps: viewHandicaps,
      ringer: () => viewBoard('ringer'), dinger: () => viewBoard('dinger'),
-     fun: viewFun, streaks: viewStreaks, players: viewPlayers }[tab])(main);
+     fun: viewFun, streaks: viewStreaks, trophies: viewTrophies,
+     players: viewPlayers }[tab])(main);
   location.hash = tab;
 }
 
@@ -367,6 +369,36 @@ function viewStreaks(main) {
       <div class="tiles" style="margin:0">${favCards}</div></div>`;
 }
 
+// ---------- Trophies ----------
+function viewTrophies(main) {
+  const t = DATA.trophies;
+  const leaders = Object.entries(t.counts).sort((a, b) => b[1] - a[1]).slice(0, 3);
+  const medals = ['🥇', '🥈', '🥉'];
+  const leaderTiles = leaders.map(([p, n], i) =>
+    `<div class="tile"><div class="label">${medals[i]} ${i === 0 ? 'Most trophies' : 'Runner-up'}</div>
+      <div class="value">${n}</div><div class="who">${shortName(p)}</div></div>`).join('');
+
+  const cards = t.badges.map(b => {
+    const locked = b.holders.length === 0;
+    const holders = locked
+      ? `<div class="badge-locked">🔒 Not yet unlocked</div>`
+      : `<div class="badge-holders">${b.holders.map(h =>
+          `<span class="badge-chip">${shortName(h.player)}<span class="note"> ${h.detail}</span></span>`).join('')}</div>`;
+    return `<div class="badge-card${locked ? ' is-locked' : ''}">
+      <div class="badge-top"><span class="badge-emoji">${b.emoji}</span>
+        <span class="badge-count">${locked ? '—' : b.holders.length}</span></div>
+      <div class="badge-name">${b.name}</div>
+      <div class="badge-desc">${b.desc}</div>
+      ${holders}</div>`;
+  }).join('');
+
+  main.innerHTML = `
+    <h2 class="view-title">🏆 Trophy Case</h2>
+    <p class="view-intro">Season-long achievements, all earned from hole-by-hole play. Rarest are hardest — some are still up for grabs.</p>
+    <div class="tiles">${leaderTiles}</div>
+    <div class="badge-grid">${cards}</div>`;
+}
+
 // ---------- Players ----------
 let currentPlayer = null;
 function viewPlayers(main) {
@@ -410,7 +442,15 @@ function renderProfile(root, p) {
   }).join('');
   const heatHead = holes.map(hh => `<th>${hh}</th>`).join('');
 
+  const myBadges = DATA.trophies.badges
+    .map(b => ({ b, hd: b.holders.find(h => h.player === p) }))
+    .filter(x => x.hd);
+  const badgeStrip = myBadges.length ? `<div class="card"><h3 class="section-title">🏅 Trophies (${myBadges.length})</h3>
+    <div class="badge-strip">${myBadges.map(({ b, hd }) =>
+      `<span class="badge-mini" title="${b.name} — ${b.desc} (${hd.detail})">${b.emoji} ${b.name}</span>`).join('')}</div></div>` : '';
+
   root.innerHTML = `${tiles}
+    ${badgeStrip}
     ${radarCard(p)}
     <div class="grid-2">
       <div class="card"><h3 class="section-title">Score vs par</h3>${lineChart(gSeries, { yLabel: 'To par', invertBetter: true })}</div>

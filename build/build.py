@@ -96,6 +96,12 @@ def rnd(x, n=2):
     return None if x is None else round(x, n)
 
 
+def sgn(x):
+    if x is None:
+        return "–"
+    return f"+{x}" if x > 0 else f"{x}"
+
+
 def build():
     course = load_course()
     week_meta = load_week_meta()
@@ -473,6 +479,86 @@ def build():
         sc = [dna[p]["axes"][i]["score"] for p in qualified if dna[p]["axes"][i]["score"] is not None]
         dna_league.append({"label": label, "score": rnd(statistics.mean(sc)) if sc else None})
 
+    # ---- trophy case (achievements) ----
+    aces, eagles, snowmen = {}, {}, {}
+    for (p, w), rd in rounds.items():
+        for h, s in rd["holes"].items():
+            par = course[h]["par"]
+            if s == 1 and par == 3:
+                aces.setdefault(p, f"hole {h}, wk {w}")
+            if s - par <= -2:
+                eagles.setdefault(p, f"{s} on hole {h} (wk {w})")
+            if s >= 8:
+                snowmen[p] = f"{s} on hole {h} (wk {w})"
+    best_net_round = {}
+    for wk in weeks:
+        for r in wk["results"]:
+            if r["net"] is None:
+                continue
+            cur = best_net_round.get(r["player"])
+            if cur is None or r["net"] < cur[0]:
+                best_net_round[r["player"]] = (r["net"], wk["week"])
+
+    badge_defs = []
+
+    def add_badge(bid, emoji, name, desc, holders):
+        badge_defs.append({
+            "id": bid, "emoji": emoji, "name": name, "desc": desc,
+            "holders": [{"player": p, "detail": d} for p, d in sorted(holders.items())],
+        })
+
+    add_badge("ace", "🕳️", "Hole-in-One", "Aced a par 3", aces)
+    add_badge("eagle", "🦅", "Eagle", "2+ under par on a hole", eagles)
+    add_badge("sub40", "🎯", "Sub-40", "Broke 40 for nine holes",
+              {p: f"{pr['best_round']['gross']} (wk {pr['best_round']['week']})"
+               for p, pr in profiles.items()
+               if pr["best_round"] and pr["best_round"]["gross"] < 40})
+    add_badge("birdie_hunter", "🐦", "Birdie Hunter", "5+ birdies or better",
+              {p: f"{distribution[p]['birdies_or_better']} birdies+" for p in players
+               if distribution[p]["birdies_or_better"] >= 5})
+    add_badge("winner", "🏆", "Weekly Winner", "Won a week on net",
+              {s["player"]: f"{s['weekly_wins']} win(s)" for s in standings if s["weekly_wins"] >= 1})
+    add_badge("skins", "💰", "Skins Baron", "Won 5+ skins",
+              {p: f"{skins[p]} skins" for p in players if skins[p] >= 5})
+    add_badge("sandbagger", "🎣", "Sandbagger", "Beat handicap by 5+ in a round",
+              {p: f"net {sgn(v[0])} (wk {v[1]})" for p, v in best_net_round.items() if v[0] <= -5})
+    add_badge("comeback", "📉", "Comeback", "Cut handicap by 3+ strokes",
+              {p: sgn(handicaps[p]["delta"]) for p in players
+               if handicaps[p]["delta"] is not None and handicaps[p]["delta"] <= -3})
+    add_badge("reliable", "🧊", "Mr. Reliable", "Std dev ≤ 2.5 (4+ rounds)",
+              {c["player"]: f"±{c['std']}" for c in consistency
+               if c["std"] <= 2.5 and c["rounds"] >= 4})
+    add_badge("onfire", "🔥", "On Fire", "Par-or-better streak of 4+",
+              {p: f"{streaks[p]['par_or_better']} holes" for p in players
+               if streaks[p]["par_or_better"] >= 4})
+    add_badge("bounceback", "🪃", "Bounce-Back King", "40%+ bounce-back (5+ chances)",
+              {p: f"{streaks[p]['bounce_back_pct']}%" for p in players
+               if streaks[p]["bounce_back_pct"] is not None
+               and streaks[p]["bounce_back_pct"] >= 40 and streaks[p]["bounce_back_n"] >= 5})
+    add_badge("par5", "🦏", "Par-5 Slayer", "At or under par on par 5s (4+ rounds)",
+              {p: sgn(splits[p]["par5"]) for p in players
+               if splits[p]["par5"] is not None and splits[p]["par5"] <= 0
+               and profiles[p]["rounds"] >= 4})
+    add_badge("dreamcard", "💎", "Dream Card", "Ringer round 5+ under par",
+              {p: sgn(ringer[p]["total"] - ringer[p]["par"]) for p in players
+               if ringer[p]["par"] and ringer[p]["total"] - ringer[p]["par"] <= -5})
+    add_badge("veteran", "🎖️", "Veteran", "Played 10+ rounds",
+              {p: f"{profiles[p]['rounds']} rounds" for p in players if profiles[p]["rounds"] >= 10})
+    add_badge("ironman", "🧱", "Iron Man", "Perfect attendance",
+              {p: f"{profiles[p]['rounds']}/{len(league_weeks)}" for p in players
+               if profiles[p]["rounds"] == len(league_weeks)})
+    add_badge("snowman", "💀", "Snowman", "Carded an 8 or worse on a hole", snowmen)
+
+    trophy_by_player = {}
+    for b in badge_defs:
+        for hd in b["holders"]:
+            trophy_by_player.setdefault(hd["player"], []).append(b["id"])
+    trophies = {
+        "badges": badge_defs,
+        "by_player": trophy_by_player,
+        "counts": {p: len(v) for p, v in trophy_by_player.items()},
+    }
+
     # ---- fun records ----
     all_results = [(wk["week"], r) for wk in weeks for r in wk["results"]]
     records = {}
@@ -523,6 +609,7 @@ def build():
         "streaks": streaks, "splits": splits, "favorites": favorites,
         "race": race, "heatmap": heatmap, "awards": awards,
         "dna": dna, "dna_league": dna_league,
+        "trophies": trophies,
     }
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

@@ -162,6 +162,25 @@ tr.missed td:not(.name) { background: repeating-linear-gradient(45deg, transpare
 .award-who { font-weight: 700; font-size: 1.05rem; }
 .award-sub { font-size: .82rem; color: var(--muted); }
 
+/* Trophy case */
+.badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.badge-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; }
+.badge-card.is-locked { opacity: .55; }
+.badge-top { display: flex; align-items: center; justify-content: space-between; }
+.badge-emoji { font-size: 2rem; line-height: 1; }
+.badge-count { font-size: .8rem; font-weight: 700; color: var(--green); background: var(--green-light); border-radius: 999px; padding: 2px 9px; }
+@media (prefers-color-scheme: dark) { .badge-count { color: #8fe0b3; } }
+.badge-name { font-weight: 700; font-size: 1.05rem; margin-top: 8px; }
+.badge-desc { font-size: .82rem; color: var(--muted); margin: 2px 0 10px; }
+.badge-holders { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge-chip { font-size: .8rem; font-weight: 600; background: var(--green-light); color: var(--green-dark); border-radius: 8px; padding: 3px 8px; }
+@media (prefers-color-scheme: dark) { .badge-chip { color: #cdEBd8; } }
+.badge-chip .note { font-weight: 400; }
+.badge-locked { font-size: .82rem; color: var(--muted); font-style: italic; }
+.badge-strip { display: flex; flex-wrap: wrap; gap: 8px; }
+.badge-mini { font-size: .85rem; font-weight: 600; background: var(--green-light); color: var(--green-dark); border-radius: 999px; padding: 5px 12px; cursor: help; }
+@media (prefers-color-scheme: dark) { .badge-mini { color: #8fe0b3; } }
+
 .grid-2 { display: grid; grid-template-columns: 1fr; gap: 18px; }
 @media (min-width: 680px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
 

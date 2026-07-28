@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-28 16:33 UTC",
+    "generated_at": "2026-07-28 16:39 UTC",
     "players": [
       "Alex Djordjevski",
       "Austin Crough",
@@ -10363,6 +10363,629 @@
         "player": "Brian Holland",
         "delta": -2.3
       }
+    }
+  ],
+  "dna": {
+    "Alex Djordjevski": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.09,
+          "score": 57.5
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.09,
+          "score": 49.2
+        },
+        {
+          "label": "Par 5s",
+          "raw": 0.45,
+          "score": 66.5
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.04,
+          "score": 47.8
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.0,
+          "score": 59.5
+        },
+        {
+          "label": "Consistency",
+          "raw": 2.17,
+          "score": 75.0
+        }
+      ],
+      "qualified": true
+    },
+    "Austin Crough": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 0.96,
+          "score": 69.8
+        },
+        {
+          "label": "Par 4s",
+          "raw": 0.69,
+          "score": 82.5
+        },
+        {
+          "label": "Par 5s",
+          "raw": 0.5,
+          "score": 63.6
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.9,
+          "score": 58.1
+        },
+        {
+          "label": "Back 9",
+          "raw": 0.49,
+          "score": 98.5
+        },
+        {
+          "label": "Consistency",
+          "raw": 3.45,
+          "score": 25.8
+        }
+      ],
+      "qualified": true
+    },
+    "Boots": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 2.5,
+          "score": 0.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.83,
+          "score": 0.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.0,
+          "score": 35.2
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.89,
+          "score": 0.0
+        },
+        {
+          "label": "Back 9",
+          "raw": null,
+          "score": null
+        },
+        {
+          "label": "Consistency",
+          "raw": null,
+          "score": null
+        }
+      ],
+      "qualified": false
+    },
+    "Brian Holland": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.0,
+          "score": 66.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.0,
+          "score": 56.7
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.62,
+          "score": 0.0
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.82,
+          "score": 64.0
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.48,
+          "score": 22.9
+        },
+        {
+          "label": "Consistency",
+          "raw": 4.12,
+          "score": 0.0
+        }
+      ],
+      "qualified": true
+    },
+    "Brock Seguin": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.75,
+          "score": 0.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 0.42,
+          "score": 100.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": 0.0,
+          "score": 92.0
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.67,
+          "score": 75.0
+        },
+        {
+          "label": "Back 9",
+          "raw": null,
+          "score": null
+        },
+        {
+          "label": "Consistency",
+          "raw": 6.0,
+          "score": 0.0
+        }
+      ],
+      "qualified": false
+    },
+    "Dragan Lukic": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.5,
+          "score": 18.9
+        },
+        {
+          "label": "Par 4s",
+          "raw": 2.17,
+          "score": 0.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": 3.0,
+          "score": 0.0
+        },
+        {
+          "label": "Front 9",
+          "raw": null,
+          "score": null
+        },
+        {
+          "label": "Back 9",
+          "raw": 2.11,
+          "score": 0.0
+        },
+        {
+          "label": "Consistency",
+          "raw": null,
+          "score": null
+        }
+      ],
+      "qualified": false
+    },
+    "Dylan Bell": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.04,
+          "score": 62.3
+        },
+        {
+          "label": "Par 4s",
+          "raw": 0.96,
+          "score": 60.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.0,
+          "score": 35.2
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.02,
+          "score": 49.3
+        },
+        {
+          "label": "Back 9",
+          "raw": 0.93,
+          "score": 64.9
+        },
+        {
+          "label": "Consistency",
+          "raw": 1.52,
+          "score": 100.0
+        }
+      ],
+      "qualified": true
+    },
+    "Eddie Sauve": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 0.64,
+          "score": 100.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 0.48,
+          "score": 100.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": -0.14,
+          "score": 100.0
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.33,
+          "score": 100.0
+        },
+        {
+          "label": "Back 9",
+          "raw": 0.53,
+          "score": 95.4
+        },
+        {
+          "label": "Consistency",
+          "raw": 1.6,
+          "score": 96.9
+        }
+      ],
+      "qualified": true
+    },
+    "Marc Berthiaume": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.4,
+          "score": 28.3
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.47,
+          "score": 17.5
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.6,
+          "score": 1.1
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.39,
+          "score": 22.1
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.78,
+          "score": 0.0
+        },
+        {
+          "label": "Consistency",
+          "raw": 3.31,
+          "score": 31.2
+        }
+      ],
+      "qualified": true
+    },
+    "Mike Bondy": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.7,
+          "score": 0.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.35,
+          "score": 27.5
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.6,
+          "score": 1.1
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.58,
+          "score": 8.1
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.33,
+          "score": 34.4
+        },
+        {
+          "label": "Consistency",
+          "raw": 2.39,
+          "score": 66.5
+        }
+      ],
+      "qualified": true
+    },
+    "Nate Emery": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 0.69,
+          "score": 95.3
+        },
+        {
+          "label": "Par 4s",
+          "raw": 0.54,
+          "score": 95.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": 0.38,
+          "score": 70.5
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.64,
+          "score": 77.2
+        },
+        {
+          "label": "Back 9",
+          "raw": 0.47,
+          "score": 100.0
+        },
+        {
+          "label": "Consistency",
+          "raw": 1.73,
+          "score": 91.9
+        }
+      ],
+      "qualified": true
+    },
+    "Nate Hodgins": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.54,
+          "score": 15.1
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.68,
+          "score": 0.0
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.0,
+          "score": 35.2
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.69,
+          "score": 0.0
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.46,
+          "score": 24.4
+        },
+        {
+          "label": "Consistency",
+          "raw": 3.48,
+          "score": 24.6
+        }
+      ],
+      "qualified": true
+    },
+    "Riley Pekar": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.17,
+          "score": 50.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 0.94,
+          "score": 61.7
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.5,
+          "score": 6.8
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.15,
+          "score": 39.7
+        },
+        {
+          "label": "Back 9",
+          "raw": 0.96,
+          "score": 62.6
+        },
+        {
+          "label": "Consistency",
+          "raw": 3.04,
+          "score": 41.5
+        }
+      ],
+      "qualified": true
+    },
+    "Ryan Dimitrov": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.38,
+          "score": 30.2
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.24,
+          "score": 36.7
+        },
+        {
+          "label": "Par 5s",
+          "raw": 0.62,
+          "score": 56.8
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.19,
+          "score": 36.8
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.22,
+          "score": 42.7
+        },
+        {
+          "label": "Consistency",
+          "raw": 3.44,
+          "score": 26.2
+        }
+      ],
+      "qualified": true
+    },
+    "Scotty": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 0.0,
+          "score": 100.0
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.0,
+          "score": 56.7
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.0,
+          "score": 35.2
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.78,
+          "score": 66.9
+        },
+        {
+          "label": "Back 9",
+          "raw": null,
+          "score": null
+        },
+        {
+          "label": "Consistency",
+          "raw": null,
+          "score": null
+        }
+      ],
+      "qualified": false
+    },
+    "Travis Valdez": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 1.45,
+          "score": 23.6
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.13,
+          "score": 45.8
+        },
+        {
+          "label": "Par 5s",
+          "raw": 1.6,
+          "score": 1.1
+        },
+        {
+          "label": "Front 9",
+          "raw": 1.36,
+          "score": 24.3
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.19,
+          "score": 45.0
+        },
+        {
+          "label": "Consistency",
+          "raw": 2.41,
+          "score": 65.8
+        }
+      ],
+      "qualified": true
+    },
+    "Ty": {
+      "axes": [
+        {
+          "label": "Par 3s",
+          "raw": 0.75,
+          "score": 89.6
+        },
+        {
+          "label": "Par 4s",
+          "raw": 1.0,
+          "score": 56.7
+        },
+        {
+          "label": "Par 5s",
+          "raw": -0.5,
+          "score": 100.0
+        },
+        {
+          "label": "Front 9",
+          "raw": 0.56,
+          "score": 83.1
+        },
+        {
+          "label": "Back 9",
+          "raw": 1.0,
+          "score": 59.5
+        },
+        {
+          "label": "Consistency",
+          "raw": 2.0,
+          "score": 81.5
+        }
+      ],
+      "qualified": false
+    }
+  },
+  "dna_league": [
+    {
+      "label": "Par 3s",
+      "score": 49.84
+    },
+    {
+      "label": "Par 4s",
+      "score": 52.72
+    },
+    {
+      "label": "Par 5s",
+      "score": 36.49
+    },
+    {
+      "label": "Front 9",
+      "score": 43.95
+    },
+    {
+      "label": "Back 9",
+      "score": 54.19
+    },
+    {
+      "label": "Consistency",
+      "score": 53.78
     }
   ]
 }

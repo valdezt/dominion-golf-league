@@ -438,6 +438,41 @@ def build():
             "birdies_or_better": distribution[p]["birdies_or_better"],
         }
 
+    # ---- player DNA (radar fingerprint), normalized 0-100 vs the field ----
+    MIN_DNA_ROUNDS = 4
+    cons_std = {c["player"]: c["std"] for c in consistency}
+    dna_defs = [("Par 3s", lambda p: splits[p]["par3"]),
+                ("Par 4s", lambda p: splits[p]["par4"]),
+                ("Par 5s", lambda p: splits[p]["par5"]),
+                ("Front 9", lambda p: splits[p]["front"]),
+                ("Back 9", lambda p: splits[p]["back"]),
+                ("Consistency", lambda p: cons_std.get(p))]
+    qualified = [p for p in players if profiles[p]["rounds"] >= MIN_DNA_ROUNDS]
+    ranges = []
+    for _, fn in dna_defs:
+        vals = [fn(p) for p in qualified if fn(p) is not None]
+        ranges.append((min(vals), max(vals)) if vals else (None, None))
+
+    def dna_score(raw, rng):  # all metrics: lower (over par / stdev) is better
+        if raw is None or rng[0] is None:
+            return None
+        mn, mx = rng
+        if mx == mn:
+            return 50.0
+        return round(max(0.0, min(100.0, (mx - raw) / (mx - mn) * 100)), 1)
+
+    dna = {}
+    for p in players:
+        axes = []
+        for (label, fn), rng in zip(dna_defs, ranges):
+            raw = fn(p)
+            axes.append({"label": label, "raw": rnd(raw), "score": dna_score(raw, rng)})
+        dna[p] = {"axes": axes, "qualified": profiles[p]["rounds"] >= MIN_DNA_ROUNDS}
+    dna_league = []
+    for i, (label, _) in enumerate(dna_defs):
+        sc = [dna[p]["axes"][i]["score"] for p in qualified if dna[p]["axes"][i]["score"] is not None]
+        dna_league.append({"label": label, "score": rnd(statistics.mean(sc)) if sc else None})
+
     # ---- fun records ----
     all_results = [(wk["week"], r) for wk in weeks for r in wk["results"]]
     records = {}
@@ -487,6 +522,7 @@ def build():
         "records": records,
         "streaks": streaks, "splits": splits, "favorites": favorites,
         "race": race, "heatmap": heatmap, "awards": awards,
+        "dna": dna, "dna_league": dna_league,
     }
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

@@ -113,9 +113,11 @@ tbody tr:hover td { background: rgba(46,139,87,.06); }
 .delta-up { color: var(--triple); font-weight: 700; }
 
 /* Player picker */
-.picker { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
-.picker button { border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 8px 14px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: .9rem; }
-.picker button.active { background: var(--green); color: #fff; border-color: var(--green); }
+.player-picker { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.player-picker label { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 700; }
+.player-picker .wk-select { max-width: 260px; }
+tr.missed td { color: var(--muted); font-style: italic; }
+tr.missed td:not(.name) { background: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(127,127,127,.05) 6px, rgba(127,127,127,.05) 12px); }
 
 /* Bars */
 .bar-row { display: grid; grid-template-columns: 120px 1fr 52px; align-items: center; gap: 10px; margin: 7px 0; font-size: .88rem; }

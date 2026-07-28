@@ -371,14 +371,20 @@ function viewStreaks(main) {
 let currentPlayer = null;
 function viewPlayers(main) {
   const players = DATA.meta.players;
-  if (!currentPlayer || !players.includes(currentPlayer)) currentPlayer = players[0];
+  if (!currentPlayer || !players.includes(currentPlayer)) {
+    currentPlayer = (HIGHLIGHT_PLAYER && players.includes(HIGHLIGHT_PLAYER)) ? HIGHLIGHT_PLAYER : players[0];
+  }
   main.innerHTML = `
     <h2 class="view-title">Player Profiles</h2>
-    <div class="picker">${players.map(p =>
-      `<button class="${p === currentPlayer ? 'active' : ''}" data-p="${p}">${p}</button>`).join('')}</div>
+    <div class="player-picker">
+      <label for="player-select">Player</label>
+      <select class="wk-select" id="player-select">
+        ${players.map(p => `<option value="${p}" ${p === currentPlayer ? 'selected' : ''}>${p}</option>`).join('')}
+      </select>
+    </div>
     <div id="profile"></div>`;
-  main.querySelectorAll('.picker button').forEach(b =>
-    b.addEventListener('click', () => { currentPlayer = b.dataset.p; viewPlayers(main); }));
+  const sel = main.querySelector('#player-select');
+  sel.onchange = (e) => { currentPlayer = e.target.value; viewPlayers(main); };
   renderProfile($('#profile'), currentPlayer);
 }
 
@@ -405,14 +411,82 @@ function renderProfile(root, p) {
   const heatHead = holes.map(hh => `<th>${hh}</th>`).join('');
 
   root.innerHTML = `${tiles}
+    ${radarCard(p)}
     <div class="grid-2">
       <div class="card"><h3 class="section-title">Score vs par</h3>${lineChart(gSeries, { yLabel: 'To par', invertBetter: true })}</div>
       <div class="card"><h3 class="section-title">Handicap trend</h3>${lineChart(hSeries, { yLabel: 'Hdc', invertBetter: true })}</div>
     </div>
+    ${playerWeeksCard(p)}
     <div class="card"><h3 class="section-title">Scoring average by hole</h3>
       <div class="table-scroll"><table><thead><tr><th class="name">Hole</th>${heatHead}</tr></thead>
       <tbody><tr><td class="name">Avg</td>${heat}</tr>
       <tr class="par-row"><td class="name">Par</td>${holes.map(hh => `<td>${parOf(hh)}</td>`).join('')}</tr></tbody></table></div></div>`;
+}
+
+// ---------- Player DNA radar ----------
+function radarCard(p) {
+  const dna = DATA.dna[p];
+  return `<div class="card"><h3 class="section-title">🧬 Player DNA</h3>
+    <p class="sub">Each spoke scored 0–100 vs the field (100 = league-best at that skill). Dashed = league average.${dna.qualified ? '' : ' <em>Limited data — under 4 rounds.</em>'}</p>
+    ${radarChart(dna.axes, DATA.dna_league, colorOf[p])}
+    <div class="chart-legend"><span><span class="dot" style="background:${colorOf[p]}"></span>${shortName(p)}</span><span><span class="dot" style="background:var(--muted)"></span>league avg</span></div>
+  </div>`;
+}
+
+function radarChart(axes, league, color) {
+  const N = axes.length, W = 440, H = 340, cx = 220, cy = 165, R = 118;
+  const ang = i => -Math.PI / 2 + i * 2 * Math.PI / N;
+  const pt = (i, sc) => {
+    const r = R * (Math.max(0, Math.min(100, sc == null ? 0 : sc)) / 100);
+    return [cx + r * Math.cos(ang(i)), cy + r * Math.sin(ang(i))];
+  };
+  const poly = pts => pts.map(q => q.map(n => n.toFixed(1)).join(',')).join(' ');
+
+  let rings = '';
+  [25, 50, 75, 100].forEach(lvl => {
+    rings += `<polygon points="${poly(axes.map((_, i) => { const r = R * lvl / 100; return [cx + r * Math.cos(ang(i)), cy + r * Math.sin(ang(i))]; }))}" fill="none" stroke="var(--line)" stroke-width="1"/>`;
+  });
+  let spokes = '', labels = '';
+  axes.forEach((a, i) => {
+    const ex = cx + R * Math.cos(ang(i)), ey = cy + R * Math.sin(ang(i));
+    spokes += `<line x1="${cx}" y1="${cy}" x2="${ex.toFixed(1)}" y2="${ey.toFixed(1)}" stroke="var(--line)"/>`;
+    const lx = cx + (R + 16) * Math.cos(ang(i)), ly = cy + (R + 16) * Math.sin(ang(i));
+    const co = Math.cos(ang(i));
+    const anchor = Math.abs(co) < 0.3 ? 'middle' : (co > 0 ? 'start' : 'end');
+    labels += `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}" dominant-baseline="middle" font-size="11" fill="var(--muted)">${a.label}</text>`;
+  });
+  const dots = axes.map((a, i) => {
+    const [x, y] = pt(i, a.score);
+    const unit = a.raw == null ? 'n/a' : (a.label === 'Consistency' ? '±' + fmt(a.raw) : signed(a.raw) + '/hole');
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.5" fill="${color}"><title>${a.label}: ${a.score == null ? 'n/a' : a.score}/100 (${unit})</title></circle>`;
+  }).join('');
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" style="max-width:440px;margin:0 auto">
+    ${rings}${spokes}${labels}
+    <polygon points="${poly(league.map((a, i) => pt(i, a.score)))}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <polygon points="${poly(axes.map((a, i) => pt(i, a.score)))}" fill="${color}" fill-opacity="0.22" stroke="${color}" stroke-width="2"/>
+    ${dots}
+  </svg>`;
+}
+
+// ---------- Week-by-week (incl. missed) ----------
+function playerWeeksCard(p) {
+  const rows = DATA.weeks.map(wk => {
+    const r = wk.results.find(x => x.player === p);
+    const dateStr = wk.date ? fmtDate(wk.date) : '';
+    const nine = wk.nine === 'F' ? 'Front' : 'Back';
+    if (!r) {
+      return `<tr class="missed"><td class="name">Wk ${wk.week}</td><td>${dateStr}</td><td>${nine}</td><td colspan="3">— did not play —</td></tr>`;
+    }
+    const noteTag = r.notes ? ` <span class="rnote" title="${r.notes}">↩︎</span>` : '';
+    return `<tr class="${isMe(p) ? 'me' : ''}"><td class="name">Wk ${wk.week}${noteTag}</td><td>${dateStr}</td><td>${nine}</td>
+      <td class="total-col">${r.gross}</td><td>${signed(r.to_par)}</td><td class="total-col">${signed(r.net)}</td></tr>`;
+  }).join('');
+  const played = DATA.weeks.filter(wk => wk.results.some(x => x.player === p)).length;
+  return `<div class="card"><h3 class="section-title">📅 Week by week</h3>
+    <p class="sub">Played ${played} of ${DATA.weeks.length} weeks.</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th class="name">Week</th><th>Date</th><th>9</th><th>Gross</th><th>To Par</th><th>Net</th></tr></thead>
+      <tbody>${rows}</tbody></table></div></div>`;
 }
 
 // ---------- SVG line chart ----------

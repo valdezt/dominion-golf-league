@@ -344,15 +344,6 @@ def build():
                 "favorite": {"hole": fav[0], "over": rnd(fav[1]), "par": course[fav[0]]["par"]},
             }
 
-    # ---- title race (cumulative weekly wins) ----
-    race = {p: [] for p in players}
-    cum = {p: 0 for p in players}
-    for wk in weeks:
-        if wk["winner"]:
-            cum[wk["winner"]] += 1
-        for p in players:
-            race[p].append({"x": wk["week"], "y": cum[p]})
-
     # ---- league heatmap (avg strokes over par per player/hole) ----
     heatmap = {"players": players, "holes": list(range(1, 19)), "values": {}}
     for p in players:
@@ -397,20 +388,31 @@ def build():
         a["improved"] = best_imp
         awards.append(a)
 
-    # ---- standings ----
+    # ---- standings: average of each player's best N net rounds ----
+    STANDINGS_BEST = 5     # count this many of a player's lowest net rounds
+    MIN_QUALIFY = 5        # rounds needed to appear in the ranked table
     standings = []
     for p in players:
-        pnets = [r["net"] for wk in weeks for r in wk["results"] if r["player"] == p]
+        pnets = sorted(r["net"] for wk in weeks for r in wk["results"]
+                       if r["player"] == p and r["net"] is not None)
+        best = pnets[:STANDINGS_BEST]
         wins = sum(1 for wk in weeks if wk["winner"] == p)
         standings.append({
             "player": p, "rounds": len(pnets),
+            "best5_net": rnd(statistics.mean(best)) if best else None,
+            "best5_count": len(best),
+            "qualified": len(pnets) >= MIN_QUALIFY,
             "weekly_wins": wins,
             "avg_net": rnd(statistics.mean(pnets)) if pnets else None,
             "total_net": rnd(sum(pnets)) if pnets else None,
             "skins": skins[p],
             "handicap": handicaps[p]["current"],
         })
-    standings.sort(key=lambda s: (-s["weekly_wins"], s["avg_net"] if s["avg_net"] is not None else 1e9))
+    # qualified players first, then by best-5 net average (lower is better)
+    standings.sort(key=lambda s: (
+        0 if s["qualified"] else 1,
+        s["best5_net"] if s["best5_net"] is not None else 1e9,
+    ))
 
     # ---- per-player profiles ----
     profiles = {}
@@ -607,7 +609,7 @@ def build():
         "profiles": profiles,
         "records": records,
         "streaks": streaks, "splits": splits, "favorites": favorites,
-        "race": race, "heatmap": heatmap, "awards": awards,
+        "heatmap": heatmap, "awards": awards,
         "dna": dna, "dna_league": dna_league,
         "trophies": trophies,
     }

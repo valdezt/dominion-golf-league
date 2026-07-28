@@ -109,6 +109,8 @@ tbody tr:hover td { background: rgba(46,139,87,.06); }
 /* Pills / chips */
 .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .78rem; font-weight: 600; background: var(--green-light); color: var(--green-dark); }
 @media (prefers-color-scheme: dark) { .pill { color: #8fe0b3; } }
+.pill.prov { background: transparent; border: 1px solid var(--line); color: var(--muted); font-weight: 600; }
+tr.subhead td { text-align: left; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); background: var(--bg); font-weight: 700; padding-top: 12px; }
 .delta-down { color: var(--birdie); font-weight: 700; }
 .delta-up { color: var(--triple); font-weight: 700; }
 

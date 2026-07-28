@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-28 16:47 UTC",
+    "generated_at": "2026-07-28 17:12 UTC",
     "players": [
       "Alex Djordjevski",
       "Austin Crough",
@@ -4946,44 +4946,11 @@
   ],
   "standings": [
     {
-      "player": "Brian Holland",
-      "rounds": 8,
-      "weekly_wins": 3,
-      "avg_net": -2.19,
-      "total_net": -17.53,
-      "skins": 7,
-      "handicap": 6.5
-    },
-    {
-      "player": "Travis Valdez",
-      "rounds": 10,
-      "weekly_wins": 2,
-      "avg_net": -0.41,
-      "total_net": -4.1,
-      "skins": 4,
-      "handicap": 10.0
-    },
-    {
-      "player": "Brock Seguin",
-      "rounds": 2,
-      "weekly_wins": 1,
-      "avg_net": -6.0,
-      "total_net": -12.0,
-      "skins": 1,
-      "handicap": 6.0
-    },
-    {
-      "player": "Riley Pekar",
-      "rounds": 6,
-      "weekly_wins": 1,
-      "avg_net": -2.89,
-      "total_net": -17.33,
-      "skins": 3,
-      "handicap": 7.5
-    },
-    {
       "player": "Nate Hodgins",
       "rounds": 12,
+      "best5_net": -5.08,
+      "best5_count": 5,
+      "qualified": true,
       "weekly_wins": 1,
       "avg_net": -1.36,
       "total_net": -16.35,
@@ -4991,35 +4958,23 @@
       "handicap": 12.2
     },
     {
-      "player": "Eddie Sauve",
-      "rounds": 7,
-      "weekly_wins": 1,
-      "avg_net": -1.13,
-      "total_net": -7.88,
-      "skins": 2,
-      "handicap": 3.0
-    },
-    {
-      "player": "Mike Bondy",
-      "rounds": 10,
-      "weekly_wins": 1,
-      "avg_net": -0.05,
-      "total_net": -0.48,
-      "skins": 3,
-      "handicap": 11.6
-    },
-    {
-      "player": "Ryan Dimitrov",
-      "rounds": 13,
-      "weekly_wins": 1,
-      "avg_net": 0.02,
-      "total_net": 0.2,
-      "skins": 5,
-      "handicap": 8.0
+      "player": "Brian Holland",
+      "rounds": 8,
+      "best5_net": -3.96,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 3,
+      "avg_net": -2.19,
+      "total_net": -17.53,
+      "skins": 7,
+      "handicap": 6.5
     },
     {
       "player": "Austin Crough",
       "rounds": 12,
+      "best5_net": -3.63,
+      "best5_count": 5,
+      "qualified": true,
       "weekly_wins": 1,
       "avg_net": 0.18,
       "total_net": 2.13,
@@ -5027,8 +4982,59 @@
       "handicap": 4.4
     },
     {
+      "player": "Riley Pekar",
+      "rounds": 6,
+      "best5_net": -3.47,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 1,
+      "avg_net": -2.89,
+      "total_net": -17.33,
+      "skins": 3,
+      "handicap": 7.5
+    },
+    {
+      "player": "Ryan Dimitrov",
+      "rounds": 13,
+      "best5_net": -3.28,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 1,
+      "avg_net": 0.02,
+      "total_net": 0.2,
+      "skins": 5,
+      "handicap": 8.0
+    },
+    {
+      "player": "Mike Bondy",
+      "rounds": 10,
+      "best5_net": -2.62,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 1,
+      "avg_net": -0.05,
+      "total_net": -0.48,
+      "skins": 3,
+      "handicap": 11.6
+    },
+    {
+      "player": "Travis Valdez",
+      "rounds": 10,
+      "best5_net": -2.56,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 2,
+      "avg_net": -0.41,
+      "total_net": -4.1,
+      "skins": 4,
+      "handicap": 10.0
+    },
+    {
       "player": "Alex Djordjevski",
       "rounds": 11,
+      "best5_net": -1.95,
+      "best5_count": 5,
+      "qualified": true,
       "weekly_wins": 1,
       "avg_net": 0.45,
       "total_net": 4.93,
@@ -5036,8 +5042,23 @@
       "handicap": 8.0
     },
     {
+      "player": "Eddie Sauve",
+      "rounds": 7,
+      "best5_net": -1.78,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 1,
+      "avg_net": -1.13,
+      "total_net": -7.88,
+      "skins": 2,
+      "handicap": 3.0
+    },
+    {
       "player": "Nate Emery",
       "rounds": 8,
+      "best5_net": -1.73,
+      "best5_count": 5,
+      "qualified": true,
       "weekly_wins": 0,
       "avg_net": -0.65,
       "total_net": -5.17,
@@ -5047,6 +5068,9 @@
     {
       "player": "Dylan Bell",
       "rounds": 12,
+      "best5_net": -1.54,
+      "best5_count": 5,
+      "qualified": true,
       "weekly_wins": 0,
       "avg_net": -0.08,
       "total_net": -0.9,
@@ -5054,8 +5078,35 @@
       "handicap": 7.8
     },
     {
+      "player": "Marc Berthiaume",
+      "rounds": 5,
+      "best5_net": 1.53,
+      "best5_count": 5,
+      "qualified": true,
+      "weekly_wins": 0,
+      "avg_net": 1.53,
+      "total_net": 7.67,
+      "skins": 1,
+      "handicap": 13.2
+    },
+    {
+      "player": "Brock Seguin",
+      "rounds": 2,
+      "best5_net": -6.0,
+      "best5_count": 2,
+      "qualified": false,
+      "weekly_wins": 1,
+      "avg_net": -6.0,
+      "total_net": -12.0,
+      "skins": 1,
+      "handicap": 6.0
+    },
+    {
       "player": "Boots",
       "rounds": 1,
+      "best5_net": 0.0,
+      "best5_count": 1,
+      "qualified": false,
       "weekly_wins": 0,
       "avg_net": 0.0,
       "total_net": 0.0,
@@ -5065,6 +5116,9 @@
     {
       "player": "Dragan Lukic",
       "rounds": 1,
+      "best5_net": 0.0,
+      "best5_count": 1,
+      "qualified": false,
       "weekly_wins": 0,
       "avg_net": 0.0,
       "total_net": 0.0,
@@ -5074,6 +5128,9 @@
     {
       "player": "Scotty",
       "rounds": 1,
+      "best5_net": 0.0,
+      "best5_count": 1,
+      "qualified": false,
       "weekly_wins": 0,
       "avg_net": 0.0,
       "total_net": 0.0,
@@ -5081,17 +5138,11 @@
       "handicap": 7.0
     },
     {
-      "player": "Marc Berthiaume",
-      "rounds": 5,
-      "weekly_wins": 0,
-      "avg_net": 1.53,
-      "total_net": 7.67,
-      "skins": 1,
-      "handicap": 13.2
-    },
-    {
       "player": "Ty",
       "rounds": 2,
+      "best5_net": 2.0,
+      "best5_count": 2,
+      "qualified": false,
       "weekly_wins": 0,
       "avg_net": 2.0,
       "total_net": 4.0,
@@ -8864,926 +8915,6 @@
         "par": 5
       }
     }
-  },
-  "race": {
-    "Alex Djordjevski": [
-      {
-        "x": 1,
-        "y": 1
-      },
-      {
-        "x": 2,
-        "y": 1
-      },
-      {
-        "x": 3,
-        "y": 1
-      },
-      {
-        "x": 4,
-        "y": 1
-      },
-      {
-        "x": 5,
-        "y": 1
-      },
-      {
-        "x": 6,
-        "y": 1
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 1
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Austin Crough": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 1
-      },
-      {
-        "x": 5,
-        "y": 1
-      },
-      {
-        "x": 6,
-        "y": 1
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 1
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Boots": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ],
-    "Brian Holland": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 1
-      },
-      {
-        "x": 4,
-        "y": 1
-      },
-      {
-        "x": 5,
-        "y": 1
-      },
-      {
-        "x": 6,
-        "y": 1
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 2
-      },
-      {
-        "x": 9,
-        "y": 2
-      },
-      {
-        "x": 10,
-        "y": 2
-      },
-      {
-        "x": 11,
-        "y": 2
-      },
-      {
-        "x": 12,
-        "y": 2
-      },
-      {
-        "x": 13,
-        "y": 3
-      }
-    ],
-    "Brock Seguin": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 1
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 1
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Dragan Lukic": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ],
-    "Dylan Bell": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ],
-    "Eddie Sauve": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Marc Berthiaume": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ],
-    "Mike Bondy": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 1
-      },
-      {
-        "x": 6,
-        "y": 1
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 1
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Nate Emery": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ],
-    "Nate Hodgins": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 1
-      },
-      {
-        "x": 3,
-        "y": 1
-      },
-      {
-        "x": 4,
-        "y": 1
-      },
-      {
-        "x": 5,
-        "y": 1
-      },
-      {
-        "x": 6,
-        "y": 1
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 1
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Riley Pekar": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Ryan Dimitrov": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 1
-      },
-      {
-        "x": 13,
-        "y": 1
-      }
-    ],
-    "Scotty": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ],
-    "Travis Valdez": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 1
-      },
-      {
-        "x": 8,
-        "y": 1
-      },
-      {
-        "x": 9,
-        "y": 1
-      },
-      {
-        "x": 10,
-        "y": 1
-      },
-      {
-        "x": 11,
-        "y": 1
-      },
-      {
-        "x": 12,
-        "y": 2
-      },
-      {
-        "x": 13,
-        "y": 2
-      }
-    ],
-    "Ty": [
-      {
-        "x": 1,
-        "y": 0
-      },
-      {
-        "x": 2,
-        "y": 0
-      },
-      {
-        "x": 3,
-        "y": 0
-      },
-      {
-        "x": 4,
-        "y": 0
-      },
-      {
-        "x": 5,
-        "y": 0
-      },
-      {
-        "x": 6,
-        "y": 0
-      },
-      {
-        "x": 7,
-        "y": 0
-      },
-      {
-        "x": 8,
-        "y": 0
-      },
-      {
-        "x": 9,
-        "y": 0
-      },
-      {
-        "x": 10,
-        "y": 0
-      },
-      {
-        "x": 11,
-        "y": 0
-      },
-      {
-        "x": 12,
-        "y": 0
-      },
-      {
-        "x": 13,
-        "y": 0
-      }
-    ]
   },
   "heatmap": {
     "players": [

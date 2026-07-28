@@ -163,22 +163,46 @@ function recordsCard(rec) {
 // ---------- Standings ----------
 function viewStandings(main) {
   const s = DATA.standings;
-  const head = `<tr><th class="rank">#</th><th class="name">Player</th><th>Wins</th>
-    <th>Rounds</th><th>Avg net</th><th>Total net</th><th>Skins</th><th>Hdc</th></tr>`;
-  const body = s.map((p, i) => `<tr class="${isMe(p.player) ? 'me' : ''}">
-    <td class="rank">${i + 1}</td><td class="name">${p.player}</td>
-    <td><strong>${p.weekly_wins}</strong></td><td>${p.rounds}</td>
-    <td>${signed(p.avg_net)}</td><td>${signed(p.total_net)}</td>
-    <td>${p.skins}</td><td>${fmt(p.handicap)}</td></tr>`).join('');
-  const raceSeries = DATA.meta.players.map(p => ({ name: shortName(p), color: colorOf[p], points: DATA.race[p] }));
+  const ranked = s.filter(p => p.qualified);
+  const provisional = s.filter(p => !p.qualified);
+
+  const head = `<tr><th class="rank">#</th><th class="name">Player</th>
+    <th>Best 5 net</th><th>Rounds</th><th>Wins</th><th>Skins</th><th>Hdc</th></tr>`;
+  const rowFor = (p, rank) => `<tr class="${isMe(p.player) ? 'me' : ''}">
+    <td class="rank">${rank}</td>
+    <td class="name">${p.player}${p.qualified ? '' : ' <span class="pill prov">' + p.rounds + '/5</span>'}</td>
+    <td class="total-col">${p.best5_net == null ? '–' : signed(p.best5_net)}</td>
+    <td>${p.rounds}</td><td>${p.weekly_wins}</td><td>${p.skins}</td><td>${fmt(p.handicap)}</td></tr>`;
+  const body = ranked.map((p, i) => rowFor(p, i + 1)).join('')
+    + (provisional.length
+        ? `<tr class="subhead"><td colspan="7">Not yet qualified — need 5 rounds</td></tr>`
+          + provisional.map(p => rowFor(p, '·')).join('')
+        : '');
+
+  // clean single-colour bar ranking (readable for a big field)
+  const bars = rankBars(ranked);
+
   main.innerHTML = `
     <h2 class="view-title">Standings</h2>
-    <p class="view-intro">Ranked by weekly wins, then average net. "Net" is gross − handicap − par (lower is better).</p>
-    <div class="card"><div class="table-scroll"><table><thead>${head}</thead><tbody>${body}</tbody></table></div></div>
-    <div class="card"><h3 class="section-title">🏁 Title race</h3>
-      <p class="sub">Cumulative weekly wins over the season.</p>
-      ${lineChart(raceSeries, { yLabel: 'Wins' })}${chartLegend(raceSeries)}</div>
-    <p class="note">Want standings scored differently (points system, total net, best N weeks)? It's a one-line change — just say the word.</p>`;
+    <p class="view-intro">Ranked by the average of each player's <strong>best 5 net rounds</strong> — lower is better, and dropping your worst weeks keeps a blow-up from sinking your season. Takes 5 rounds to qualify.</p>
+    <div class="card"><h3 class="section-title">🥇 Best 5 net average</h3>
+      <p class="sub">Shorter bar = fewer strokes = better. Lengths are relative to the field.</p>${bars}</div>
+    <div class="card"><div class="table-scroll"><table><thead>${head}</thead><tbody>${body}</tbody></table></div></div>`;
+}
+
+function rankBars(ranked) {
+  const vals = ranked.map(p => p.best5_net).filter(v => v != null);
+  if (!vals.length) return '<p class="note">No qualified players yet.</p>';
+  const best = Math.min(...vals), worst = Math.max(...vals);
+  const span = (worst - best) || 1;
+  return ranked.map((p, i) => {
+    const frac = p.best5_net == null ? 0 : (worst - p.best5_net) / span;   // best -> longest
+    const w = 12 + frac * 88;                                              // 12%..100%
+    return `<div class="bar-row">
+      <div>${i === 0 ? '🥇 ' : ''}${shortName(p.player)}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${w.toFixed(0)}%"></div></div>
+      <div class="bar-label">${signed(p.best5_net)}</div></div>`;
+  }).join('');
 }
 
 // ---------- Handicaps ----------

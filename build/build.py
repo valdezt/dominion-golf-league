@@ -40,15 +40,18 @@ def load_course():
     return holes
 
 
-def load_week_dates():
-    """Optional week -> date map (data/weeks.csv). Authoritative for display."""
-    dates = {}
+def load_week_meta():
+    """Optional week -> {date, note} map (data/weeks.csv). Authoritative for display."""
+    meta = {}
     if os.path.exists(WEEKS_CSV):
         with open(WEEKS_CSV, newline="") as f:
             for r in csv.DictReader(f):
                 if r.get("week", "").strip():
-                    dates[int(r["week"])] = (r.get("date") or "").strip()
-    return dates
+                    meta[int(r["week"])] = {
+                        "date": (r.get("date") or "").strip(),
+                        "note": (r.get("note") or "").strip(),
+                    }
+    return meta
 
 
 def load_rounds(course):
@@ -94,7 +97,7 @@ def rnd(x, n=2):
 def build():
     course = load_course()
     rounds = load_rounds(course)
-    week_dates = load_week_dates()
+    week_meta = load_week_meta()
 
     players = sorted({p for (p, _) in rounds})
     league_weeks = sorted({w for (_, w) in rounds})
@@ -113,8 +116,10 @@ def build():
     weeks = []
     for w in league_weeks:
         nine = next((rd["nine"] for (p, ww), rd in rounds.items() if ww == w), "F")
-        wdate = week_dates.get(w) or next(
+        wmeta = week_meta.get(w, {})
+        wdate = wmeta.get("date") or next(
             (rd["date"] for (p, ww), rd in rounds.items() if ww == w and rd["date"]), "")
+        wnote = wmeta.get("note", "")
         holes_played = sorted(
             {h for (p, ww), rd in rounds.items() if ww == w for h in rd["holes"]}
         )
@@ -134,7 +139,7 @@ def build():
             })
         results.sort(key=lambda r: (r["net"] if r["net"] is not None else 1e9))
         weeks.append({
-            "week": w, "nine": nine, "date": wdate, "holes": holes_played,
+            "week": w, "nine": nine, "date": wdate, "note": wnote, "holes": holes_played,
             "par": sum(course[h]["par"] for h in holes_played),
             "results": results,
             "winner": results[0]["player"] if results else None,

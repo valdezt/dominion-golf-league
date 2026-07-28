@@ -78,7 +78,8 @@ function viewWeek(main) {
       </select>
       <button class="wk-btn" id="wk-next" ${isLatest ? 'disabled' : ''} aria-label="Next week">›</button>
       ${isLatest ? '<span class="pill">Current</span>' : `<button class="wk-latest" id="wk-latest">Jump to current ⟶</button>`}
-    </div>`;
+    </div>
+    ${wk.note ? `<p class="wk-note">📅 ${wk.note}</p>` : ''}`;
 
   const tiles = `
     <div class="tiles">

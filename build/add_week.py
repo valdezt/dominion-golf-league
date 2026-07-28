@@ -127,8 +127,14 @@ def main():
     else:
         prev = last_nine.get(week - 1)
         nine = "B" if prev == "F" else "F" if prev == "B" else "F"
-    # date
-    wdate = override.get("date", date.today().isoformat())
+    # date: override wins, else a pre-registered weeks.csv date, else today
+    preset_date = ""
+    if os.path.exists(WEEKS):
+        with open(WEEKS, newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("week", "").strip() and int(r["week"]) == week:
+                    preset_date = (r.get("date") or "").strip()
+    wdate = override.get("date") or preset_date or date.today().isoformat()
 
     new_rows, skipped = [], []
     for name, scores in players:
@@ -148,20 +154,21 @@ def main():
             w.writerow(FIELDS)
         w.writerows(new_rows)
 
-    # record the week's date in weeks.csv (create/append if new)
-    wk_dates = {}
+    # record the week's date in weeks.csv (create/append if new; preserve notes)
+    wk_meta = {}
     if os.path.exists(WEEKS):
         with open(WEEKS, newline="") as f:
             for r in csv.DictReader(f):
                 if r.get("week", "").strip():
-                    wk_dates[int(r["week"])] = (r.get("date") or "").strip()
-    if week not in wk_dates:
-        wk_dates[week] = wdate
+                    wk_meta[int(r["week"])] = [(r.get("date") or "").strip(),
+                                               (r.get("note") or "").strip()]
+    if week not in wk_meta:
+        wk_meta[week] = [wdate, ""]
         with open(WEEKS, "w", newline="") as f:
             w = csv.writer(f)
-            w.writerow(["week", "date"])
-            for k in sorted(wk_dates):
-                w.writerow([k, wk_dates[k]])
+            w.writerow(["week", "date", "note"])
+            for k in sorted(wk_meta):
+                w.writerow([k] + wk_meta[k])
 
     # archive what was entered, then reset the input file
     os.makedirs(LOGDIR, exist_ok=True)

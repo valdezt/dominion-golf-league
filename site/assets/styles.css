@@ -130,6 +130,26 @@ tbody tr:hover td { background: rgba(46,139,87,.06); }
 .legend span { display: inline-flex; align-items: center; gap: 5px; }
 .swatch { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
 
+/* Week navigator */
+.week-nav { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+.wk-btn {
+  width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card); color: var(--ink); font-size: 1.3rem; line-height: 1;
+  cursor: pointer; box-shadow: var(--shadow); flex: 0 0 auto;
+}
+.wk-btn:hover:not(:disabled) { background: var(--green-light); color: var(--green-dark); }
+.wk-btn:disabled { opacity: .35; cursor: default; }
+.wk-select {
+  flex: 1 1 auto; min-width: 0; max-width: 320px; height: 38px; padding: 0 12px;
+  border-radius: 10px; border: 1px solid var(--line); background: var(--card);
+  color: var(--ink); font-size: .95rem; font-weight: 600; cursor: pointer; box-shadow: var(--shadow);
+}
+.wk-latest {
+  border: none; background: none; color: var(--green); font-weight: 600;
+  font-size: .88rem; cursor: pointer; flex: 0 0 auto; padding: 6px 4px;
+}
+@media (prefers-color-scheme: dark) { .wk-latest { color: #6fd39e; } }
+
 /* Awards */
 .awards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
 .award { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: var(--green-light); border-radius: var(--radius); }

@@ -60,18 +60,31 @@ function show(tab) {
 }
 
 // ---------- This Week ----------
+let weekIdx = null;   // index into DATA.weeks; null -> latest
 function viewWeek(main) {
   const weeks = DATA.weeks;
-  const wk = weeks[weeks.length - 1];
+  if (weekIdx === null || weekIdx < 0 || weekIdx >= weeks.length) weekIdx = weeks.length - 1;
+  const wk = weeks[weekIdx];
   const holes = wk.holes;
   const rows = wk.results;
+  const isLatest = weekIdx === weeks.length - 1;
+  const nineName = wk.nine === 'F' ? 'Front 9' : 'Back 9';
 
-  const rec = DATA.records;
+  const nav = `
+    <div class="week-nav">
+      <button class="wk-btn" id="wk-prev" ${weekIdx === 0 ? 'disabled' : ''} aria-label="Previous week">‹</button>
+      <select class="wk-select" id="wk-select">
+        ${weeks.map((w, i) => `<option value="${i}" ${i === weekIdx ? 'selected' : ''}>Week ${w.week} · ${w.nine === 'F' ? 'Front' : 'Back'}${w.date ? ' · ' + w.date : ''}</option>`).join('')}
+      </select>
+      <button class="wk-btn" id="wk-next" ${isLatest ? 'disabled' : ''} aria-label="Next week">›</button>
+      ${isLatest ? '<span class="pill">Current</span>' : `<button class="wk-latest" id="wk-latest">Jump to current ⟶</button>`}
+    </div>`;
+
   const tiles = `
     <div class="tiles">
-      <div class="tile"><div class="label">Week</div><div class="value">${wk.week}</div><div class="who">${wk.nine === 'F' ? 'Front 9' : 'Back 9'} · par ${wk.par}</div></div>
       <div class="tile"><div class="label">Winner (net)</div><div class="value">🏆 ${first(rows) ? shortName(first(rows).player) : '–'}</div><div class="who">net ${first(rows) ? signed(first(rows).net) : '–'}</div></div>
-      <div class="tile"><div class="label">Low gross this week</div><div class="value">${Math.min(...rows.map(r => r.gross))}</div><div class="who">${shortName(rows.reduce((a, b) => a.gross <= b.gross ? a : b).player)}</div></div>
+      <div class="tile"><div class="label">Low gross</div><div class="value">${Math.min(...rows.map(r => r.gross))}</div><div class="who">${shortName(rows.reduce((a, b) => a.gross <= b.gross ? a : b).player)}</div></div>
+      <div class="tile"><div class="label">Turnout</div><div class="value">${rows.length}</div><div class="who">${nineName} · par ${wk.par}</div></div>
     </div>`;
 
   const head = `<tr><th class="name">Player</th>` +
@@ -94,14 +107,25 @@ function viewWeek(main) {
   }).join('');
 
   main.innerHTML = `
-    <h2 class="view-title">This Week</h2>
-    <p class="view-intro">Latest scorecard, ranked by net. Colors: <span class="s-birdie">birdie+</span>, <span class="s-bogey">bogey</span>, <span class="s-double">double</span>, <span class="s-triple">worse</span>.</p>
+    <h2 class="view-title">${isLatest ? 'This Week' : 'Week ' + wk.week}</h2>
+    <p class="view-intro">${isLatest ? 'Latest scorecard' : 'Scorecard'}, ranked by net — use ‹ › to browse the season. Colors: <span class="s-birdie">birdie+</span>, <span class="s-bogey">bogey</span>, <span class="s-double">double</span>, <span class="s-triple">worse</span>.</p>
+    ${nav}
     ${tiles}
-    ${awardsCard(DATA.awards[DATA.awards.length - 1])}
+    ${awardsCard(DATA.awards.find(a => a.week === wk.week))}
     <div class="card"><div class="table-scroll"><table>
       <thead>${head}</thead><tbody>${parRow}${body}</tbody>
     </table></div></div>
-    ${recordsCard(rec)}`;
+    ${isLatest ? recordsCard(DATA.records) : ''}`;
+
+  const go = (i) => { weekIdx = Math.max(0, Math.min(weeks.length - 1, i)); viewWeek(main); };
+  const prev = main.querySelector('#wk-prev');
+  const next = main.querySelector('#wk-next');
+  const latest = main.querySelector('#wk-latest');
+  const select = main.querySelector('#wk-select');
+  if (prev) prev.onclick = () => go(weekIdx - 1);
+  if (next) next.onclick = () => go(weekIdx + 1);
+  if (latest) latest.onclick = () => go(weeks.length - 1);
+  if (select) select.onchange = (e) => go(parseInt(e.target.value, 10));
 }
 
 function awardsCard(a) {

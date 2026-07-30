@@ -2,7 +2,7 @@
 
 // ---- config you can tweak ----
 const LEAGUE_NAME = 'Dominion Golf League 2026';   // shown in the header
-const HIGHLIGHT_PLAYER = 'Travis Valdez';          // your rows get highlighted
+const HIGHLIGHT_PLAYER = null;                      // set to a name to tint that player's rows
 
 const PLAYER_COLORS = ['#1a7a4c', '#0b6b8a', '#d4a017', '#c0392b', '#7b4bc9',
   '#e2703a', '#2e8b57', '#3a6ea5', '#b5651d', '#9d3d63'];

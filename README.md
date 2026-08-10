@@ -56,6 +56,15 @@ from the paste and would drop weeks you appended. Pick one as your master.
 You can also just hand-edit `data/scores.csv` (it's plain wide CSV) and run
 `python3 build/update.py` to rebuild.
 
+## Letting friends submit their own scores
+
+`site/submit.html` and `site/edit.html` let anyone with the link — no
+GitHub account needed — enter a round for their group, or correct a past
+score, without touching `data/this_week.txt` yourself. Every submission
+opens a **pull request** for you to review and merge; nothing goes live
+until you approve it. This runs on a small Cloudflare Worker (`worker/`)
+that needs a one-time setup — see `worker/README.md`.
+
 ## The math (all in `build/build.py`)
 
 - **Handicap** = average of the best 5 nine-hole scores (relative to par) over

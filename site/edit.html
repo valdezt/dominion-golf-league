@@ -3,29 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dominion Golf League 2026</title>
+  <title>Fix a Score — Dominion Golf League 2026</title>
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛳</text></svg>" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <h1>⛳ <span id="league-name">Golf League</span></h1>
-      <p class="tagline" id="meta-line">Loading…</p>
-      <p class="tagline"><a class="submit-link" href="submit.html">Submit your scores →</a> · <a class="submit-link" href="edit.html">Fix a past score →</a></p>
+      <h1>⛳ Fix a Score</h1>
+      <p class="tagline">Propose a correction to a score from a past week — it opens a pull request for review.</p>
+      <p class="tagline"><a class="submit-link" href="index.html">← Back to the site</a> · <a class="submit-link" href="submit.html">Submit a new round →</a></p>
     </div>
   </header>
-
-  <nav class="tabs wrap" id="tabs"></nav>
 
   <main id="main" class="wrap">
     <p class="loading">Loading league data…</p>
   </main>
 
-  <footer class="wrap">
-    <p id="footer-meta"></p>
-  </footer>
+  <footer class="wrap"></footer>
 
-  <script src="assets/app.js"></script>
+  <script src="assets/scorecard-form.js"></script>
+  <script src="assets/edit.js"></script>
 </body>
 </html>

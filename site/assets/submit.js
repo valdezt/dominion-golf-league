@@ -2,7 +2,7 @@
 
 // Fill this in after `wrangler deploy` (see worker/README.md) — the only
 // coupling between this static page and the Cloudflare Worker that opens PRs.
-const WORKER_URL = 'https://REPLACE-ME.workers.dev';
+const WORKER_URL = 'https://dominion-golf-submit.valdezt.workers.dev';
 
 const DRAFT_KEY = 'golf:submitDraft';
 const NEW_WEEK_VALUE = '__new_week__';

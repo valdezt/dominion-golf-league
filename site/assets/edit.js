@@ -1,7 +1,7 @@
 'use strict';
 
 // See worker/README.md — must match the value set in submit.js.
-const WORKER_URL = 'https://REPLACE-ME.workers.dev';
+const WORKER_URL = 'https://dominion-golf-submit.valdezt.workers.dev';
 const NEW_PLAYER_VALUE_UNUSED = null; // edit form never adds new players
 
 const $ = (sel, root = document) => root.querySelector(sel);

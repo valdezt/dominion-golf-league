@@ -5,3 +5,8 @@ __pycache__/
 
 # weekly-entry archive (backups of this_week.txt)
 data/weeks_log/
+
+# Cloudflare Worker (see worker/README.md for one-time setup)
+worker/node_modules/
+worker/.wrangler/
+worker/.dev.vars

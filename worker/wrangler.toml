@@ -1,0 +1,19 @@
+name = "dominion-golf-submit"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+[vars]
+GITHUB_OWNER = "valdezt"
+GITHUB_REPO = "dominion-golf-league"
+BASE_BRANCH = "main"
+# The exact origin the site is served from — no trailing slash. Update this
+# if you put the site on a custom domain instead of the default github.io one.
+ALLOWED_ORIGIN = "https://valdezt.github.io"
+
+# Optional: enables the per-IP rate limiter (see src/index.js). Create with:
+#   wrangler kv namespace create RATE_LIMIT
+# then paste the returned id below. Safe to leave commented out — the Worker
+# just skips rate limiting if the binding isn't present.
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "REPLACE_ME"

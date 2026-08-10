@@ -112,6 +112,13 @@ def build():
     league_weeks = sorted({w for (_, w) in rounds})
     nine_par = sum(course[h]["par"] for h in range(1, 10))  # both nines = 35 here
 
+    # every week registered in weeks.csv, played or not (front-end submission
+    # form needs this to offer a pre-registered-but-not-yet-played week)
+    registered_weeks = [
+        {"week": w, "nine": m["nine"], "date": m["date"], "note": m["note"]}
+        for w, m in sorted(week_meta.items())
+    ]
+
     def handicap(player, upto_week, inclusive=True):
         """Best-5-of-last-8 handicap as of a given week."""
         window = [w for w in league_weeks if (w <= upto_week if inclusive else w < upto_week)][-WINDOW:]
@@ -595,6 +602,7 @@ def build():
             "players": players, "num_weeks": len(league_weeks),
             "league_weeks": league_weeks, "nine_par": nine_par,
             "window": WINDOW, "best_n": BEST_N,
+            "registered_weeks": registered_weeks,
         },
         "course": {str(h): course[h] for h in course},
         "weeks": weeks,

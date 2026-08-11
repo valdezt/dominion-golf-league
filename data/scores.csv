@@ -1,5 +1,5 @@
 week,player,h1,h2,h3,h4,h5,h6,h7,h8,h9,notes
--1,Alex Djordjevski,8,6,4,5,3,4,5,6,4,From 06-08
+15,Alex Djordjevski,8,6,4,5,3,4,5,6,4,From 06-08
 1,Mike Bondy,6,7,7,5,5,6,5,5,6,
 1,Nate Emery,5,5,6,4,5,4,3,5,4,
 1,Dylan Bell,6,4,6,6,4,6,5,4,4,
@@ -123,7 +123,7 @@ week,player,h1,h2,h3,h4,h5,h6,h7,h8,h9,notes
 -1,Dylan Bell,6,4,6,5,4,7,4,5,6,Play ahead 04-27
 13,Dylan Bell,5,5,5,5,3,5,3,4,4,Played 08-03
 14,Dylan Bell,6,6,5,5,3,3,4,5,3,
-14,Michael Bondy,5,5,5,5,6,4,5,6,6,
+14,Mike Bondy,5,5,5,5,6,4,5,6,6,
 14,Evan Sheppard,5,8,5,8,3,4,5,5,6,
 14,Nate Emery,4,3,3,6,3,4,4,3,3,
 14,Alex Djordjevski,5,6,3,4,5,3,5,5,4,
@@ -132,3 +132,10 @@ week,player,h1,h2,h3,h4,h5,h6,h7,h8,h9,notes
 14,Austin Crough,5,4,4,6,5,3,4,4,5,
 14,Eddie Sauve,4,5,3,5,3,4,4,4,4,
 14,Brian Holland,6,5,4,5,5,4,6,5,6,
+15,Mike Bondy,6,5,8,6,5,5,6,5,5,
+15,Austin Crough,5,5,5,5,5,7,4,5,5,
+15,Nate Hodgins,5,4,6,5,3,6,4,6,3,
+15,Eddie Sauve,5,4,5,5,4,6,3,3,3,
+15,Travis Valdez,6,4,6,5,4,6,7,6,3,
+15,Dylan Bell,5,4,4,5,4,6,3,5,4,
+15,Nate Emery,6,5,6,5,4,6,5,4,3,

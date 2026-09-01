@@ -105,6 +105,10 @@ tbody tr:hover td { background: rgba(46,139,87,.06); }
 .s-double { color: var(--double); font-weight: 600; }
 .s-triple { color: var(--triple); font-weight: 700; }
 .par-row td { color: var(--muted); font-size: .8rem; background: transparent; border-bottom: 2px solid var(--line); }
+.stat-label { font-size: .74rem; color: var(--muted); font-weight: 600; }
+tr.spread-row td { color: var(--muted); font-style: italic; }
+tr.spread-row td.total-col { font-style: normal; font-weight: 700; }
+tr.spread-row td.name { border-bottom: 2px solid var(--line); }
 
 /* Pills / chips */
 .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .78rem; font-weight: 600; background: var(--green-light); color: var(--green-dark); }

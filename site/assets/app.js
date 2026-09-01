@@ -33,8 +33,7 @@ const TABS = [
   ['week', 'This Week'],
   ['standings', 'Standings'],
   ['handicaps', 'Handicaps'],
-  ['ringer', 'Ringer'],
-  ['dinger', 'Dinger'],
+  ['ringerdinger', 'Ringer/Dinger'],
   ['fun', 'Fun Stats'],
   ['streaks', 'Streaks'],
   ['trophies', 'Trophies'],
@@ -55,7 +54,7 @@ function show(tab) {
   main.scrollIntoView({ block: 'start' });
   window.scrollTo({ top: 0 });
   ({ week: viewWeek, standings: viewStandings, handicaps: viewHandicaps,
-     ringer: () => viewBoard('ringer'), dinger: () => viewBoard('dinger'),
+     ringerdinger: viewRingerDinger,
      fun: viewFun, streaks: viewStreaks, trophies: viewTrophies,
      players: viewPlayers }[tab])(main);
   location.hash = tab;
@@ -260,12 +259,10 @@ function viewHandicaps(main) {
   card.addEventListener('click', () => { locked = null; apply(null); });
 }
 
-// ---------- Ringer / Dinger boards ----------
-function viewBoard(kind) {
-  const main = $('#main');
-  const isRinger = kind === 'ringer';
-  const board = DATA[kind];
-  const leagueCard = DATA[isRinger ? 'league_ringer' : 'league_dinger'];
+// ---------- Ringer / Dinger board ----------
+function viewRingerDinger(main) {
+  const ringer = DATA.ringer, dinger = DATA.dinger, spread = DATA.spread;
+  const leagueRinger = DATA.league_ringer, leagueDinger = DATA.league_dinger, leagueSpread = DATA.league_spread;
   const players = DATA.meta.players;
   const holes = Array.from({ length: 18 }, (_, i) => i + 1);
 
@@ -273,30 +270,41 @@ function viewBoard(kind) {
     holes.map(h => `<th>${h}<div class="note" style="font-weight:400">p${parOf(h)}</div></th>`).join('') +
     `<th class="total-col">Tot</th><th>+/-</th></tr>`;
 
-  const body = players.map(p => {
-    const b = board[p].holes;
-    const cells = holes.map(h => {
-      const v = b[String(h)];
-      return `<td class="${scoreClass(v, parOf(h))}">${v ?? '·'}</td>`;
-    }).join('');
-    return `<tr class="${isMe(p) ? 'me' : ''}"><td class="name">${p}</td>${cells}
-      <td class="total-col">${board[p].total}</td>
-      <td>${signed(board[p].total - board[p].par)}</td></tr>`;
-  }).join('');
+  const scoreRow = (board) => holes.map(h => {
+    const v = board.holes[String(h)];
+    return `<td class="${scoreClass(v, parOf(h))}">${v ?? '·'}</td>`;
+  }).join('') + `<td class="total-col">${board.total}</td><td>${signed(board.total - board.par)}</td>`;
 
-  const leagueTotal = Object.values(leagueCard).reduce((a, b) => a + b, 0);
-  const leaguePar = holes.reduce((a, h) => a + (leagueCard[String(h)] != null ? parOf(h) : 0), 0);
-  const leagueRow = `<tr style="border-top:2px solid var(--line)"><td class="name">${isRinger ? '🌟 League best' : '💀 League worst'}</td>` +
-    holes.map(h => `<td class="${scoreClass(leagueCard[String(h)], parOf(h))}">${leagueCard[String(h)] ?? '·'}</td>`).join('') +
-    `<td class="total-col">${leagueTotal}</td><td>${signed(leagueTotal - leaguePar)}</td></tr>`;
+  const spreadRow = (board) => holes.map(h => {
+    const v = board.holes[String(h)];
+    return `<td>${v ?? '·'}</td>`;
+  }).join('') + `<td class="total-col">${board.total}</td><td></td>`;
+
+  const nameCell = (label, sub) => `<td class="name"><div>${label}</div><div class="stat-label">${sub}</div></td>`;
+
+  const body = players.map(p => `
+    <tr class="${isMe(p) ? 'me' : ''}">${nameCell(p, '🌟 Ringer')}${scoreRow(ringer[p])}</tr>
+    <tr class="${isMe(p) ? 'me' : ''}">${nameCell('', '💀 Dinger')}${scoreRow(dinger[p])}</tr>
+    <tr class="${isMe(p) ? 'me' : ''} spread-row">${nameCell('', '↕ Spread')}${spreadRow(spread[p])}</tr>`
+  ).join('');
+
+  const leagueTotal = (card) => Object.values(card).reduce((a, b) => a + b, 0);
+  const leaguePar = (card) => holes.reduce((a, h) => a + (card[String(h)] != null ? parOf(h) : 0), 0);
+  const leagueScoreRow = (card) => holes.map(h => `<td class="${scoreClass(card[String(h)], parOf(h))}">${card[String(h)] ?? '·'}</td>`).join('') +
+    `<td class="total-col">${leagueTotal(card)}</td><td>${signed(leagueTotal(card) - leaguePar(card))}</td>`;
+  const leagueSpreadRow = holes.map(h => `<td>${leagueSpread[String(h)] ?? '·'}</td>`).join('') +
+    `<td class="total-col">${leagueTotal(leagueSpread)}</td><td></td>`;
+
+  const leagueRows = `
+    <tr style="border-top:2px solid var(--line)">${nameCell('League', '🌟 Best')}${leagueScoreRow(leagueRinger)}</tr>
+    <tr>${nameCell('', '💀 Worst')}${leagueScoreRow(leagueDinger)}</tr>
+    <tr class="spread-row">${nameCell('', '↕ Spread')}${leagueSpreadRow}</tr>`;
 
   main.innerHTML = `
-    <h2 class="view-title">${isRinger ? '🌟 Ringer Board' : '💀 Dinger Board'}</h2>
-    <p class="view-intro">${isRinger
-      ? 'Everyone\'s <strong>best</strong> score on each hole all season — your dream 18. The bottom row is the league\'s best-ball card.'
-      : 'Everyone\'s <strong>worst</strong> score on each hole all season — the hall of shame. The bottom row is the ugliest the course has ever played.'}</p>
+    <h2 class="view-title">🌟💀 Ringer / Dinger Board</h2>
+    <p class="view-intro">Everyone's <strong>best</strong> (Ringer) and <strong>worst</strong> (Dinger) score on each hole all season, plus the <strong>Spread</strong> between them — how wide a player's range is on that hole. The bottom block is the league-wide best/worst card.</p>
     <div class="card"><div class="table-scroll"><table><thead>${head}</thead>
-      <tbody>${body}${leagueRow}</tbody></table></div></div>
+      <tbody>${body}${leagueRows}</tbody></table></div></div>
     <p class="note">"·" = hole not yet played this season.</p>`;
 }
 

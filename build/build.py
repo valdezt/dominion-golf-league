@@ -205,6 +205,13 @@ def build():
             league_ringer[str(h)] = min(vals)
             league_dinger[str(h)] = max(vals)
 
+    # ---- spread (dinger - ringer), hole by hole and total ----
+    spread = {}
+    for p in players:
+        holes_p = {h: dinger[p]["holes"][h] - ringer[p]["holes"][h] for h in ringer[p]["holes"]}
+        spread[p] = {"holes": holes_p, "total": dinger[p]["total"] - ringer[p]["total"]}
+    league_spread = {h: league_dinger[h] - league_ringer[h] for h in league_ringer}
+
     # ---- scoring distribution (per hole vs par) ----
     def bucket(diff):
         if diff <= -2: return "eagle"
@@ -446,7 +453,7 @@ def build():
             "best_round": best, "worst_round": worst,
             "series": series,
             "distribution": distribution[p],
-            "ringer": ringer[p], "dinger": dinger[p],
+            "ringer": ringer[p], "dinger": dinger[p], "spread": spread[p],
             "skins": skins[p],
             "hole_avg": hole_avg,
             "avg_gross": rnd(statistics.mean([s["gross"] for s in series])) if series else None,
@@ -607,8 +614,8 @@ def build():
         "course": {str(h): course[h] for h in course},
         "weeks": weeks,
         "handicaps": handicaps,
-        "ringer": ringer, "dinger": dinger,
-        "league_ringer": league_ringer, "league_dinger": league_dinger,
+        "ringer": ringer, "dinger": dinger, "spread": spread,
+        "league_ringer": league_ringer, "league_dinger": league_dinger, "league_spread": league_spread,
         "distribution": distribution, "distribution_order": order,
         "hole_difficulty": hole_difficulty,
         "consistency": consistency,

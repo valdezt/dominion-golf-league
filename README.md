@@ -72,6 +72,7 @@ that needs a one-time setup — see `worker/README.md`.
   at the top of `build.py` to change it.
 - **Net** = gross − handicap − par (lower is better).
 - **Ringer / Dinger** = best / worst score on each of the 18 holes all season.
+  **Spread** = the gap between them, hole by hole and total.
 - **Skins** = outright-lowest net on a hole, strokes allocated by stroke index.
 - Plus hole difficulty, scoring distribution, consistency, per-player profiles.
 
